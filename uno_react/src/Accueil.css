@@ -1,0 +1,58 @@
+.tailleimg {
+    height : 30%;
+    width : 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%
+}
+
+.imgson {
+    width: 150px;
+	height: 150px;
+}
+
+body {
+    margin:0; 
+    padding:0; 
+    background: url(./ressources/bois.jpg) no-repeat center fixed; 
+    -webkit-background-size: cover;
+}
+
+.myButton {
+	-moz-box-shadow: 3px 4px 0px 0px #8a2a21;
+	-webkit-box-shadow: 3px 4px 0px 0px #8a2a21;
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:-moz-linear-gradient(top, #ff1500 5%, #f24437 100%);
+	background:-webkit-linear-gradient(top, #ff1500 5%, #f24437 100%);
+	background:-o-linear-gradient(top, #ff1500 5%, #f24437 100%);
+	background:-ms-linear-gradient(top, #ff1500 5%, #f24437 100%);
+	background:linear-gradient(to bottom, #ff1500 5%, #f24437 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1500', endColorstr='#f24437',GradientType=0);
+	background-color:#ff1500;
+	-moz-border-radius:18px;
+	-webkit-border-radius:18px;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+.myButton:hover {
+	background:-moz-linear-gradient(top, #f24437 5%, #ff1500 100%);
+	background:-webkit-linear-gradient(top, #f24437 5%, #ff1500 100%);
+	background:-o-linear-gradient(top, #f24437 5%, #ff1500 100%);
+	background:-ms-linear-gradient(top, #f24437 5%, #ff1500 100%);
+	background:linear-gradient(to bottom, #f24437 5%, #ff1500 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24437', endColorstr='#ff1500',GradientType=0);
+	background-color:#f24437;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
