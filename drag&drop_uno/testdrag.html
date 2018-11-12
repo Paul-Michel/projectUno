@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+    <style>
+        #target {
+            border: 1px solid black;
+            width: 200px;
+            height: 250px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Pile</h2>
+    <div id="target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    <h2>Hand</h2>
+    <div id="draggable1" class="draggable" draggable="true" ondragstart="drag(event)">
+        <img src="b3.png" draggable="false">
+    </div>
+    <div id="draggable2" class="draggable" draggable="true" ondragstart="drag(event)">
+        <img src="b3.png" draggable="false">
+    </div>
+    <div id="draggable3" class="draggable" draggable="true" ondragstart="drag(event)">
+        <img src="b3.png" draggable="false">
+    </div>
+
+</body>
+
+</html>
