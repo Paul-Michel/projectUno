@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/historyCore.iml" filepath="$PROJECT_DIR$/historyCore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/historyCore_main.iml" filepath="$PROJECT_DIR$/.idea/modules/historyCore_main.iml" group="historyCore" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/historyCore_test.iml" filepath="$PROJECT_DIR$/.idea/modules/historyCore_test.iml" group="historyCore" />
+    </modules>
+  </component>
+</project>

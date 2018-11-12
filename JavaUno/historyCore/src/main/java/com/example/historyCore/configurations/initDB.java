@@ -8,9 +8,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.util.Date;
-
-import static jdk.nashorn.internal.runtime.regexp.joni.Syntax.Java;
 
 @Configuration
 @Slf4j
