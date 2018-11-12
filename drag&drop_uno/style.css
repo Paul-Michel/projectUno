@@ -1,0 +1,101 @@
+/* Add some margin to the page and set a default font and colour */
+ 
+body {
+  margin: auto;
+  font-family: "Georgia", serif;
+  line-height: 1.8em;
+  color: #333;
+}
+ 
+/* Main content area */
+ 
+#content {
+  margin: 80px 70px;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+ 
+/* Slots for final card positions */
+ 
+#cardSlots {
+  margin: 0 auto 3em auto;
+  float: top;
+}
+ 
+/* The initial pile of unsorted cards */
+ 
+#cardPile {
+  margin: 0 auto;
+  float: bottom;
+}
+ 
+#cardSlots, #cardPile {
+  width: 47%;
+  height: 80%;
+  padding: .85em;
+  border: 2px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+}
+ 
+/* Individual cards and slots */
+ 
+#cardSlots div, #cardPile div {
+  float: center;
+  padding: .85em;
+  padding-bottom: 0;
+  border: 2px solid #333;
+  background-image: '/b3.png';
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+ 
+/*#cardSlots div:first-child, #cardPile div:first-child {
+  margin-left: 0;
+}*/
+ 
+#cardSlots div {
+  border-style: dashed;
+}
+ 
+#cardPile div {
+  color: black;
+  font-size: 1em;
+  text-align: center;
+  background-image: "b3.png"
+}
+ 
+#cardPile div.ui-draggable-dragging {
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+ 
+/*#card1 {
+  margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+#card1 img{
+   width: 100%;
+    height: auto;
+}*/
+#card2.correct { background: brown; }
+#card3.correct { background: orange; }
+#card4.correct { background: yellow; }
+#card5.correct { background: green; }
+#card6.correct { background: cyan; }
+#card7.correct { background: blue; }
+#card8.correct { background: indigo; }
+#card9.correct { background: purple; }
+#card10.correct { background: violet; }
+ 
