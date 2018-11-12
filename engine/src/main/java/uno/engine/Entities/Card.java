@@ -30,9 +30,9 @@ public class Card {
         return color;
     }
 
-    public Boolean getPlayable() {
-        return playable;
-    }
+//    public Boolean getPlayable() {
+//        return playable;
+//    }
 
     public void setPlayable(Boolean playable) {
         playable = playable;

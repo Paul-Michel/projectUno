@@ -3,6 +3,7 @@ package uno.engine.Entities;
 import uno.engine.enums.Color;
 
 import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class Player {
 
@@ -19,14 +20,17 @@ public class Player {
     }
 
 
-    public void setAvailableCard(Card currentCard) {
+    public Boolean  setAvailableCard(Card currentCard) {
+        AtomicReference<Boolean> minOneAvailable = new AtomicReference<>(false);
         this.hand.forEach(card -> {
             if ((card.getColor() == Color.BLACK || card.getColor() == currentCard.getColor()) || card.getValue() == currentCard.getValue()) {
                 card.setPlayable(true);
+                minOneAvailable.set(true);
             } else {
                 card.setPlayable(false);
             }
         });
+        return minOneAvailable.get();
     }
 
     public void pick(List<Card> newCard) {
