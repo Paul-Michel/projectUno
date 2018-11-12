@@ -54,6 +54,14 @@ public class Game {
         Card currentCard = Stack.get(Stack.size() - 1);
         resultNewTurn.currentCard = currentCard;
 
+        if(Deck.size() < 1){
+            Stack.forEach(card -> {
+                Deck.add(card);
+                Stack.remove(card);
+            });
+            Collections.shuffle(Deck);
+            Stack.add(currentCard);
+        }
 
         if (!Players.get(playerIdx).setAvailableCard(currentCard)) {
             Players.get(playerIdx).pick(pickCard(1));
