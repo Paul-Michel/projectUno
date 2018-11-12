@@ -21,7 +21,6 @@ public class EngineApplication {
         List<Integer> test = new ArrayList<>();
         test.add(1);
         test.add(2);
-        test.add(3);
 
         myGame = new Game(test);
 
@@ -43,29 +42,34 @@ public class EngineApplication {
                 + resultNewTurn.currentCard.getColor());
 
         System.out.println("Player: " + (playerIdx + 1));
+        final Integer[] i = {0};
         hand.forEach(card -> {
-            System.out.println(card.getValue() + " " + card.getColor() + " " + card.getPlayable());
+            System.out.println(i[0] + " " + card.getValue() + " " + card.getColor() + " " + card.getPlayable());
+            i[0]++;
         });
 
+        if (resultNewTurn.CanPlay) {
 
-        System.out.println("Pick a card : ");
+            System.out.println("Pick a card : ");
+            Scanner scanner = new Scanner(System.in);
+            int inp;
+            do {
+                inp = scanner.nextInt();
+                System.out.println("coucou");
+                if (resultNewTurn.hand.get(inp).getPlayable()) {
+                    break;
+                } else {
+                    System.out.println("Wrong card : ");
+                }
+            } while (true);
 
 
-        Scanner scanner = new Scanner(System.in);
-        int inp;
-        do {
-            inp = scanner.nextInt();
-            System.out.println("coucou");
-            if (resultNewTurn.hand.get(inp).getPlayable()) {
-                break;
-            } else {
-                System.out.println("Wrong card : ");
-            }
-        } while (true);
+            Resulteffect resulteffect = myGame.effect(playerIdx, resultNewTurn.hand.get(inp));
+            return resulteffect.nextPlayer;
+        } else {
+            System.out.println("############################ Can't play -> next player");
+            return resultNewTurn.nextplayer;
+        }
 
-
-        Resulteffect resulteffect = myGame.effect(playerIdx, resultNewTurn.hand.get(inp));
-        return resulteffect.nextPlayer;
     }
-
 }

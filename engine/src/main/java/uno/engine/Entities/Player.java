@@ -1,4 +1,4 @@
-package uno.engine.Entities;
+package uno.engine.entities;
 
 import uno.engine.enums.Color;
 
@@ -26,7 +26,7 @@ public class Player {
             if ((card.getColor() == Color.BLACK || card.getColor() == currentCard.getColor()) || card.getValue() == currentCard.getValue()) {
                 card.setPlayable(true);
                 minOneAvailable.set(true);
-            } else {
+            }else{
                 card.setPlayable(false);
             }
         });

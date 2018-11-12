@@ -1,4 +1,4 @@
-package uno.engine.Entities;
+package uno.engine.entities;
 
 import uno.engine.enums.Color;
 import uno.engine.enums.Value;
@@ -30,11 +30,15 @@ public class Card {
         return color;
     }
 
-//    public Boolean getPlayable() {
-//        return playable;
-//    }
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    public Boolean getPlayable() {
+        return playable;
+    }
 
     public void setPlayable(Boolean playable) {
-        playable = playable;
+        this.playable = playable;
     }
 }
