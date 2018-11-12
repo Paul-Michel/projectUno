@@ -13,3 +13,22 @@ div.draggable img {
     width: 100%;
     height: auto;
 }
+
+div#target {
+    border: 1px solid black;
+    width: 200px;
+    height: 250px;
+    padding: 5px;
+    float: left;
+}
+
+div#cards {
+    border: 1px solid black;
+    width: 200px;
+    height: 250px;
+    padding: 5px;
+    float: right;
+}
+
+
+

@@ -18,20 +18,16 @@
             ev.target.appendChild(document.getElementById(data));
         }
     </script>
-    <style>
-        #target {
-            border: 1px solid black;
-            width: 200px;
-            height: 250px;
-            padding: 5px;
-        }
-    </style>
+
 </head>
 
 <body>
 
     <h2>Pile</h2>
     <div id="target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    
+    <h2> Cards</h2>
+    <div id="cards"> </div>
 
     <h2>Hand</h2>
     <div id="draggable1" class="draggable" draggable="true" ondragstart="drag(event)">
