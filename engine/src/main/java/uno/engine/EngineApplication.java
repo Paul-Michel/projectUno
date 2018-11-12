@@ -1,16 +1,20 @@
 package uno.engine;
 
-import uno.engine.Entities.Card;
-import uno.engine.Entities.Game;
-import uno.engine.enums.Color;
-import uno.engine.enums.Value;
+import uno.engine.entities.Card;
+import uno.engine.entities.Game;
+import uno.engine.structs.ResultNewTurn;
+import uno.engine.structs.Resulteffect;
+
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 
 //@SpringBootApplication
 public class EngineApplication {
+    private static Game myGame;
+
 
     public static void main(String[] args) {
         //SpringApplication.run(EngineApplication.class, args);
@@ -18,9 +22,50 @@ public class EngineApplication {
         test.add(1);
         test.add(2);
         test.add(3);
-        Game myGame = new Game(test);
-       List<Card> hand = myGame.newTurn(1);
-        myGame.effect(1, new Card(Value.FIVE, Color.RED, 11));
+
+        myGame = new Game(test);
+
+        int playerIdx = 0;
+
+        while (1 == 1) {
+            playerIdx = turn(playerIdx);
+        }
+
+    }
+
+    public static int turn(Integer playerIdx) {
+
+        ResultNewTurn resultNewTurn = myGame.newTurn(playerIdx);
+        List<Card> hand = new ArrayList<>(resultNewTurn.hand);
+
+        System.out.println("Current Card: "
+                + resultNewTurn.currentCard.getValue() + " "
+                + resultNewTurn.currentCard.getColor());
+
+        System.out.println("Player: " + (playerIdx + 1));
+        hand.forEach(card -> {
+            System.out.println(card.getValue() + " " + card.getColor() + " " + card.getPlayable());
+        });
+
+
+        System.out.println("Pick a card : ");
+
+
+        Scanner scanner = new Scanner(System.in);
+        int inp;
+        do {
+            inp = scanner.nextInt();
+            System.out.println("coucou");
+            if (resultNewTurn.hand.get(inp).getPlayable()) {
+                break;
+            } else {
+                System.out.println("Wrong card : ");
+            }
+        } while (true);
+
+
+        Resulteffect resulteffect = myGame.effect(playerIdx, resultNewTurn.hand.get(inp));
+        return resulteffect.nextPlayer;
     }
 
 }

@@ -12,7 +12,7 @@ public enum Value {
     NINE,
     ZERO,
     FOURMORE,
-    TOWMORE,
+    TWOMORE,
     DIRCHANGE,
     COLORCHANGE,
     FORBIDDEN,
