@@ -10,12 +10,12 @@ public class Player {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "PRIVATE_SEQ_PLAYER")
-    private Long id;
-    private String pseudo;
-    private Double winNb;
-    private Double playedNb;
-    private Double winrate;
-    private String email;
+        private Long id;
+        private String pseudo;
+        private Double winNb;
+        private Double playedNb;
+        private Double winrate;
+        private String email;
 
     public Player(String pseudo, Double winNb, Double playedNb, String email) {
         this.pseudo = pseudo;

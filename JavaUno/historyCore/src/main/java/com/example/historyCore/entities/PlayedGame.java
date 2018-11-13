@@ -14,65 +14,17 @@ public class PlayedGame {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "PRIVATE_SEQ_PLAYEDGAME")
     private Long id;
     private Date datePlayed;
-    private String firstWinner;
-    private String secondWinner;
-    private String thirdWinner;
-    private String fourthWinner;
+    private Long firstWinnerId;
+    private Long secondWinnerId;
+    private Long thirdWinnerId;
+    private Long fourthWinnerId;
 
-    public PlayedGame(String firstWinner, String secondWinner, String thirdWinner, String fourthWinner) {
+    public PlayedGame(Long firstWinnerId, Long secondWinnerId, Long thirdWinnerId, Long fourthWinnerId) {
         this.datePlayed = new Date();
-        this.firstWinner = firstWinner;
-        this.secondWinner = secondWinner;
-        this.thirdWinner = thirdWinner;
-        this.fourthWinner = fourthWinner;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Date getDatePlayed() {
-        return datePlayed;
-    }
-
-    public void setDatePlayed(Date datePlayed) {
-        this.datePlayed = datePlayed;
-    }
-
-    public String getFirstWinner() {
-        return firstWinner;
-    }
-
-    public void setFirstWinner(String firstWinner) {
-        this.firstWinner = firstWinner;
-    }
-
-    public String getSecondWinner() {
-        return secondWinner;
-    }
-
-    public void setSecondWinner(String secondWinner) {
-        this.secondWinner = secondWinner;
-    }
-
-    public String getThirdWinner() {
-        return thirdWinner;
-    }
-
-    public void setThirdWinner(String thirdWinner) {
-        this.thirdWinner = thirdWinner;
-    }
-
-    public String getFourthWinner() {
-        return fourthWinner;
-    }
-
-    public void setFourthWinner(String fourthWinner) {
-        this.fourthWinner = fourthWinner;
+        this.firstWinnerId = firstWinnerId;
+        this.secondWinnerId = secondWinnerId;
+        this.thirdWinnerId = thirdWinnerId;
+        this.fourthWinnerId = fourthWinnerId;
     }
 
     public PlayedGame(){}
