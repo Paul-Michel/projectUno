@@ -27,15 +27,21 @@ public class PlayedGameController {
         return playedGameRepository.findById(id).orElseThrow(()-> new PlayedGameNotFoundException(id));
     }
 
+    @RequestMapping(value = "/playedgames/winner/{id}", method = RequestMethod.GET)
+    List<PlayedGame> getAllWonGames(@PathVariable Long id){
+        return playedGameRepository.findAllByFirstWinnerId(id);
+    }
+
+
     @PutMapping(value = "/playedgames/{id}")
     PlayedGame replacePlayedGame (@RequestBody PlayedGame newPlayedGame, @PathVariable Long id){
         return playedGameRepository.findById(id)
                 .map(playedGame -> {
                     playedGame.setDatePlayed(newPlayedGame.getDatePlayed());
-                    playedGame.setFirstWinner(newPlayedGame.getFirstWinner());
-                    playedGame.setSecondWinner(newPlayedGame.getSecondWinner());
-                    playedGame.setThirdWinner(newPlayedGame.getThirdWinner());
-                    playedGame.setFourthWinner(newPlayedGame.getFourthWinner());
+                    playedGame.setFirstWinnerId(newPlayedGame.getFirstWinnerId());
+                    playedGame.setSecondWinnerId(newPlayedGame.getSecondWinnerId());
+                    playedGame.setThirdWinnerId(newPlayedGame.getThirdWinnerId());
+                    playedGame.setFourthWinnerId(newPlayedGame.getFourthWinnerId());
                     return playedGameRepository.save(newPlayedGame);
                 })
                 .orElseGet(()->{
