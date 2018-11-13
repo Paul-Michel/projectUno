@@ -2,6 +2,7 @@ package uno.engine;
 
 import uno.engine.entities.Card;
 import uno.engine.entities.Game;
+import uno.engine.entities.Player;
 import uno.engine.structs.ResultNewTurn;
 import uno.engine.structs.Resulteffect;
 
@@ -14,19 +15,18 @@ import java.util.Scanner;
 //@SpringBootApplication
 public class EngineApplication {
     private static Game myGame;
-
+    private static List<Integer> players = new ArrayList<>();
 
     public static void main(String[] args) {
         //SpringApplication.run(EngineApplication.class, args);
-        List<Integer> test = new ArrayList<>();
-        test.add(1);
-        test.add(2);
-
-        myGame = new Game(test);
+        players.add(111);
+        players.add(222);
+        players.add(333);
+        myGame = new Game(players);
 
         int playerIdx = 0;
 
-        while (1 == 1) {
+        while (true) {
             playerIdx = turn(playerIdx);
         }
 
@@ -41,7 +41,7 @@ public class EngineApplication {
                 + resultNewTurn.currentCard.getValue() + " "
                 + resultNewTurn.currentCard.getColor());
 
-        System.out.println("Player: " + (playerIdx + 1));
+        System.out.println("Player: " + players.get(playerIdx));
         final Integer[] i = {0};
         hand.forEach(card -> {
             System.out.println(i[0] + " " + card.getValue() + " " + card.getColor() + " " + card.getPlayable());
@@ -55,7 +55,6 @@ public class EngineApplication {
             int inp;
             do {
                 inp = scanner.nextInt();
-                System.out.println("coucou");
                 if (resultNewTurn.hand.get(inp).getPlayable()) {
                     break;
                 } else {
@@ -65,6 +64,9 @@ public class EngineApplication {
 
 
             Resulteffect resulteffect = myGame.effect(playerIdx, resultNewTurn.hand.get(inp));
+            if(resulteffect.hand.size() == 0){
+                players.remove(playerIdx);
+            }
             return resulteffect.nextPlayer;
         } else {
             System.out.println("############################ Can't play -> next player");

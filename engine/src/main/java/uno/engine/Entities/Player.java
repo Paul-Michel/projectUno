@@ -37,7 +37,4 @@ public class Player {
         this.hand.addAll(newCard);
     }
 
-
-
-
 }

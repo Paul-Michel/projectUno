@@ -27,7 +27,7 @@ public class Game {
 
         idPlayers.forEach(id -> {
             List<Card> hand = new ArrayList<>();
-            hand.addAll(pickCard(10));
+            hand.addAll(pickCard(7));
             this.Players.add(new Player(id, hand));
         });
         Integer i = 1;
@@ -54,25 +54,25 @@ public class Game {
         Card currentCard = Stack.get(Stack.size() - 1);
         resultNewTurn.currentCard = currentCard;
 
-        if(Deck.size() < 1){
-            Stack.forEach(card -> {
-                Deck.add(card);
-                Stack.remove(card);
-            });
-            Collections.shuffle(Deck);
+        if (Deck.size() - cardMore <= 1) {
+
+            Stack.remove(currentCard);
+            Deck.addAll(Stack);
+            Stack.clear();
             Stack.add(currentCard);
+            Collections.shuffle(Deck);
         }
 
         if (!Players.get(playerIdx).setAvailableCard(currentCard)) {
             Players.get(playerIdx).pick(pickCard(1));
-            if(!Players.get(playerIdx).setAvailableCard(currentCard)){
+            if (!Players.get(playerIdx).setAvailableCard(currentCard)) {
                 CardMore(playerIdx);
                 resultNewTurn.CanPlay = false;
                 resultNewTurn.nextplayer = setNextPlayer(playerIdx);
-            }else{
+            } else {
                 resultNewTurn.CanPlay = true;
             }
-        }else{
+        } else {
             resultNewTurn.CanPlay = true;
         }
 
@@ -82,14 +82,12 @@ public class Game {
         return resultNewTurn;
     }
 
-
     public Resulteffect effect(Integer playerIdx, Card Card) {
 
         Resulteffect resulteffect = new Resulteffect();
         Boolean forbiddenPlayer = false;
 
         if (Card.getValue() != Value.TWOMORE && Card.getValue() != Value.FOURMORE) {
-            System.out.println(cardMore);
             CardMore(playerIdx);
         }
 
@@ -113,6 +111,14 @@ public class Game {
         }
 
         Players.get(playerIdx).getHand().remove(Card);
+        resulteffect.hand = Players.get(playerIdx).getHand();
+        if (Players.get(playerIdx).getHand().size() <= 0) {
+            Players.remove(Players.get(playerIdx));
+            System.out.println("remove playeur");
+        }else if(Players.size() == 1){
+            //Fin de partie !!
+            System.out.println("Fin de partie !!!");
+        }
         if (forbiddenPlayer) {
             playerIdx = setNextPlayer(playerIdx);
         }
