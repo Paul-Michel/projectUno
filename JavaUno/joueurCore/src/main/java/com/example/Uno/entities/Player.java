@@ -27,4 +27,18 @@ public class Player {
 
     public Player() {
     }
+
+    public void RefreshWR(Player player){
+        player.setWinrate(player.getWinNb()/player.getPlayedNb()*100);
+    }
+    public void AddPlayedGame(Player player){
+        player.setPlayedNb(player.getPlayedNb()+1);
+        RefreshWR(player);
+    }
+    public void AddVictory(Player player){
+        player.setWinNb(player.getWinNb()+1);
+        AddPlayedGame(player);
+    }
+
+
 }
