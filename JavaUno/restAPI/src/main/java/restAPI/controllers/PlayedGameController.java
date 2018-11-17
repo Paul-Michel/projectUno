@@ -1,6 +1,7 @@
 package restAPI.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,8 +15,13 @@ public class PlayedGameController {
     PlayedGameService playedGameService;
 
     @RequestMapping("/playedgames/{id}")
-    ResponseEntity getOne(@PathVariable Long id) {
-
+    ResponseEntity<Object> getOnePlayedGame(@PathVariable Long id) {
         return playedGameService.getOnePlayedGame(id);
     }
+
+    @RequestMapping("/playedgames")
+    ResponseEntity<Object> getAllPlayedGames() {
+        return playedGameService.getAllPlayedGame();
+    }
+
 }

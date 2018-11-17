@@ -7,9 +7,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
 @Component
-@FeignClient("PlayedGame")
+@FeignClient("PlayedGameClient")
 public interface IPlayedGameClient {
 
     @RequestLine("GET /{id}")
-    ResponseEntity getOneById(@Param("id") Long id);
+    Object getOne(@Param("id") Long id);
+
+    @RequestLine("GET /")
+    Object getAll();
 }

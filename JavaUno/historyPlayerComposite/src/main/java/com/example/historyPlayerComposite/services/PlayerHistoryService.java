@@ -38,10 +38,7 @@ public class PlayerHistoryService {
             .target(IHistoryClient.class, "http://localhost:5002/playedgames");
 
     public PlayerHistory getOneById(Long playerId){
-        log.info("Call to the Player Core - getOneById :" + playerId);
         Player player = iPlayerClient.getOneById((playerId));
-        System.out.println("MQSFKDHBF QSDMFHPVQSDLFMB%QSD¨GIUFM BSDJFKLGQSDBFMJHQSDGLVKF");
-        log.info("Call to the History Core - getAllByPlayerId : " + playerId);
         Object historyList = iHistoryClient.getAllByfirstWinnerId(playerId);
 
         return new PlayerHistory(player.getId(), player.getPseudo(), historyList);
