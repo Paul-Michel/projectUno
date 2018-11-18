@@ -3,7 +3,9 @@
  *
  * ---------------------------------------------------------------
  *
- * Copy files and/or folders.
+ * Copy files and/or folders from your `assets/` directory into
+ * the web root (`.tmp/public`) so they can be served via HTTP,
+ * and also for further pre-processing by other Grunt tasks.
  *
  * For more information, see:
  *   https://sailsjs.com/anatomy/tasks/config/copy.js
@@ -27,15 +29,7 @@ module.exports = function(grunt) {
         src: ['**/*'],
         dest: 'www'
       }]
-    },
-    beforeLinkBuildProd: {
-      files: [{
-        expand: true,
-        cwd: '.tmp/public/hash',
-        src: ['**/*'],
-        dest: '.tmp/public/dist'
-      }]
-    },
+    }
   });
 
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
