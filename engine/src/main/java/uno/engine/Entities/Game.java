@@ -4,8 +4,8 @@ package uno.engine.entities;
 
 import uno.engine.enums.Color;
 import uno.engine.enums.Value;
-import uno.engine.structs.ResultNewTurn;
-import uno.engine.structs.Resulteffect;
+import uno.engine.structs.Result;
+import uno.engine.structs.Result;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -47,12 +47,12 @@ public class Game {
 
     }
 
-    public ResultNewTurn newTurn(Integer playerIdx) {
+    public Result newTurn(Integer playerIdx) {
 
-        ResultNewTurn resultNewTurn = new ResultNewTurn();
+        Result Result = new Result();
 
         Card currentCard = Stack.get(Stack.size() - 1);
-        resultNewTurn.currentCard = currentCard;
+        Result.currentCard = currentCard;
 
         if (Deck.size() - cardMore <= 1) {
 
@@ -67,24 +67,23 @@ public class Game {
             Players.get(playerIdx).pick(pickCard(1));
             if (!Players.get(playerIdx).setAvailableCard(currentCard)) {
                 CardMore(playerIdx);
-                resultNewTurn.CanPlay = false;
-                resultNewTurn.nextplayer = setNextPlayer(playerIdx);
+                Result.CanPlay = false;
+                Result.nextPlayer = setNextPlayer(playerIdx);
             } else {
-                resultNewTurn.CanPlay = true;
+                Result.CanPlay = true;
             }
         } else {
-            resultNewTurn.CanPlay = true;
+            Result.CanPlay = true;
         }
 
 
-        resultNewTurn.hand = Players.get(playerIdx).getHand();
-
-        return resultNewTurn;
+        Result.hand = Players.get(playerIdx).getHand();
+        return Result;
     }
 
-    public Resulteffect effect(Integer playerIdx, Card Card) {
+    public Result effect(Integer playerIdx, Card Card) {
 
-        Resulteffect resulteffect = new Resulteffect();
+        Result Result = new Result();
         Boolean forbiddenPlayer = false;
 
         if (Card.getValue() != Value.TWOMORE && Card.getValue() != Value.FOURMORE) {
@@ -110,20 +109,27 @@ public class Game {
                 break;
         }
 
-        Players.get(playerIdx).getHand().remove(Card);
-        resulteffect.hand = Players.get(playerIdx).getHand();
+
+        Integer finalPlayerIdx = playerIdx;
+        Players.get(playerIdx).getHand().forEach(c ->{
+            if(c.getId() == Card.getId()){
+                Players.get(finalPlayerIdx).getHand().remove(c);
+
+            }
+        });
+        Result.hand = Players.get(playerIdx).getHand();
         if (Players.get(playerIdx).getHand().size() <= 0) {
             Players.remove(Players.get(playerIdx));
             System.out.println("remove playeur");
-        }else if(Players.size() == 1){
+        } else if (Players.size() == 1) {
             //Fin de partie !!
             System.out.println("Fin de partie !!!");
         }
         if (forbiddenPlayer) {
             playerIdx = setNextPlayer(playerIdx);
         }
-        resulteffect.nextPlayer = setNextPlayer(playerIdx);
-        return resulteffect;
+        Result.nextPlayer = setNextPlayer(playerIdx);
+        return Result;
     }
 
     private Integer setNextPlayer(Integer currentPlayerIdx) {

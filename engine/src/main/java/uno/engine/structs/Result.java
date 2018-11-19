@@ -4,9 +4,10 @@ import uno.engine.entities.Card;
 
 import java.util.List;
 
-public class ResultNewTurn {
+public class Result {
+    public Boolean CanPlay;
+    public Boolean CanRePlay;
+    public Integer nextPlayer;
     public Card currentCard;
     public List<Card> hand;
-    public Boolean CanPlay;
-    public Integer nextplayer;
 }
