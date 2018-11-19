@@ -23,7 +23,7 @@ class Accueil extends Component {
                     <img src={logo} className="tailleimg" />
                 </div>
                 <div style={{ textAlign: 'center' }}>
-                    <Link to="/Game">
+                    <Link to="/ingame">
                         <a className="button a" >NEW GAME</a>
                     </Link>
                     <br></br>

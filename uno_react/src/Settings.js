@@ -39,6 +39,7 @@ class Settings extends Component {
         this.state.players.forEach(player => {
             console.log(statPseudo, player.pseudo)
             if (player.pseudo == statPseudo) {
+                divstat.removeChild(h1)
                 h1.innerHTML=player.pseudo
                 divstat.appendChild(h1)
                 statdetails.innerHTML=  "Nombre de parties :" + player.playedNb + "<br></br>" +
