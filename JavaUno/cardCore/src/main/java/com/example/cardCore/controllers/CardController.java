@@ -21,7 +21,14 @@ public class CardController {
     List<Card> getAll(){return cardRepository.findAll();}
 
     @RequestMapping(value = "/cards", method = RequestMethod.POST)
-    Card newCard (@RequestBody Card newCard){return cardRepository.save(newCard);}
+    public @ResponseBody String add(@RequestParam String value,
+                                    @RequestParam String color){
+        Card card = new Card();
+        card.setValue(value);
+        card.setColor(color);
+        cardRepository.save(card);
+        return "Saved";
+    }
 
     @RequestMapping(value = "/cards/{id}", method = RequestMethod.GET)
     Card getOneCard(@PathVariable Long id){
