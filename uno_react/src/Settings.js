@@ -32,26 +32,29 @@ class Settings extends Component {
     }
 
     pseudoStat = () => {
+        const divstat = document.getElementById("divstat")
+        while (divstat.firstChild) {
+            divstat.removeChild(divstat.firstChild);
+        }
+
         const statPseudo = document.getElementById("statpseudo").value
         const h1 = document.createElement("h1")
         const statdetails = document.createElement("p")
-        const divstat = document.getElementById("divstat")
+
         this.state.players.forEach(player => {
-            console.log(statPseudo, player.pseudo)
             if (player.pseudo == statPseudo) {
-                divstat.removeChild(h1)
-                h1.innerHTML=player.pseudo
-                divstat.appendChild(h1)
-                statdetails.innerHTML=  "Nombre de parties :" + player.playedNb + "<br></br>" +
-                                        "Nombre de victoires :" + player.winNb + "<br></br>" +
-                                        "Ratio victoires/défaites :" + player.winrate + "%";
-                divstat.appendChild(statdetails)
-            }
-            else if(divstat.children.length == 0) {
-                h1.innerHTML="Pseudo innexistant"
-                divstat.appendChild(h1)
+                    h1.innerHTML = player.pseudo
+                    divstat.appendChild(h1)
+                    statdetails.innerHTML = "Nombre de parties :" + player.playedNb + "<br></br>" +
+                        "Nombre de victoires :" + player.winNb + "<br></br>" +
+                        "Ratio victoires/défaites :" + player.winrate + "%";
+                    divstat.appendChild(statdetails)
             }
         })
+        if(!divstat.firstChild){
+            h1.innerHTML = "Player not found"
+            divstat.appendChild(h1)
+        }
     }
 
     render() {

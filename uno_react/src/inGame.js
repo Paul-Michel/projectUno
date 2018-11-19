@@ -61,7 +61,7 @@ class Test extends Component {
                 </div>
 
                 <div id="draggableContent">
-                    <div id="draggable1" draggable onDragStart = {(e) => this.onDragStart(e)}className="draggable in-hand" draggable="true" ondragstart="drag(event)">
+                    <div id="draggable1" draggable onDragOver={(e)=>this.onDragOver(e)}  className="draggable in-hand" draggable="true" ondragstart="drag(event)">
                         <div className="facecachée1">
                             <img src={pioche} draggable="false"></img>
                         </div>

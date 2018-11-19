@@ -32,23 +32,15 @@ div.draggable:hover {
     height: 100%;
     width: 100%;
     margin: 50px;
+    
 }
+
 div.draggable img {
     width: 100%;
     height: auto;
 }
 
-#centre{
-    max-width:500px;
-    height:400px;
-    margin-top: 200px;
-    margin-left: 400px;
-}
-#box{
-    width:440px;
-    margin:0;
-    height:100px;
-}
+
 #box_left,#box_right{
     width:200px;
     display:inline-block;
