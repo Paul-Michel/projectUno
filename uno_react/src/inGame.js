@@ -50,7 +50,7 @@ class Test extends Component {
             <div id="body">
                 <div>
                     <div id="box">
-                        <div id="box_left" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div id="box_left" onDragOver={(e)=>this.onDragOver(e)}></div>
                         <div id="box_right">
                             <img src={pioche}></img>
                         </div>
@@ -61,7 +61,7 @@ class Test extends Component {
                 </div>
 
                 <div id="draggableContent">
-                    <div id="draggable1" className="draggable in-hand" draggable="true" ondragstart="drag(event)">
+                    <div id="draggable1" draggable onDragStart = {(e) => this.onDragStart(e)}className="draggable in-hand" draggable="true" ondragstart="drag(event)">
                         <div className="facecachée1">
                             <img src={pioche} draggable="false"></img>
                         </div>
@@ -69,7 +69,7 @@ class Test extends Component {
                             <img src={testcard} draggable="false"></img>
                         </div>
                     </div>
-                    <div id="draggable2" className="draggable in-hand" draggable="true" ondragstart="drag(event)">
+                    <div id="draggable2" draggable class="draggable in-hand" draggable="true" ondragstart="drag(event)">
                         <div className="facecachée2">
                             <img src={pioche} draggable="false"></img>
                         </div>
@@ -77,7 +77,7 @@ class Test extends Component {
                             <img src={testcard} draggable="false"></img>
                         </div>
                     </div>
-                    <div id="draggable3" className="draggable in-hand" draggable="true" ondragstart="drag(event)">
+                    <div id="draggable3" draggable className="draggable in-hand" draggable="true" ondragstart="drag(event)">
                         <div className="facecachée3">
                             <img src={pioche} draggable="false"></img>
                         </div>
