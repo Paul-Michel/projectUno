@@ -15,7 +15,9 @@
         function drop(ev) {
             ev.preventDefault();
             var data = ev.dataTransfer.getData("text");
-            ev.target.appendChild(document.getElementById(data));
+            document.getElementById(data).classList.toggle("in-hand") 
+            ev.target.appendChild(document.getElementById(data)); 
+                      
         }
     </script>
 
@@ -23,21 +25,29 @@
 
 <body>
 
-    <h2>Pile</h2>
-    <div id="target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-    
-    <h2> Cards</h2>
-    <div id="cards"> </div>
+    <!--Récupération des éléments permettant d'afficher les images.
+    Fetch ! -->
 
-    <h2>Hand</h2>
-    <div id="draggable1" class="draggable" draggable="true" ondragstart="drag(event)">
-        <img src="b3.png" draggable="false">
+    <div id="centre">
+        <div id="box">
+            <div id="box_left" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+            <div id="box_right">
+                <img src="pioche.png">
+            </div>
+        </div>
     </div>
-    <div id="draggable2" class="draggable" draggable="true" ondragstart="drag(event)">
-        <img src="b3.png" draggable="false">
-    </div>
-    <div id="draggable3" class="draggable" draggable="true" ondragstart="drag(event)">
-        <img src="b3.png" draggable="false">
+
+    <div id="draggableContent">
+        <div id="draggable1" class="draggable in-hand" draggable="true" ondragstart="drag(event)">
+            <img src="b3.png" draggable="false">
+        </div>
+        <div id="draggable2" class="draggable in-hand" draggable="true" ondragstart="drag(event)">
+            <img src="b3.png" draggable="false">
+        </div>
+        <div id="draggable3" class="draggable in-hand" draggable="true" ondragstart="drag(event)">
+            <img src="b3.png" draggable="false">
+        </div>
     </div>
 
 </body>

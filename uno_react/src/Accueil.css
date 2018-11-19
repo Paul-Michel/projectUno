@@ -17,7 +17,6 @@ body {
     margin:0; 
     padding:0; 
     background: url(./ressources/bois.jpg) no-repeat center fixed; 
-	-webkit-background-size: cover;
 }
 
 .button {
@@ -28,10 +27,10 @@ body {
   white-space: nowrap;
   background: rgba(0,0,0,0);
   border-radius: 100px;
-  border: 5px solid #e70012;
+  border: 5px solid black;
   border-width: 5px 5px 5px 5px;
   padding: 3px 10px 2px 10px;
-    color: rgba(90.58823529411765%,0%,7.058823529411827%,0.776);
+    color: black;
   font-size: 20px;
   font-family: 'Righteous', cursive;
   font-weight: 200;
