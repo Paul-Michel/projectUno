@@ -10,7 +10,6 @@ public class Card {
     private Color color;
     private Boolean playable;
 
-
     public Card(Value value, Color color, Integer id) {
         this.id = id;
         this.value = value;

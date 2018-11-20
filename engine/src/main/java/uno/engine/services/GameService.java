@@ -14,39 +14,39 @@ import uno.engine.structs.Result;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Stack;
 
 
 @Service
 @Slf4j
 public class GameService {
-    
-    private Game myGame;
+
+
     @Autowired
     private CardService cardService;
+    private Game myGame;
+    private PlayerService playerService = new PlayerService();
 
     public void newGame(List<Integer> idPlayers) {
         this.myGame = new Game();
 
-        myGame.Deck = cardService.getAllCards();
-      //  this.DeckCreate(); //Future recuperation des Cards dans la bdd
-        Collections.shuffle(myGame.Deck);
+
+        myGame.deck = cardService.getAllCards();
+        Collections.shuffle(myGame.deck);
 
         idPlayers.forEach(id -> {
-            List<Card> hand = new ArrayList<>();
-            hand.addAll(pickCard(7));
-            myGame.Players.add(new Player(id, hand));
+            List<Card> hand = new ArrayList<>(pickCard(7));
+            myGame.players.add(new Player(id, hand));
         });
-        Integer i = 1;
+        int i = 1;
         do {
-            if (myGame.Deck.get(myGame.Deck.size() - i).getColor() == Color.BLACK ||
-                    myGame.Deck.get(myGame.Deck.size() - i).getValue() == Value.FORBIDDEN ||
-                    myGame.Deck.get(myGame.Deck.size() - i).getValue() == Value.DIRCHANGE ||
-                    myGame.Deck.get(myGame.Deck.size() - i).getValue() == Value.TWOMORE) {
+            if (myGame.deck.get(myGame.deck.size() - i).getColor() == Color.BLACK ||
+                    myGame.deck.get(myGame.deck.size() - i).getValue() == Value.FORBIDDEN ||
+                    myGame.deck.get(myGame.deck.size() - i).getValue() == Value.DIRCHANGE ||
+                    myGame.deck.get(myGame.deck.size() - i).getValue() == Value.TWOMORE) {
                 i++;
             } else {
-                myGame.Stack.add(myGame.Deck.get(myGame.Deck.size() - i));
-                myGame.Deck.remove(myGame.Deck.size() - i);
+                myGame.stack.add(myGame.deck.get(myGame.deck.size() - i));
+                myGame.deck.remove(myGame.deck.size() - i);
                 break;
             }
 
@@ -58,21 +58,22 @@ public class GameService {
 
         Result Result = new Result();
 
-        Card currentCard = myGame.Stack.get(myGame.Stack.size() - 1);
+        Card currentCard = myGame.stack.get(myGame.stack.size() - 1);
         Result.currentCard = currentCard;
 
-        if (myGame.Deck.size() - myGame.cardMore <= 1) {
+        if (myGame.deck.size() - myGame.cardMore <= 1) {
 
-            myGame.Stack.remove(currentCard);
-            myGame.Deck.addAll(myGame.Stack);
-            myGame.Stack.clear();
-            myGame.Stack.add(currentCard);
-            Collections.shuffle(myGame.Deck);
+            myGame.stack.remove(currentCard);
+            myGame.deck.addAll(myGame.stack);
+            myGame.stack.clear();
+            myGame.stack.add(currentCard);
+            Collections.shuffle(myGame.deck);
         }
 
-        if (!myGame.Players.get(playerIdx).setAvailableCard(currentCard)) {
-            myGame.Players.get(playerIdx).pick(pickCard(1));
-            if (!myGame.Players.get(playerIdx).setAvailableCard(currentCard)) {
+
+        if (!playerService.setAvailableCard(currentCard, myGame.players.get(playerIdx))) {
+            playerService.pick(pickCard(1), myGame.players.get(playerIdx));
+            if (!playerService.setAvailableCard(currentCard, myGame.players.get(playerIdx))) {
                 CardMore(playerIdx);
                 Result.CanPlay = false;
                 Result.nextPlayer = setNextPlayer(playerIdx);
@@ -84,7 +85,7 @@ public class GameService {
         }
 
 
-        Result.hand = myGame.Players.get(playerIdx).getHand();
+        Result.hand = myGame.players.get(playerIdx).getHand();
         return Result;
     }
 
@@ -94,13 +95,13 @@ public class GameService {
         Card Card = cardplayed.getCard();
 
         Result Result = new Result();
-        Boolean forbiddenPlayer = false;
+        boolean forbiddenPlayer = false;
 
         if (Card.getValue() != Value.TWOMORE && Card.getValue() != Value.FOURMORE) {
             CardMore(playerIdx);
         }
 
-        myGame.Stack.add(Card);
+        myGame.stack.add(Card);
         switch (Card.getValue()) {
             case FORBIDDEN:
                 forbiddenPlayer = true;
@@ -112,7 +113,7 @@ public class GameService {
                 myGame.cardMore += 4;
                 break;
             case DIRCHANGE:
-                myGame.TurnDir = !myGame.TurnDir;
+                myGame.turnDir = !myGame.turnDir;
                 break;
             case COLORCHANGE:
                 Card.setColor(Color.BLACK);
@@ -120,20 +121,20 @@ public class GameService {
         }
 
 
-        Card c = myGame.Players.get(playerIdx).getHand()
+        Card c = myGame.players.get(playerIdx).getHand()
                 .stream()
                 .filter(card -> card.getId().equals(Card.getId()))
                 .findFirst()
                 .get();
-        myGame.Players.get(playerIdx).getHand().remove(c);
-        Result.CanRePlay = myGame.Players.get(playerIdx).setOtherAvailableCard(Card);
-        Result.hand = myGame.Players.get(playerIdx).getHand();
+        myGame.players.get(playerIdx).getHand().remove(c);
+        Result.CanRePlay = playerService.setOtherAvailableCard(Card, myGame.players.get(playerIdx));
+        Result.hand = myGame.players.get(playerIdx).getHand();
         Result.currentCard = Card;
-        if (myGame.Players.get(playerIdx).getHand().size() <= 0) {
-            myGame.Players.remove(myGame.Players.get(playerIdx));
+        if (myGame.players.get(playerIdx).getHand().size() <= 0) {
+            myGame.players.remove(myGame.players.get(playerIdx));
             System.out.println("remove playeur");
-        } else if (myGame.Players.size() == 1) {
-            //Fin de partie !!
+        } else if (myGame.players.size() == 1) {
+            Result.gameEnd = true;
             System.out.println("Fin de partie !!!");
         }
         if (forbiddenPlayer) {
@@ -144,10 +145,10 @@ public class GameService {
     }
 
     private Integer setNextPlayer(Integer currentPlayerIdx) {
-        Integer nextPlayer;
+        int nextPlayer;
 
-        if (myGame.TurnDir) {
-            if (currentPlayerIdx + 1 <= myGame.Players.size() - 1) {
+        if (myGame.turnDir) {
+            if (currentPlayerIdx + 1 <= myGame.players.size() - 1) {
                 nextPlayer = currentPlayerIdx + 1;
             } else {
                 nextPlayer = 0;
@@ -157,7 +158,7 @@ public class GameService {
             if (currentPlayerIdx - 1 >= 0) {
                 nextPlayer = currentPlayerIdx - 1;
             } else {
-                nextPlayer = myGame.Players.size() - 1;
+                nextPlayer = myGame.players.size() - 1;
             }
         }
 
@@ -166,7 +167,7 @@ public class GameService {
 
     private void CardMore(Integer playerIdx) {
         if (myGame.cardMore != 0) {
-            myGame.Players.get(playerIdx).pick(pickCard(myGame.cardMore));
+            playerService.pick(pickCard(myGame.cardMore), myGame.players.get(playerIdx));
             myGame.cardMore = 0;
         }
     }
@@ -176,53 +177,9 @@ public class GameService {
         List<Card> cards = new ArrayList<>();
 
         for (Integer i = 0; i < numberCard; i++) {
-            cards.add(myGame.Deck.get(myGame.Deck.size() - 1));
-            myGame.Deck.remove(myGame.Deck.size() - 1);
+            cards.add(myGame.deck.get(myGame.deck.size() - 1));
+            myGame.deck.remove(myGame.deck.size() - 1);
         }
         return cards;
-    }
-
-    private void DeckCreate() {
-
-        cardService.getAllCards();
-
-        myGame.Deck.add(new Card(Value.ONE, Color.BLUE, 1));
-        myGame.Deck.add(new Card(Value.TWO, Color.BLUE, 2));
-        myGame.Deck.add(new Card(Value.THREE, Color.BLUE, 3));
-        myGame.Deck.add(new Card(Value.FOUR, Color.BLUE, 4));
-        myGame.Deck.add(new Card(Value.FIVE, Color.BLUE, 5));
-        myGame.Deck.add(new Card(Value.SIX, Color.BLUE, 6));
-        myGame.Deck.add(new Card(Value.SEVEN, Color.BLUE, 7));
-        myGame.Deck.add(new Card(Value.EIGHT, Color.BLUE, 8));
-        myGame.Deck.add(new Card(Value.NINE, Color.BLUE, 9));
-        myGame.Deck.add(new Card(Value.ZERO, Color.BLUE, 10));
-
-        myGame.Deck.add(new Card(Value.ONE, Color.RED, 11));
-        myGame.Deck.add(new Card(Value.TWO, Color.RED, 12));
-        myGame.Deck.add(new Card(Value.THREE, Color.RED, 13));
-        myGame.Deck.add(new Card(Value.FOUR, Color.RED, 14));
-        myGame.Deck.add(new Card(Value.FIVE, Color.RED, 15));
-        myGame.Deck.add(new Card(Value.SIX, Color.RED, 16));
-        myGame.Deck.add(new Card(Value.SEVEN, Color.RED, 17));
-        myGame.Deck.add(new Card(Value.EIGHT, Color.RED, 18));
-        myGame.Deck.add(new Card(Value.NINE, Color.RED, 19));
-        myGame.Deck.add(new Card(Value.ZERO, Color.RED, 20));
-
-        myGame.Deck.add(new Card(Value.DIRCHANGE, Color.BLUE, 21));
-        myGame.Deck.add(new Card(Value.DIRCHANGE, Color.BLUE, 22));
-        myGame.Deck.add(new Card(Value.DIRCHANGE, Color.RED, 23));
-        myGame.Deck.add(new Card(Value.DIRCHANGE, Color.RED, 24));
-
-        myGame.Deck.add(new Card(Value.FORBIDDEN, Color.BLUE, 25));
-        myGame.Deck.add(new Card(Value.FORBIDDEN, Color.BLUE, 26));
-        myGame.Deck.add(new Card(Value.FORBIDDEN, Color.RED, 27));
-        myGame.Deck.add(new Card(Value.FORBIDDEN, Color.RED, 28));
-
-        myGame.Deck.add(new Card(Value.TWOMORE, Color.BLUE, 25));
-        myGame.Deck.add(new Card(Value.TWOMORE, Color.BLUE, 26));
-        myGame.Deck.add(new Card(Value.TWOMORE, Color.RED, 27));
-        myGame.Deck.add(new Card(Value.TWOMORE, Color.RED, 28));
-
-
     }
 }
