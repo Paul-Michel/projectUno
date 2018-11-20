@@ -20,18 +20,32 @@ public class Player {
     }
 
 
-    public Boolean  setAvailableCard(Card currentCard) {
+    public Boolean setAvailableCard(Card currentCard) {
         AtomicReference<Boolean> minOneAvailable = new AtomicReference<>(false);
         this.hand.forEach(card -> {
             if ((card.getColor() == Color.BLACK || card.getColor() == currentCard.getColor()) || card.getValue() == currentCard.getValue()) {
                 card.setPlayable(true);
                 minOneAvailable.set(true);
-            }else{
+            } else {
                 card.setPlayable(false);
             }
         });
         return minOneAvailable.get();
     }
+
+    public Boolean setOtherAvailableCard(Card currentCard) {
+        AtomicReference<Boolean> minOneAvailable = new AtomicReference<>(false);
+        this.hand.forEach(card -> {
+            if (currentCard.getValue() == card.getValue()) {
+                card.setPlayable(true);
+                minOneAvailable.set(true);
+            } else {
+                card.setPlayable(false);
+            }
+        });
+        return minOneAvailable.get();
+    }
+
 
     public void pick(List<Card> newCard) {
         this.hand.addAll(newCard);

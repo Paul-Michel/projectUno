@@ -5,11 +5,11 @@ package uno.engine.entities;
 import uno.engine.enums.Color;
 import uno.engine.enums.Value;
 import uno.engine.structs.Result;
-import uno.engine.structs.Result;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class Game {
 
@@ -110,14 +110,15 @@ public class Game {
         }
 
 
-        Integer finalPlayerIdx = playerIdx;
-        Players.get(playerIdx).getHand().forEach(c ->{
-            if(c.getId() == Card.getId()){
-                Players.get(finalPlayerIdx).getHand().remove(c);
-
-            }
-        });
+        Card c = Players.get(playerIdx).getHand()
+                .stream()
+                .filter(card -> card.getId().equals(Card.getId()))
+                .findFirst()
+                .get();
+        Players.get(playerIdx).getHand().remove(c);
+        Result.CanRePlay = Players.get(playerIdx).setOtherAvailableCard(Card);
         Result.hand = Players.get(playerIdx).getHand();
+        Result.currentCard = Card;
         if (Players.get(playerIdx).getHand().size() <= 0) {
             Players.remove(Players.get(playerIdx));
             System.out.println("remove playeur");
