@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './Settings.css';
-
+import './css/Settings.css';
+import Footer from './footer.js';
 
 class Settings extends Component {
     state = {
@@ -96,6 +96,7 @@ class Settings extends Component {
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }

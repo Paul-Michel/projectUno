@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './inGame.css';
+import './css/inGame.css';
 import pioche from './ressources/pioche.png';
 import testcard from './ressources/b3.png';
 

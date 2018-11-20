@@ -1,0 +1,28 @@
+.tailleimg {
+    height : 50%;
+    width : 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%
+}
+
+.imgson {
+    width: 150px;
+	height: 150px;
+	margin-left: 200px;
+}
+
+html,
+body {
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+.div{
+  height : 100%;
+}
+root{
+  height: 100%;
+}
+

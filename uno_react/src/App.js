@@ -7,7 +7,7 @@ import inGame from './inGame';
 
 const App = () => (
   <Router>
-    <div>
+    <div class="main">
       <Route path='/accueil' component={Accueil} />
       <Route path='/settings' component={Settings}/>
       <Route path='/ingame' component={inGame}/>

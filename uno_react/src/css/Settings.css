@@ -12,6 +12,7 @@ body {
     border-radius: 5px;
     padding: 5px;
     margin-left : 20px;
+    font-size : 25px;
 }
 
 #history {
@@ -21,6 +22,7 @@ body {
     padding: 5px;
     margin-left : 250px;
     margin-right : 400px;
+    font-size: 25px;
 }
 
 #stats {
@@ -30,6 +32,7 @@ body {
     padding: 5px;
     margin-left : 250px;
     margin-right : 400px;
+    font-size: 25px;
 }
 
 .hidden {
@@ -40,10 +43,10 @@ a {
     color : black;
 }
 
-#histocontent {
+.histocontent {
     border : 3px solid black;
     border-radius: 5px;
     padding: 5px;
     padding : 5px;
-    margin-left: 5px;
+    margin-left: 20px;
 }
