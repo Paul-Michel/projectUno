@@ -12,9 +12,14 @@
 	height: 150px;
 	margin-left: 200px;
 }
+a{
+  text-decoration: none;
+}
 
 body {
-    background: url(./ressources/bois.jpg);
+    margin:0; 
+    padding:0; 
+    background: url(./ressources/bois.jpg) no-repeat center fixed; 
 }
 
 .button {
@@ -33,5 +38,31 @@ body {
   font-family: 'Righteous', cursive;
   font-weight: 200;
   font-style: normal;
-  letter-spacing: 1px
+  letter-spacing: 1px;
+  margin-top:2%;
+  display: block;
+  width: 5%;
+  margin-right: auto;
+  margin-left: auto;
+  }
+.button > div {
+    color: #999;
+  font-size: 10px;
+  font-family: Helvetica Neue;
+  font-weight: initial;
+  font-style: normal;
+  text-align: center;
+  margin: 0px 0px 0px 0px
+  }
+.button > i {
+    font-size: 1em;
+  border-radius: 0px;
+  border: 0px solid transparent;
+  border-width: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  position: static
+  }
+  .button > .ld {
+    font-size: initial
   }

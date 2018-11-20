@@ -12,7 +12,7 @@ class Accueil extends Component {
 
         return (
 
-            <body>
+            <div>
                 <style>
                     @import url('https://fonts.googleapis.com/css?family=Righteous');
                 </style>
@@ -23,16 +23,13 @@ class Accueil extends Component {
                     <img src={logo} className="tailleimg" />
                 </div>
                 <div style={{ textAlign: 'center' }}>
-                    <Link to="/Game">
-                        <a class="button a" >NEW GAME</a>
-                    </Link>
-                    <br></br>
-                    <br></br>
-                    <Link to='/Settings'>
-                        <a class="button"> STATS </a>
+                        <a className="button" href="http://localhost:1337/login" >LOGIN</a>
+                        <a className="button" href="http://localhost:1337/register" >REGISTER</a>
+                    <Link to='/settings'>
+                        <a className="button"> STATS </a>
                     </Link>
                 </div>
-            </body>
+            </div>
         );
     }
 }
