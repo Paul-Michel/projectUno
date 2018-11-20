@@ -1,6 +1,7 @@
 package uno.engine.services;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import uno.engine.entities.Card;
 import uno.engine.entities.CardPlayed;
@@ -21,12 +22,14 @@ import java.util.Stack;
 public class GameService {
     
     private Game myGame;
-    
+    @Autowired
+    private CardService cardService;
 
     public void newGame(List<Integer> idPlayers) {
         this.myGame = new Game();
 
-        this.DeckCreate(); //Future recuperation des Cards dans la bdd
+        myGame.Deck = cardService.getAllCards();
+      //  this.DeckCreate(); //Future recuperation des Cards dans la bdd
         Collections.shuffle(myGame.Deck);
 
         idPlayers.forEach(id -> {
@@ -180,6 +183,9 @@ public class GameService {
     }
 
     private void DeckCreate() {
+
+        cardService.getAllCards();
+
         myGame.Deck.add(new Card(Value.ONE, Color.BLUE, 1));
         myGame.Deck.add(new Card(Value.TWO, Color.BLUE, 2));
         myGame.Deck.add(new Card(Value.THREE, Color.BLUE, 3));
