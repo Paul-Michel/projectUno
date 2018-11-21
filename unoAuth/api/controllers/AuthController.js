@@ -12,7 +12,7 @@ module.exports = {
         req.login(user, function(err){
             if (err) res.send(err);
             sails.log('User '+user.id+' has logged in.');
-            return res.redirect('/');
+            return res.redirect('http://localhost:3000/accueil');
         })
       })(req, res);
   },
