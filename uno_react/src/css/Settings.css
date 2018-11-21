@@ -1,0 +1,52 @@
+body {
+    font-family: 'Righteous';
+}
+
+#component {
+    margin-top : 100px;
+}
+
+#menu {
+    float: left;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left : 20px;
+    font-size : 25px;
+}
+
+#history {
+    float: center;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left : 250px;
+    margin-right : 400px;
+    font-size: 25px;
+}
+
+#stats {
+    float: center;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left : 250px;
+    margin-right : 400px;
+    font-size: 25px;
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    color : black;
+}
+
+.histocontent {
+    border : 3px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    padding : 5px;
+    margin-left: 20px;
+}

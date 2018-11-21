@@ -1,0 +1,56 @@
+draggable {
+    width: 200px;
+    height:280px;
+    margin-top : 80px;
+}
+#draggable1, #draggable2, #draggable3 {
+    margin: 0%;
+}
+#draggableHidden1, #visibleDraggable1{
+    position: absolute;
+}
+#draggableHidden2, #visibleDraggable2 {
+    position: absolute;
+}
+#draggableHidden3, #visibleDraggable3 {
+    margin:0px;
+    position: relative;
+}
+#visibleDraggable2.in-hand, #draggableHidden2.in-hand{
+    margin-left: 40px;
+}
+#visibleDraggable3.in-hand, #draggableHidden3.in-hand{
+    margin-left: 80px;
+}
+.draggable.in-pioche{
+    margin-left: 0;
+    margin-right: 0;
+}
+.visibleFace:hover{
+    border: 1px solid #e70012;
+    border-radius: 5px;
+    box-shadow: 2px 2px #888888;
+    background-color: white;
+}
+
+#box_left,#box_right{
+    width:200px;
+    display:flex;
+    height:280px;
+    margin-top:23%;
+    border: 3px solid #e70012;
+    border-radius: 5px;
+}
+#box_left{
+    background-color: lightgray;
+    margin-right: 10px;
+    height: 300px;
+}
+#box_right{
+    background-color:lightgray;
+    margin-left: 10px;
+    height:300px;
+}
+col.s6.containLeftBox{
+    margin-left: 100%;
+}
