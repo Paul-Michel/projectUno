@@ -2,25 +2,28 @@ import React, { Component } from 'react';
 import './css/inGame.css';
 import pioche from './ressources/pioche.png';
 import testcard from './ressources/b3.png';
+import './css/animation.css';
+import Header from './header.js';
 
 
 class Test extends Component {
 
-    allowDrop = (ev) => {
-        ev.preventDefault();
-    }
 
-    drag = (ev) => {
-        ev.dataTransfer.setData("text", ev.target.id);
-    }
-
-    drop = (ev) => {
-        ev.preventDefault();
-        var data = ev.dataTransfer.getData("text");
-        document.getElementById(data).classList.toggle("in-hand")
-        ev.target.appendChild(document.getElementById(data));
-
-    }
+    handleDragStart(event) {
+        event.dataTransfer.setData("text/plain", event.target.id);
+      event.dropEffect = "move";
+     }
+     
+    handleDrop(event) {
+       event.preventDefault();
+       var id = event.dataTransfer.getData("text");
+       event.target.appendChild(document.getElementById(id));
+     }
+     
+    handleDragOver(event) {
+       event.preventDefault();
+       event.dataTransfer.dropEffect = 'move';
+     }
 
     //var xhr = new XMLHttpRequest();
     sendPost = () => {
@@ -29,18 +32,18 @@ class Test extends Component {
          xhr.send(JSON.stringify({
              value: 'value'
          }));*/
-        const facecachée1 = document.getElementsByClassName('facecachée1')[0]
-        const facevisible1 = document.getElementsByClassName('facevisible1')[0]
-        const facecachée2 = document.getElementsByClassName('facecachée2')[0]
-        const facevisible2 = document.getElementsByClassName('facevisible2')[0]
-        const facecachée3 = document.getElementsByClassName('facecachée3')[0]
-        const facevisible3 = document.getElementsByClassName('facevisible3')[0]
-        facevisible1.classList.toggle('hidden')
-        facecachée1.classList.toggle('hidden')
-        facevisible2.classList.toggle('hidden')
-        facecachée2.classList.toggle('hidden')
-        facevisible3.classList.toggle('hidden')
-        facecachée3.classList.toggle('hidden')
+        const draggableHidden1 = document.getElementById('draggableHidden1')
+        const visibleDraggable1 = document.getElementById('visibleDraggable1')
+        const draggableHidden2 = document.getElementById('draggableHidden2')
+        const visibleDraggable2 = document.getElementById('visibleDraggable2')
+        const draggableHidden3 = document.getElementById('draggableHidden3')
+        const visibleDraggable3 = document.getElementById('visibleDraggable3')
+        visibleDraggable1.classList.toggle('hidden')
+        draggableHidden1.classList.toggle('hidden')
+        visibleDraggable2.classList.toggle('hidden')
+        draggableHidden2.classList.toggle('hidden')
+        visibleDraggable3.classList.toggle('hidden')
+        draggableHidden3.classList.toggle('hidden')
     }
 
 
@@ -48,45 +51,61 @@ class Test extends Component {
 
         return (
             <div id="body">
-                <div>
-                    <div id="box">
-                        <div id="box_left" onDragOver={(e)=>this.onDragOver(e)}></div>
+                <Header/>
+                <div class="row">
+                    <div class="col s6 conatinLeftBox">
+                        <div id="box_left" onDrop={this.handleDrop} 
+                                            onDragOver={this.handleDragOver}>
+                        </div>
+                    </div>
+                    <div class="col s6">
                         <div id="box_right">
-                            <img src={pioche}></img>
+                            <img class="imgPioche" src={pioche} draggable="false"></img>
                         </div>
                     </div>
-                </div>
-                <div id="montour">
-                    <button onClick={this.sendPost}> Mon tour </button>
-                </div>
+                    <div class="col s12">
+                        <div id="montour">
+                            <button onClick={this.sendPost}> Mon tour </button>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <div id="draggableContent">
+                            <div id="draggableHidden1" class="animated slideInUp in-hand " draggable="false">
+                                <div class="hiddenFace1">
+                                    <img class="hiddenFaceImg" src={pioche} draggable="false"></img>
+                                </div>
+                            </div>
+                            <div id="visibleDraggable1" class="animated flipInY draggable in-hand hidden"  draggable="true" onDragStart={this.handleDragStart}>
+                                <div class="visibleFace">
+                                    <img class="visibleImg" id="1" src={testcard} draggable="false"></img>
+                                </div>
+                            </div>
 
-                <div id="draggableContent">
-                    <div id="draggable1" draggable onDragOver={(e)=>this.onDragOver(e)}  className="draggable in-hand" draggable="true" ondragstart="drag(event)">
-                        <div className="facecachée1">
-                            <img src={pioche} draggable="false"></img>
-                        </div>
-                        <div className="facevisible1 hidden">
-                            <img src={testcard} draggable="false"></img>
-                        </div>
-                    </div>
-                    <div id="draggable2" draggable class="draggable in-hand" draggable="true" ondragstart="drag(event)">
-                        <div className="facecachée2">
-                            <img src={pioche} draggable="false"></img>
-                        </div>
-                        <div className="facevisible2 hidden">
-                            <img src={testcard} draggable="false"></img>
-                        </div>
-                    </div>
-                    <div id="draggable3" draggable className="draggable in-hand" draggable="true" ondragstart="drag(event)">
-                        <div className="facecachée3">
-                            <img src={pioche} draggable="false"></img>
-                        </div>
-                        <div className="facevisible3 hidden">
-                            <img src={testcard} draggable="false"></img>
-                        </div>
+                            <div id="draggableHidden2" class="animated slideInUp in-hand"  draggable="false">
+                                <div class="hiddenFace2">
+                                    <img class="hiddenFaceImg" src={pioche} draggable="false"></img>
+                                </div>
+                            </div>
+                            <div id="visibleDraggable2" class="animated flipInY draggable in-hand hidden"  draggable="true" onDragStart={this.handleDragStart}>
+                                <div class="visibleFace">
+                                    <img class="visibleImg" id="2" src={testcard} draggable="false"></img>
+                                </div>
+                            </div>
+
+                            <div id="draggableHidden3" class="animated slideInUp in-hand"  draggable="false">
+                                <div class="hiddenFace3">
+                                    <img class="hiddenFaceImg" src={pioche} draggable="false"></img>
+                                </div>
+                            </div>
+                            <div id="visibleDraggable3" class="animated flipInY draggable in-hand hidden" draggable="true" onDragStart={this.handleDragStart}>
+                                <div class="visibleFace">
+                                    <img class="visibleImg" id="3" src={testcard} draggable="false"></img>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
+        </div>
         )
     }
 }
