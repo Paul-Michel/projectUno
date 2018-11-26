@@ -1,42 +1,37 @@
-const router = require('express').Router()
+/* const router = require('express').Router()
 const _ = require('lodash')
 
-function sendData(){
-  let data = fetch('l_url_de_vincent')
-  return data
-}
+const url = fetch('l_url_de_vincent')
 
 router.get('/newgame', (req, res) => {
-    res.redirect('l_url_de_vincent').then((games) => res.json(games)).catch((err) => {
+  Restaurants.redirect('l_url_de_vincent').then((games) => res.json(games)).catch((err) => {
     return res.status(404).send(err)
   })
 })
 router.post('/newgame', (req, res) => {
-  res.sendData().then((games) => res.json(games)).catch((err) => {
+  Restaurants.url.then((games) => res.json(games)).catch((err) => {
     return res.status(404).send(err)
   })
 })
 
 router.get('/newturn', (req, res) => {
-  res.redirect('l_url_de_vincent').then((games) => res.json(games)).catch((err) => {
-      return res.status(404).send(err)
+  Restaurants.redirect('l_url_de_vincent').then((games) => res.json(games)).catch((err) => {
+    return res.status(404).send(err)
   })
 })
 router.post('/newturn', (req, res) => {
-  res.sendData().then((games) => res.json(games)).catch((err) => {
+  Restaurants.url.then((games) => res.json(games)).catch((err) => {
     return res.status(404).send(err)
   })
 })
 
 router.get('/play', (req, res) => {
-  res.redirect('l_url_de_vincent').then((games) => res.json(games)).catch((err) => {
-      return res.status(404).send(err)
-  })
-})
-router.post('/play', (req, res) => {
-  res.sendData().then((games) => res.json(games)).catch((err) => {
+  Restaurants.redirect('l_url_de_vincent').then((games) => res.json(games)).catch((err) => {
     return res.status(404).send(err)
   })
 })
-
-module.exports = router
+router.post('/play', (req, res) => {
+  Restaurants.url.then((games) => res.json(games)).catch((err) => {
+    return res.status(404).send(err)
+  })
+}) */

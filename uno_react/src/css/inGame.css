@@ -1,5 +1,4 @@
-
-div.draggable {
+draggable {
     width: 200px;
     height:280px;
     margin-top : 80px;
@@ -7,44 +6,36 @@ div.draggable {
 #draggable1, #draggable2, #draggable3 {
     margin: 0%;
 }
-#draggable1 {
+#draggableHidden1, #visibleDraggable1{
     position: absolute;
 }
-#draggable2 {
+#draggableHidden2, #visibleDraggable2 {
     position: absolute;
 }
-#draggable3 {
+#draggableHidden3, #visibleDraggable3 {
     margin:0px;
     position: relative;
 }
-#draggable2, .in-hand{
+#visibleDraggable2.in-hand, #draggableHidden2.in-hand{
     margin-left: 40px;
 }
-#draggable3, .in-hand{
+#visibleDraggable3.in-hand, #draggableHidden3.in-hand{
     margin-left: 80px;
 }
-
-div.draggable:hover {
+.draggable.in-pioche{
+    margin-left: 0;
+    margin-right: 0;
+}
+.visibleFace:hover{
     border: 1px solid #e70012;
     border-radius: 5px;
     box-shadow: 2px 2px #888888;
+    background-color: white;
 }
-#draggableContent {
-    height: 100%;
-    width: 100%;
-    margin: 50px;
-    
-}
-
-div.draggable img {
-    width: 100%;
-    height: auto;
-}
-
 
 #box_left,#box_right{
     width:200px;
-    display:inline-block;
+    display:flex;
     height:280px;
     margin-top:23%;
     border: 3px solid #e70012;
@@ -53,20 +44,13 @@ div.draggable img {
 #box_left{
     background-color: lightgray;
     margin-right: 10px;
+    height: 300px;
 }
 #box_right{
     background-color:lightgray;
     margin-left: 10px;
+    height:300px;
 }
-img {
-    width:100%;
-    height:100%;
-    display:block;
-}
-#facecachée {
-    position: absolute;
-}
-
-.hidden {
-    display: none;
+col.s6.containLeftBox{
+    margin-left: 100%;
 }

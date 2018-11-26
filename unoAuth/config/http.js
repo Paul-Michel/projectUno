@@ -28,8 +28,6 @@ module.exports.http = {
     * (This Sails app's routes are handled by the "router" middleware below.)  *
     *                                                                          *
     ***************************************************************************/
-  passportInit: require('passport').initialize(),
-  passportSession: require('passport').session(),
 
     order: [
       'cookieParser',
@@ -58,6 +56,16 @@ module.exports.http = {
     //   var middlewareFn = skipper({ strict: true });
     //   return middlewareFn;
     // })(),
+
+    passportInit: (function(){
+      var passport = require('passport');
+      return  passport.initialize();
+ 
+    })(),
+    passportSession: (function(){
+      var passport = require('passport');
+      return  passport.session();
+    })(),
 
   },
 
