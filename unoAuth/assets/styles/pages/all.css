@@ -1,0 +1,24 @@
+/* In All*/
+html{
+    height: 100%
+}
+body{
+    height: 100%;
+}
+form{
+    margin-top:10%;
+}
+.redUnoColor{
+    background-color: #ED1C24;
+}
+.containSubmitBtn{
+    display: flex;
+    align-items: center;
+    margin:0;
+}
+.submitBtn{
+    margin-left: 50%;
+}s
+/* LOGIN PART */
+
+/*REGISTER PART*/

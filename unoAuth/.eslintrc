@@ -27,21 +27,17 @@
   },
 
   "parserOptions": {
-    "ecmaVersion": 8,
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true
-    }
+    "ecmaVersion": 8
   },
 
   "globals": {
-    // If "no-undef" is enabled below, be sure to list all global variables that
-    // are used in this app's backend code (including the globalIds of models):
+    // If "no-undef" is enabled below and your app uses globals, be sure to list all
+    // relevant globals below (including the globalIds of models, if appropriate):
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    "Promise": true,
     "sails": true,
     "_": true,
     "async": true
-    // …and any others (e.g. `"Organization": true`)
+    // ...and any other backend globals (e.g. `"Organization": true`)
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   },
 
@@ -80,7 +76,7 @@
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     "no-unexpected-multiline":      ["warn"],
     "no-unreachable":               ["warn"],
-    "no-unused-vars":               ["warn", {"caughtErrors":"all", "caughtErrorsIgnorePattern": "^unused($|[A-Z].*$)", "argsIgnorePattern": "^unused($|[A-Z].*$)", "varsIgnorePattern": "^unused($|[A-Z].*$)" }],
+    "no-unused-vars":               ["warn", {"caughtErrors":"all", "caughtErrorsIgnorePattern": "^unused($|[A-Z].*$)"}],
     "no-use-before-define":         ["error", {"functions":false}],
     "one-var":                      ["warn", "never"],
     "prefer-arrow-callback":        ["warn", {"allowNamedFunctions":true}],

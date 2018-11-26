@@ -1,12 +1,11 @@
-# uno-auth
+# Passport Implementation Example with Sails.js V1
 
-a [Sails v1](https://sailsjs.com) application
-
+A [Sails v1](https://sailsjs.com) application implementing the [Passport](http://www.passportjs.org) auth system created by David Cedar
+Follow along with the Youtube playlist for a line by line implementation. https://youtu.be/hY52-Ls01YQ
 
 ### Links
-
-+ [Get started](https://sailsjs.com/get-started)
-+ [Sails framework documentation](https://sailsjs.com/documentation)
++ [David's Youtube Channel](https://www.youtube.com/user/Digitalbight)
++ [Sails V1 framework documentation](https://next.sailsjs.com/documentation)
 + [Version notes / upgrading](https://sailsjs.com/documentation/upgrading)
 + [Deployment tips](https://sailsjs.com/documentation/concepts/deployment)
 + [Community support options](https://sailsjs.com/support)
@@ -15,9 +14,7 @@ a [Sails v1](https://sailsjs.com) application
 
 ### Version info
 
-This app was originally generated on Tue Nov 06 2018 10:38:30 GMT+0100 (heure normale d’Europe centrale) using Sails v1.0.2.
-
-<!-- Internally, Sails used [`sails-generate@1.15.28`](https://github.com/balderdashy/sails-generate/tree/v1.15.28/lib/core-generators/new). -->
+This app was originally generated on Sun Dec 17 2017 23:09:08 GMT+1030 (Cen. Australia Daylight Time) using Sails v1.0.0-41 _(internally: `sails-generate@1.12.6`)_.
 
 
 

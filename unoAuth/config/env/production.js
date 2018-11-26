@@ -64,7 +64,7 @@ module.exports = {
       * More adapter-specific options                                             *
       *                                                                           *
       * > For example, for some hosted PostgreSQL providers (like Heroku), the    *
-      * > extra `ssl: true` option is mandatory and must be provided.             *
+      * > extra `ssl: true` option is mandatory and must be provided here.        *
       *                                                                           *
       * More info:                                                                *
       * https://sailsjs.com/config/datastores                                     *
@@ -150,6 +150,7 @@ module.exports = {
     cors: {
       // allowOrigins: [
       //   'https://example.com',
+      //   'https://staging.example.com',
       // ]
     },
 
@@ -174,25 +175,25 @@ module.exports = {
     * Production session store configuration.                                  *
     *                                                                          *
     * Uncomment the following lines to finish setting up a package called      *
-    * "@sailshq/connect-redis" that will use Redis to handle session data.     *
+    * "connect-redis" that will use Redis to store and retrieve session data.  *
     * This makes your app more scalable by allowing you to share sessions      *
     * across a cluster of multiple Sails/Node.js servers and/or processes.     *
     * (See http://bit.ly/redis-session-config for more info.)                  *
     *                                                                          *
-    * > While @sailshq/connect-redis is a popular choice for Sails apps, many  *
-    * > other compatible packages (like "connect-mongo") are available on NPM. *
+    * > While "connect-redis" is a popular choice for Sails apps, many other   *
+    * > compatible packages (like "connect-mongo") are available on NPM.       *
     * > (For a full list, see https://sailsjs.com/plugins/sessions)            *
     *                                                                          *
     ***************************************************************************/
-    // adapter: '@sailshq/connect-redis',
-    // url: 'redis://user:password@localhost:6379/databasenumber',
+    // adapter: 'connect-redis',
+    // url: 'redis://user:password@localhost:6379/dbname',
     //--------------------------------------------------------------------------
     // /\   OR, to avoid checking it in to version control, you might opt to
     // ||   set sensitive credentials like this using an environment variable.
     //
     // For example:
     // ```
-    // sails_session__url=redis://admin:myc00lpAssw2D@bigsquid.redistogo.com:9562/0
+    // sails_session__url=redis://admin:myc00lpAssw2D@bigsquid.redistogo.com:9562/sessions
     // ```
     //
     //--------------------------------------------------------------------------
@@ -262,21 +263,21 @@ module.exports = {
     * then uncomment the following lines.  This tells Socket.io about a Redis  *
     * server it can use to help it deliver broadcasted socket messages.        *
     *                                                                          *
-    * > Be sure a compatible version of @sailshq/socket.io-redis is installed! *
+    * > Be sure you have a compatible version of socket.io-redis installed!    *
     * > (See https://sailsjs.com/config/sockets for the latest version info)   *
     *                                                                          *
     * (https://sailsjs.com/docs/concepts/deployment/scaling)                   *
     *                                                                          *
     ***************************************************************************/
-    // adapter: '@sailshq/socket.io-redis',
-    // url: 'redis://user:password@bigsquid.redistogo.com:9562/databasenumber',
+    // adapter: 'socket.io-redis',
+    // url: 'redis://user:password@bigsquid.redistogo.com:9562/dbname',
     //--------------------------------------------------------------------------
     // /\   OR, to avoid checking it in to version control, you might opt to
     // ||   set sensitive credentials like this using an environment variable.
     //
     // For example:
     // ```
-    // sails_sockets__url=redis://admin:myc00lpAssw2D@bigsquid.redistogo.com:9562/0
+    // sails_sockets__url=redis://admin:myc00lpAssw2D@bigsquid.redistogo.com:9562/
     // ```
     //--------------------------------------------------------------------------
 

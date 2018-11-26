@@ -1,0 +1,73 @@
+draggable {
+    width: 75%;
+    height:280px;
+    margin-top : 80px;
+}
+#draggableContent{
+    margin-left: 44%;
+    margin-top: 5%;
+}
+#draggable1, #draggable2, #draggable3 {
+    margin: 0%;
+}
+#draggableHidden1, #visibleDraggable1{
+    position: absolute;
+}
+#draggableHidden2, #visibleDraggable2 {
+    position: absolute;
+}
+#draggableHidden3, #visibleDraggable3 {
+    margin:0px;
+    position: relative;
+}
+#visibleDraggable2.in-hand, #draggableHidden2.in-hand{
+    margin-left: 40px;
+}
+#visibleDraggable3.in-hand, #draggableHidden3.in-hand{
+    margin-left: 80px;
+    width: 153px;
+}
+.draggable.in-pioche{
+    margin-left: 0;
+    margin-right: 0;
+}
+.draggable.in-stack{
+    margin-left: 0;
+    margin-right: 0;
+}
+.in-hand:hover{
+    border: 1px solid #e70012;
+    border-radius: 5px;
+    box-shadow: 2px 2px #888888;
+    background-color: white;
+}
+
+#box_left,#box_right{
+    width:200px;
+    display:flex;
+    height:280px;
+    margin-top:23%;
+    border: 3px solid #e70012;
+    border-radius: 5px;
+}
+#box_left{
+    background-color: lightgray;
+    margin-left:auto;
+    margin-right: auto;
+    align-items: center;
+    height: 300px;
+}
+#box_right{
+    background-color:lightgray;
+    margin-left: auto;
+    margin-right:auto;
+    height:300px;
+
+}
+col.s6.containLeftBox{
+    margin-left: 100%;
+}
+.unoColor{
+ background-color: #ED1C24;
+ font-family: 'Righteous';
+}

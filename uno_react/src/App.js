@@ -2,12 +2,18 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
 import Accueil from './Accueil'
 import './App.css';
+import Settings from './Settings';
+import inGame from './inGame';
+
 
 const App = () => (
   <Router>
-    <div>
-      <Redirect from="/" to='/Accueil'/>
-      <Route path='/Accueil' component={Accueil} />
+    <div class="main">
+      <Route exact path='/' 
+      component={() => window.location = 'http://localhost:1337/login'}/>
+      <Route path='/accueil/:id/:pseudo' component={Accueil} />
+      <Route path='/settings' component={Settings}/>
+      <Route path='/ingame' component={inGame}/>
     </div>
   </Router>
 )
