@@ -20,9 +20,30 @@ class Accueil extends Component {
         document.getElementById('openChatBtn').style.display = "block"
         document.getElementById('closeChatBtn').style.display = "none"
     }
-
+    sendChat = (message, author) => {
+        console.log(message)
+        const chat = document.getElementById('messageChat')
+       // const message = document.getElementById('message').value
+        const newMessage = document.createElement('div')
+        newMessage.classList.add('chatContainer')
+        chat.appendChild(newMessage)
+        const authorMessage = document.createElement('p')
+        authorMessage.innerHTML = author
+        authorMessage.style.borderBottom = "2px solid black"
+        newMessage.appendChild(authorMessage)
+        const messageContent = document.createElement('p')
+        messageContent.innerHTML = message
+        newMessage.appendChild(messageContent)
+        const dateMessage = document.createElement('span')
+        dateMessage.classList.add('time-right')
+        const dateHours = new Date().getHours()
+        const dateSeconds = new Date().getMinutes()
+        dateMessage.innerHTML = dateHours + ":" + dateSeconds
+        newMessage.appendChild(dateMessage)
+    }
     render() {
-
+        const message = " Hi ! ";
+        const author = "Tim";
         return (
 
             <div className="div">
@@ -40,17 +61,12 @@ class Accueil extends Component {
                     </div>
                 </div>
                 <div id="chat">
-                    <div id="openChat" className="animated rotateInUpRight">
-                        <div class=" chatContainer">
-                            <img src="" alt="Avatar" />
-                            <p>Hello. How are you today?</p>
-                            <span class="time-right">11:00</span>
-                        </div>
-
-                        <div class="chatContainer darker">
-                            <img src="" alt="Avatar" class="right" />
-                            <p>Hey! I'm fine. Thanks for asking!</p>
-                            <span class="time-left">11:01</span>
+                    <div id="openChat" className="animated rotateInUpRight positionChat">
+                        <div id="messageChat" class="positionMessageChat"></div>
+                        <div id="inputChat" class="inputChat">
+                            <i class="material-icons prefix positionIconChat">textsms</i>
+                            <input id="message" type="text" class="autocomplete positionInputChat" name="pseudo" /> 
+                            <button onClick={() =>this.sendChat(message, author)}className="waves-effect waves-light btn-small red colorBody"> Send </button>
                         </div>
                     </div>
                     <button id="openChatBtn" className="waves-effect waves-light btn-small red colorBody openChatBtn" onClick={this.openChat}> Messagerie </button>

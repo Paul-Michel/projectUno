@@ -94,7 +94,6 @@ body {
 #chat {
   width: 300px;
   float: right;
-  margin-top: -180px;
 }
 
 #openChat {
@@ -111,4 +110,17 @@ body {
   position: fixed;
   bottom: 130px;
   right : 28px;
+}
+.inputChat{
+  position: fixed;
+  top : -550px;
+  right : 20px;
+}
+
+.positionMessageChat {
+  height : 440px;
+  overflow: auto;
+  position: fixed;
+  width : 300px;
+  top : -400px;
 }
