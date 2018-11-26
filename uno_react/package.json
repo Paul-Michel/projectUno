@@ -10,6 +10,8 @@
     "react-dom": "^16.6.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1",
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1",
     "webkit": "0.0.0"
   },
   "scripts": {
