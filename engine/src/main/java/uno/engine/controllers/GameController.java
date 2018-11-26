@@ -33,7 +33,6 @@ public class GameController {
 
     @RequestMapping(value = "/newturn", method = RequestMethod.POST)
     Result newTurn(Integer playerIdx) {
-
         return gameService.newTurn(playerIdx);
     }
 

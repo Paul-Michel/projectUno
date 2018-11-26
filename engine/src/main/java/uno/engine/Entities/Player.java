@@ -1,8 +1,12 @@
 package uno.engine.entities;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.List;
 
-
+@Getter
+@Setter
 public class Player {
 
     private Integer id;
@@ -11,9 +15,5 @@ public class Player {
     public Player(Integer id, List<Card> hand) {
         this.id = id;
         this.hand = hand;
-    }
-
-    public List<Card> getHand() {
-        return hand;
     }
 }
