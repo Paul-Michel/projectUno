@@ -66,11 +66,6 @@ class Test extends Component {
                         </div>
                     </div>
                     <div class="col s12">
-                        <div id="montour">
-                            <button onClick={this.sendPost}> Mon tour </button>
-                        </div>
-                    </div>
-                    <div class="col s12">
                         <div id="draggableContent">
                             <div id="draggableHidden1" class="animated slideInUp in-hand " draggable="false">
                                 <div class="hiddenFace1">
@@ -104,6 +99,11 @@ class Test extends Component {
                                     <img class="visibleImg" id="3" src={testcard} draggable="false"></img>
                                 </div>
                             </div>
+                    </div>
+                    <div class="col s12">
+                        <div id="montour">
+                            <button className="waves-effect waves-light btn-small unoColor centerbtn" onClick={this.sendPost}> Mon tour </button>
+                        </div>
                     </div>
                 </div>
             </div>

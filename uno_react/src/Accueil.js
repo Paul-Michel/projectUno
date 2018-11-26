@@ -26,12 +26,7 @@ class Accueil extends Component {
         return (
 
             <div className="div">
-
-                <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
-                <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet"></link>
-
                 <Header />
-
                 <div class="animated zoomIn container">
                     <img src={logo} className="tailleimg" />
 
