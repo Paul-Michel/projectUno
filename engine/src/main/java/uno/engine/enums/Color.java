@@ -1,9 +1,19 @@
 package uno.engine.enums;
 
 public enum Color {
-    BLACK,
-    RED,
-    BLUE,
-    GREEN,
-    YELLOW,
+    BLACK("black"),
+    RED("red"),
+    BLUE("blue"),
+    GREEN("green"),
+    YELLOW("yellow");
+
+    private String color;
+
+    Color(String color) {
+        this.color = color;
+    }
+
+    public String getColor() {
+        return this.color;
+    }
 }

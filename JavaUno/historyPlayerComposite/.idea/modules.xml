@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/historyPlayerComposite.iml" filepath="$PROJECT_DIR$/historyPlayerComposite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/historyPlayerComposite_main.iml" filepath="$PROJECT_DIR$/.idea/modules/historyPlayerComposite_main.iml" group="historyPlayerComposite" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/historyPlayerComposite_test.iml" filepath="$PROJECT_DIR$/.idea/modules/historyPlayerComposite_test.iml" group="historyPlayerComposite" />
+    </modules>
+  </component>
+</project>
