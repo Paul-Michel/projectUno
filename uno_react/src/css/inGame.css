@@ -3,6 +3,9 @@ draggable {
     height:280px;
     margin-top : 80px;
 }
+#draggableContent{
+    margin-left: 44%;
+}
 #draggable1, #draggable2, #draggable3 {
     margin: 0%;
 }
@@ -55,8 +58,10 @@ draggable {
 }
 #box_right{
     background-color:lightgray;
-    margin-left: 10px;
+    margin-left: auto;
+    margin-right:auto;
     height:300px;
+
 }
 col.s6.containLeftBox{
     margin-left: 100%;
