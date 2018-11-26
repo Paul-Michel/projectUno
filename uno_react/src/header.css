@@ -1,3 +1,9 @@
 .colorNav {
     background-color: #ED1C24;
 }
+.positionIconHome{
+    margin-left : 40px;
+}
+a.home:hover{
+    color:blue;
+}

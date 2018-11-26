@@ -11,8 +11,8 @@ class Footer extends Component {
                 <style>
                     @import url('https://fonts.googleapis.com/icon?family=Material+Icons'),
                 </style>
-                <footer class="animated fadeInUp page-footer red darken-3">
-                    <div class="footer-copyright red darken-3">
+                <footer class="animated fadeInUp page-footer  colorFoot">
+                    <div class="footer-copyright ">
                         <div class="container">
                             © 2018 Copyright Uno
                         </div>
