@@ -24,14 +24,19 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'pages/homepage'
+  '/': 'DashboardController.renderIndex',
+  '/explore': {
+    view: 'pages/explore'
   },
-  'GET /login': {view:'pages/login'},
-  'POST /login': 'Authcontroller.login',
-  '/logout': 'AuthController.lougout',
 
-  'GET /register': {view: 'pages/register'}
+  //Auth
+  'get /login': {
+    view: 'pages/login'
+  },
+  'get /register': {
+    view: 'pages/register'
+  },
+  
 
   /***************************************************************************
   *                                                                          *
@@ -48,8 +53,9 @@ module.exports.routes = {
   //  ╔═╗╔═╗╦  ╔═╗╔╗╔╔╦╗╔═╗╔═╗╦╔╗╔╔╦╗╔═╗
   //  ╠═╣╠═╝║  ║╣ ║║║ ║║╠═╝║ ║║║║║ ║ ╚═╗
   //  ╩ ╩╩  ╩  ╚═╝╝╚╝═╩╝╩  ╚═╝╩╝╚╝ ╩ ╚═╝
-
-
+  'post /login': 'AuthController.login',
+  'post /register': 'AuthController.register',
+  '/logout': 'AuthController.logout',
 
   //  ╦ ╦╔═╗╔╗ ╦ ╦╔═╗╔═╗╦╔═╔═╗
   //  ║║║║╣ ╠╩╗╠═╣║ ║║ ║╠╩╗╚═╗

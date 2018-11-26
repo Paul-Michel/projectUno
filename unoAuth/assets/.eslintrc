@@ -37,6 +37,7 @@
     "SAILS_LOCALS": true,
     "io": true,
     // "moment": true,
+    // "bowser": true
     // ...etc.
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

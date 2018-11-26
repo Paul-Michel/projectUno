@@ -1,6 +1,26 @@
-<h1>Login</h1>
-  <form method="POST" action="/">
-  <input type="text" name="username" placeholder="Username">
-  <input type="password" name="password" placeholder="Password">
-  <input type="submit" value="submit">
+<nav>
+  <div class="animated fadeInDown nav-wrapper redUnoColor">
+      <a href="/accueil" class=" brand-logo pulse"> <img src="/images/uno.png" class=" small material-icons"/>Login</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a class="waves-effect waves-light btn-small red colorNav" href="http://localhost:1337/register">Register</a></li>
+      </ul>
+  </div>
+</nav>
+<link rel="stylesheet" href="/styles/login.css">
+<style>@import url('https://fonts.googleapis.com/css?family=Righteous');</style>
+  <form method="POST" action="/login">
+  <div class="container">
+    <div class="row">
+      <div class="input-field col s4">
+        <input type="text" id="first_name" name="username" placeholder="Username">
+      </div>
+      <div class="input-field col s4">
+        <input type="password" name="password" placeholder="Password">
+      </div>
+      <div class="input-field col s4 containSubmitBtn"">
+          <input class="waves-effect waves-light btn-small redUnoColor submitBtn"  type="submit" value="submit">
+      </div>
+    </div>
+  </div>
 </form>
+<a href="http://localhost:1337/register">Register</a>

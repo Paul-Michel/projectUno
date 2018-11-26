@@ -18,8 +18,15 @@ module.exports.session = {
   * of your users, forcing them to log in again.                             *
   *                                                                          *
   ***************************************************************************/
-  secret: '6e24b258f81cce3866ef5a4c2ca950cb',
-
+  secret: '66cb435ce5e701f39969cb023abe45cd',
+  
+  adapter: 'connect-mongo',
+  // Note: user, pass and port are optional
+  url: 'mongodb://localhost:27017/unoUsers',
+  collection: 'sessions',
+  auto_reconnect: false,
+  ssl: false,
+  stringify: true
 
   /***************************************************************************
   *                                                                          *

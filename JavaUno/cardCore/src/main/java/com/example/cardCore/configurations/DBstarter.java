@@ -15,13 +15,5 @@ import static com.example.cardCore.enums.Color.YELLOW;
 @Slf4j
 public class DBstarter {
 
-    @Bean
-    CommandLineRunner initialize(CardRepository cardRepository){
-        return args -> {
-            cardRepository.save(new Card("four", GREEN));
-            cardRepository.save(new Card("five", YELLOW));
-            cardRepository.save(new Card("next", RED));
-            cardRepository.save(new Card("seven", GREEN));
-        };
-    }
+
 }

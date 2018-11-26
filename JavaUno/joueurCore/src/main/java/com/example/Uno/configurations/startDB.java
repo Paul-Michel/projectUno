@@ -14,11 +14,11 @@ public class startDB {
     @Bean
     CommandLineRunner initialize(PlayerRepository playerRepository){
         return args -> {
-            log.info("DB initialized with : " + playerRepository.save(new Player("Flacype", 150D, 150D,"lkqdsfbjlqs@dsklfhjq.cksqdf")));
-            log.info("DB initialized with : " + playerRepository.save(new Player("Pyshell", 0D, 256D, "lkqdsfbjlqs@dsklfhjq.cksqdf")));
-            log.info("DB initialized with : " + playerRepository.save(new Player("VaLaPute", 20D, 40D, "lkqdsfbjlqs@dsklfhjq.cksqdf")));
-            log.info("DB initialized with : " + playerRepository.save(new Player("ThimoNul", 59D, 96D, "lkqdsfbjlqs@dsklfhjq.cksqdf")));
-            log.info("DB initialized with : " + playerRepository.save(new Player("Vincaca", 65D, 66D, "lkqdsfbjlqs@dsklfhjq.cksqdf")));
+            playerRepository.save(new Player("Flacype", 150D, 150D,"lkqdsfbjlqs@dsklfhjq.cksqdf"));
+            playerRepository.save(new Player("Pyshell", 0D, 256D, "lkqdsfbjlqs@dsklfhjq.cksqdf"));
+            playerRepository.save(new Player("Val", 20D, 40D, "lkqdsfbjlqs@dsklfhjq.cksqdf"));
+            playerRepository.save(new Player("Thim", 59D, 96D, "lkqdsfbjlqs@dsklfhjq.cksqdf"));
+            playerRepository.save(new Player("Vincaca", 65D, 66D, "lkqdsfbjlqs@dsklfhjq.cksqdf"));
         };
     }
 }

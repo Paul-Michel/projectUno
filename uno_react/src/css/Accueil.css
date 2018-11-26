@@ -1,0 +1,126 @@
+.tailleimg {
+    height : 50%;
+    width : 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%
+}
+
+.imgson {
+    width: 150px;
+	height: 150px;
+	margin-left: 200px;
+}
+
+html,
+body {
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+.div{
+  height : 100%;
+}
+
+.colorBody {
+  background-color: #ED1C24;
+}
+
+.centrage {
+  margin-left: auto;
+  margin-right: auto; 
+  border-radius : 25px;
+  width:200px;
+}
+
+.centerbtn {
+  margin-left : 50px;
+}
+
+.boutonJoin {
+  margin-top :10px;
+}
+/* Chat chatContainers */
+.chatContainer {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Darker chat chatContainer */
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+/* Clear floats */
+.chatContainer::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style images */
+.chatContainer img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Style the right image */
+.chatContainer img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+/* Style time text */
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+  float: left;
+  color: #999;
+}
+
+#chat {
+  width: 300px;
+  float: right;
+}
+
+#openChat {
+  display : none;
+}
+
+.openChatBtn {
+  position: fixed;
+  bottom: 130px;
+  right : 28px;
+}
+.closeChatBtn {
+  display: none;
+  position: fixed;
+  bottom: 130px;
+  right : 28px;
+}
+.inputChat{
+  position: fixed;
+  top : -550px;
+  right : 20px;
+}
+
+.positionMessageChat {
+  height : 440px;
+  overflow: auto;
+  position: fixed;
+  width : 300px;
+  top : -400px;
+}

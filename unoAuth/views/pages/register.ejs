@@ -1,7 +1,28 @@
-<h1>Register</h1>
-<form method="POST" action="/">
-  <input type="text" name="username" placeholder="Username">
-  <input type="email" name="email" placeholder="Email Address">
-  <input type="password" name="password" placeholder="Password">
-  <input type="submit" value="submit">
+<nav>
+  <div class="animated fadeInDown nav-wrapper redUnoColor">
+      <a href="/accueil" class=" brand-logo pulse"> <img src="/images/uno.png" class=" small material-icons"/>Register</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a class="waves-effect waves-light btn-small red colorNav" href="http://localhost:1337/login">Login</a></li>
+      </ul>
+  </div>
+</nav>
+<style>@import url('https://fonts.googleapis.com/css?family=Righteous');</style>
+<form class="formRegister" method="POST" action="/register">
+  <div class="container">
+    <div class="row">
+      <div class="input-field col s4">
+        <input type="text" name="username" placeholder="Username">
+      </div>
+      <div class="input-field col s4">
+        <input type="email" name="email" placeholder="Email Address">
+      </div>
+      <div class="input-field col s4 containSubmitBtn">
+        <input type="password" name="password" placeholder="Password">
+      </div>
+      <div class="input-field col s4 containSubmitBtn">
+        <input class="waves-effect waves-light btn-small redUnoColor submitBtn" type="submit" value="submit">
+      </div>
+    </div>
+  </div>
 </form>
+

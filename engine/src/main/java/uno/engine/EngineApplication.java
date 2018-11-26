@@ -1,36 +1,17 @@
 package uno.engine;
 
-import uno.engine.entities.Card;
-import uno.engine.entities.Game;
-import uno.engine.structs.ResultNewTurn;
-import uno.engine.structs.Resulteffect;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
-
-//@SpringBootApplication
+@SpringBootApplication
+@EnableFeignClients
 public class EngineApplication {
     private static Game myGame;
 
 
     public static void main(String[] args) {
-        //SpringApplication.run(EngineApplication.class, args);
-        List<Integer> test = new ArrayList<>();
-        test.add(1);
-        test.add(2);
-        test.add(3);
-
-        myGame = new Game(test);
-
-        int playerIdx = 0;
-
-        while (1 == 1) {
-            playerIdx = turn(playerIdx);
-        }
-
+        SpringApplication.run(EngineApplication.class, args);
     }
 
     public static int turn(Integer playerIdx) {
