@@ -28,6 +28,11 @@ public class PlayerController {
                 .orElseThrow(()-> new PlayerNotFoundException(id));
     }
 
+    @RequestMapping(value = "/players/pseudo/{pseudo}", method = RequestMethod.GET)
+    Player getOneByPseudo(@PathVariable String pseudo){
+        return playerRepository.findByPseudo(pseudo);
+    }
+
     @PutMapping(value ="/players/{id}")
     Player replacePlayer (@RequestBody Player newPlayer, @PathVariable Long id){
         return  playerRepository.findById(id)

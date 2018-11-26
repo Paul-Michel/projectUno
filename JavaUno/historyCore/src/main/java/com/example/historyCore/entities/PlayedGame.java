@@ -14,18 +14,20 @@ public class PlayedGame {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "PRIVATE_SEQ_PLAYEDGAME")
     private Long id;
     private Date datePlayed;
-    private String firstWinner;
-    private String secondWinner;
-    private String thirdWinner;
-    private String fourthWinner;
+    private Long firstWinnerId;
+    private Long secondWinnerId;
+    private Long thirdWinnerId;
+    private Long fourthWinnerId;
 
-    public PlayedGame(String firstWinner, String secondWinner, String thirdWinner, String fourthWinner) {
+    public PlayedGame(Long firstWinnerId, Long secondWinnerId, Long thirdWinnerId, Long fourthWinnerId) {
         this.datePlayed = new Date();
-        this.firstWinner = firstWinner;
-        this.secondWinner = secondWinner;
-        this.thirdWinner = thirdWinner;
-        this.fourthWinner = fourthWinner;
+        this.firstWinnerId = firstWinnerId;
+        this.secondWinnerId = secondWinnerId;
+        this.thirdWinnerId = thirdWinnerId;
+        this.fourthWinnerId = fourthWinnerId;
     }
+
+    public PlayedGame(){}
 
     public Long getId() {
         return id;
@@ -43,37 +45,35 @@ public class PlayedGame {
         this.datePlayed = datePlayed;
     }
 
-    public String getFirstWinner() {
-        return firstWinner;
+    public Long getFirstWinnerId() {
+        return firstWinnerId;
     }
 
-    public void setFirstWinner(String firstWinner) {
-        this.firstWinner = firstWinner;
+    public void setFirstWinnerId(Long firstWinnerId) {
+        this.firstWinnerId = firstWinnerId;
     }
 
-    public String getSecondWinner() {
-        return secondWinner;
+    public Long getSecondWinnerId() {
+        return secondWinnerId;
     }
 
-    public void setSecondWinner(String secondWinner) {
-        this.secondWinner = secondWinner;
+    public void setSecondWinnerId(Long secondWinnerId) {
+        this.secondWinnerId = secondWinnerId;
     }
 
-    public String getThirdWinner() {
-        return thirdWinner;
+    public Long getThirdWinnerId() {
+        return thirdWinnerId;
     }
 
-    public void setThirdWinner(String thirdWinner) {
-        this.thirdWinner = thirdWinner;
+    public void setThirdWinnerId(Long thirdWinnerId) {
+        this.thirdWinnerId = thirdWinnerId;
     }
 
-    public String getFourthWinner() {
-        return fourthWinner;
+    public Long getFourthWinnerId() {
+        return fourthWinnerId;
     }
 
-    public void setFourthWinner(String fourthWinner) {
-        this.fourthWinner = fourthWinner;
+    public void setFourthWinnerId(Long fourthWinnerId) {
+        this.fourthWinnerId = fourthWinnerId;
     }
-
-    public PlayedGame(){}
 }
