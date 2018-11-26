@@ -8,7 +8,6 @@ import Header from './header.js';
 
 class Test extends Component {
 
-
     handleDragStart(event) {
         event.dataTransfer.setData("text/plain", event.target.id);
       event.dropEffect = "move";

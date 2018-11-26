@@ -8,11 +8,10 @@ module.exports = {
                 user
             });
         }
-
         req.login(user, function(err){
             if (err) res.send(err);
-            sails.log('User '+user.id+' has logged in.');
-            return res.redirect('http://localhost:3000/accueil');
+            sails.log('User '+ user.id+ ' has logged in.');
+            return res.redirect('http://localhost:3000/accueil/' + user.id + '/' + user.username);
         })
       })(req, res);
   },
