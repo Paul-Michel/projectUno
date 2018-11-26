@@ -35,7 +35,7 @@ module.exports = {
         req.login(user, function(err){
             if (err) return res.negotiate(err);
             sails.log('User '+ user.id +' has logged in.');
-            return res.redirect('/');
+            return res.redirect('/login');
         })
     })
 

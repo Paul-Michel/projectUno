@@ -1,5 +1,5 @@
 draggable {
-    width: 200px;
+    width: 75%;
     height:280px;
     margin-top : 80px;
 }
@@ -21,12 +21,17 @@ draggable {
 }
 #visibleDraggable3.in-hand, #draggableHidden3.in-hand{
     margin-left: 80px;
+    width: 153px;
 }
 .draggable.in-pioche{
     margin-left: 0;
     margin-right: 0;
 }
-.visibleFace:hover{
+.draggable.in-stack{
+    margin-left: 0;
+    margin-right: 0;
+}
+.in-hand:hover{
     border: 1px solid #e70012;
     border-radius: 5px;
     box-shadow: 2px 2px #888888;
@@ -43,7 +48,9 @@ draggable {
 }
 #box_left{
     background-color: lightgray;
-    margin-right: 10px;
+    margin-left:auto;
+    margin-right: auto;
+    align-items: center;
     height: 300px;
 }
 #box_right{

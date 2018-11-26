@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './css/inGame.css';
 import pioche from './ressources/pioche.png';
 import testcard from './ressources/b3.png';
+import swaped from './ressources/swaped.png';
 import './css/animation.css';
 import Header from './header.js';
 
@@ -11,21 +12,22 @@ class Test extends Component {
 
     handleDragStart(event) {
         event.dataTransfer.setData("text/plain", event.target.id);
-      event.dropEffect = "move";
+        const draggable = document.getElementById(event.target.id)
+        draggable.classList.remove("in-hand")
+        draggable.classList.add("in-stack")
      }
      
     handleDrop(event) {
        event.preventDefault();
-       var id = event.dataTransfer.getData("text");
+       const id = event.dataTransfer.getData("text");
        event.target.appendChild(document.getElementById(id));
      }
      
     handleDragOver(event) {
        event.preventDefault();
-       event.dataTransfer.dropEffect = 'move';
      }
 
-    //var xhr = new XMLHttpRequest();
+    //const xhr = new XMLHttpRequest();
     sendPost = () => {
         /* xhr.open("POST", "url", true);
          xhr.setRequestHeader('Content-Type', 'application/json');
@@ -72,7 +74,7 @@ class Test extends Component {
                         <div id="draggableContent">
                             <div id="draggableHidden1" class="animated slideInUp in-hand " draggable="false">
                                 <div class="hiddenFace1">
-                                    <img class="hiddenFaceImg" src={pioche} draggable="false"></img>
+                                    <img class="hiddenFaceImg" src={swaped} draggable="false"></img>
                                 </div>
                             </div>
                             <div id="visibleDraggable1" class="animated flipInY draggable in-hand hidden"  draggable="true" onDragStart={this.handleDragStart}>
@@ -83,7 +85,7 @@ class Test extends Component {
 
                             <div id="draggableHidden2" class="animated slideInUp in-hand"  draggable="false">
                                 <div class="hiddenFace2">
-                                    <img class="hiddenFaceImg" src={pioche} draggable="false"></img>
+                                    <img class="hiddenFaceImg" src={swaped} draggable="false"></img>
                                 </div>
                             </div>
                             <div id="visibleDraggable2" class="animated flipInY draggable in-hand hidden"  draggable="true" onDragStart={this.handleDragStart}>
@@ -94,7 +96,7 @@ class Test extends Component {
 
                             <div id="draggableHidden3" class="animated slideInUp in-hand"  draggable="false">
                                 <div class="hiddenFace3">
-                                    <img class="hiddenFaceImg" src={pioche} draggable="false"></img>
+                                    <img class="hiddenFaceImg" src={swaped} draggable="false"></img>
                                 </div>
                             </div>
                             <div id="visibleDraggable3" class="animated flipInY draggable in-hand hidden" draggable="true" onDragStart={this.handleDragStart}>
