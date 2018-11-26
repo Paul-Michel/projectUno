@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './css/Settings.css';
 import Footer from './footer.js';
+import Header from './header.js';
+import './css/materialize.min.css';
+import './css/animation.css';
 
 class Settings extends Component {
     state = {
@@ -43,15 +46,15 @@ class Settings extends Component {
 
         this.state.players.forEach(player => {
             if (player.pseudo == statPseudo) {
-                    h1.innerHTML = player.pseudo
-                    divstat.appendChild(h1)
-                    statdetails.innerHTML = "Nombre de parties :" + player.playedNb + "<br></br>" +
-                        "Nombre de victoires :" + player.winNb + "<br></br>" +
-                        "Ratio victoires/défaites :" + player.winrate + "%";
-                    divstat.appendChild(statdetails)
+                h1.innerHTML = player.pseudo
+                divstat.appendChild(h1)
+                statdetails.innerHTML = "Nombre de parties :" + player.playedNb + "<br></br>" +
+                    "Nombre de victoires :" + player.winNb + "<br></br>" +
+                    "Ratio victoires/défaites :" + player.winrate + "%";
+                divstat.appendChild(statdetails)
             }
         })
-        if(!divstat.firstChild){
+        if (!divstat.firstChild) {
             h1.innerHTML = "Player not found"
             divstat.appendChild(h1)
         }
@@ -64,22 +67,24 @@ class Settings extends Component {
 
         return (
             <div>
-                <style>
-                    @import url('https://fonts.googleapis.com/css?family=Righteous')
-                </style>
+                <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
+                <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet"></link>
+
+                <Header />
+
                 <div id="component">
                     <div id="menu">
-                        <h2><a href='#' onClick={this.seeHistory}>HISTORY</a></h2>
-                        <br></br>
-                        <br></br>
-                        <h2><a href='#' onClick={this.seeStats}>STATS</a></h2>
+                        <ul class="collection with-header">
+                            <a href="#" class="collection-item red" onClick={this.seeHistory}><h4>HISTORY</h4></a>
+                            <a href="#" class="collection-item red" onClick={this.seeStats}><h4>STATS</h4></a>
+                        </ul>
                     </div>
                     <div id="history">
                         <center><h1>FLACYPE</h1></center>
                         <div id="listeGame">
                             Your games :
                             <ul> {games.map((game) => (
-                                <li key={game.id}> Game {game.id}, {game.datePlayed.substring(0, 10)} <a href="#" onClick={() => this.seeDesc(game.id)}>See more</a>
+                                <li key={game.id}> Game {game.id}, {game.datePlayed.substring(0, 10)} <a div="seeMore" href="#" onClick={() => this.seeDesc(game.id)}>See more</a>
                                     <div id={game.id} class="hidden histocontent">
                                         Première place : {game.firstWinner} <br></br>
                                         Deuxième place : {game.secondWinner} <br></br>
@@ -91,7 +96,8 @@ class Settings extends Component {
                         </div>
                     </div>
                     <div id="stats" class="hidden">
-                        <h1>Entrer nom joueur : </h1> <input id="statpseudo" type="text" name="pseudo"></input> <button onClick={this.pseudoStat}> Rechercher </button>
+                        <h1>Entrer nom joueur : </h1> <i class="material-icons prefix">textsms</i>
+                        <input id="statpseudo" type="text" class="autocomplete" name="pseudo" /> <button onClick={this.pseudoStat}> Rechercher </button>
                         <div id="divstat">
                         </div>
                     </div>

@@ -8,45 +8,51 @@ body {
 
 #menu {
     float: left;
-    border: 3px solid black;
-    border-radius: 5px;
     padding: 5px;
     margin-left : 20px;
     font-size : 25px;
+    border-radius : 5px;
 }
 
 #history {
     float: center;
-    border: 3px solid black;
-    border-radius: 5px;
     padding: 5px;
     margin-left : 250px;
     margin-right : 400px;
     font-size: 25px;
+    background-color : #e53935;
+    color: white;
+    border-radius : 5px;
 }
 
 #stats {
     float: center;
-    border: 3px solid black;
-    border-radius: 5px;
     padding: 5px;
     margin-left : 250px;
     margin-right : 400px;
     font-size: 25px;
+    background-color : #e53935;
+    color: white;
 }
 
 .hidden {
     display: none;
 }
 
-a {
-    color : black;
-}
-
 .histocontent {
-    border : 3px solid black;
-    border-radius: 5px;
     padding: 5px;
     padding : 5px;
     margin-left: 20px;
+}
+
+h4 {
+    color : white;
+}
+
+a {
+    color : white ;
+}
+
+a:hover {
+    color : #d50000;
 }

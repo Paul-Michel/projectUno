@@ -11,7 +11,7 @@ class Header extends Component {
 
             <nav>
                 <div class="animated fadeInDown nav-wrapper colorNav">
-                    <a href="/accueil" class=" brand-logo pulse"> <i class=" medium material-icons">home</i> </a>
+                    <a id="home" href="/accueil" class=" brand-logo pulse "> <i class="medium material-icons positionIconHome">home</i> </a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li><Link to='/settings'><a className="waves-effect waves-light btn-small red colorNav"> STATS </a></Link></li>
                     </ul>
