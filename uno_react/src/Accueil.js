@@ -97,18 +97,10 @@ class Accueil extends Component {
                     </div>
                     <button id="openChatBtn" className="waves-effect waves-light btn-small red colorBody openChatBtn" onClick={this.openChat}> Messagerie </button>
                     <button id="closeChatBtn" className="waves-effect waves-light btn-small red colorBody closeChatBtn" onClick={this.closeChat}> Fermer </button>
-                <div className="animated zoomIn row container">
-                    <div className="col s4">
-                        <div className="waves-effect waves-light btn-small red darken-3" onClick={() => this.newGame()}>NEW GAME</div>
-                    </div>
-                    <div className="animated zoomIn col s4">
-                        <div className="waves-effect waves-light btn-small red darken-3" onClick={() => this.joinGame()}>JOIN GAME</div>
-                    </div>
-                </div>
 
                 <Footer />
             </div>
-
+            </div>
         );
     }
 
