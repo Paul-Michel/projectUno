@@ -22,7 +22,7 @@ function gameCreateListener(callback,server){
     io.sockets.on('connection', function (socket) {
         //Create a game : with number of players and check if game not already created.
         socket.on('create', function (n,id,pseudo) {
-            let infoSocket = {socket: socket, pseudo: pseudo, id: id}
+            let infoSocket = {socket: socket, id: id, pseudo: pseudo}
             if(gameCreated === false){
                 console.log('game created, player 1 joined the game.')
                 socket.emit('message',{ message : 'game created, '+ infoSocket.pseudo + ' joined the game.', res : true})
@@ -37,8 +37,8 @@ function gameCreateListener(callback,server){
 
         //Join the game : check if the game is created and there is still room for one player,
         //then increment player 
-        socket.on('join', function (pseudo, id) {
-            let infoSocket = {socket: socket, pseudo: pseudo, id: id}
+        socket.on('join', function (id, pseudo) {
+            let infoSocket = {socket: socket, id: id, pseudo: pseudo}
             console.log('player ' + nbPlayers + ' joined the game.');
             if(gameCreated === false)
                 socket.emit('message',{ message : "no game created ! Create one if you want", res : false })
@@ -63,13 +63,19 @@ function gameListener(server,sockets){
     let turn = 0
     let players = []
     sockets.forEach(s => {
+        s.socket.on('chat',function(message,author){
+            console.log("ok")
+            sockets.forEach(s2 => {
+                s2.socket.emit('chat', message, s.pseudo)
+            })
+        })
         s.socket.on('effect', function(){
             turn = effect(cardPlayed)
             newTurn(turn)
         })
         players.push(s.id)
     })
-    createGame("players=" + players)
+    //createGame("players=" + players)
     console.log('game created')
 }
 
