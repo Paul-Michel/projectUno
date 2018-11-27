@@ -71,3 +71,36 @@ col.s6.containLeftBox{
  background-color: #ED1C24;
  font-family: 'Righteous';
 }
+#chat {
+    width: 300px;
+    float: right;
+  }
+  
+  #openChat {
+    display : none;
+  }
+  
+  .openChatBtn {
+    position: fixed;
+    bottom: 50px;
+    right : 28px;
+  }
+  .closeChatBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right : 28px;
+  }
+  .inputChat{
+    position: fixed;
+    top : -650px;
+    right : 20px;
+  }
+  
+  .positionMessageChat {
+    height : 440px;
+    overflow: auto;
+    position: fixed;
+    width : 300px;
+    top : -500px;
+  }
