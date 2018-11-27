@@ -38,6 +38,9 @@ module.exports = {
         })
     })
 
+  },
+  test: () => {
+      console.log('bezi')
   }
 
 };

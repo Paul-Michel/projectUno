@@ -93,7 +93,7 @@ module.exports.models = {
   * > manage these keys like you would any other sensitive credential.          *
   *                                                                             *
   * > For more info, see:                                                       *
-  * > https://sailsjs.com/docs/concepts/orm/model-settings#?dataEncryptionKeys  *
+  * > https://saihttps://www.google.com/search?q=mongoclient+archlinux&ie=utf-8&oe=utf-8&client=firefox-b-ablsjs.com/docs/concepts/orm/model-settings#?dataEncryptionKeys  *
   *                                                                             *
   ******************************************************************************/
 

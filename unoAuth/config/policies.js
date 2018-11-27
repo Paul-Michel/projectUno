@@ -21,5 +21,8 @@ module.exports.policies = {
   // whitelist the auth controller
 	'auth': {
 		'*': true
+  },
+  'game': {
+    '*': true
   }
 };

@@ -1,37 +1,38 @@
-/* const router = require('express').Router()
-const _ = require('lodash')
+/**
+ * GameController
+ *
+ * @description :: Server-side actions for handling incoming requests.
+ * @help        :: See https://sailsjs.com/docs/concepts/actions
+ */
+const MongoClient = require('mongodb').MongoClient;
+var ObjectId = require('mongodb').ObjectID;
+const url = "mongodb://localhost:27017/";
+module.exports = {
 
-const url = fetch('l_url_de_vincent')
+    findAll: function(req,res){
+      console.log('test1')
+      MongoClient.connect(url, function(err, db) {
+        if (err) throw err;
+        var dbo = db.db("unoUsers");
+        dbo.collection("user").find({}).toArray(function(err, result) {
+          if (err) throw err;
+          res.send(result);
+          db.close();
+        });
+      }); 
+    },
 
-router.get('/newgame', (req, res) => {
-  Restaurants.redirect('l_url_de_vincent').then((games) => res.json(games)).catch((err) => {
-    return res.status(404).send(err)
-  })
-})
-router.post('/newgame', (req, res) => {
-  Restaurants.url.then((games) => res.json(games)).catch((err) => {
-    return res.status(404).send(err)
-  })
-})
+    findById: function(req,res){
+        console.log('test1')
+        MongoClient.connect(url, function(err, db) {
+          if (err) throw err;
+          var dbo = db.db("unoUsers")
+          dbo.collection("user").find({"_id": ObjectId(req.params.id)}).toArray(function(err, result) {
+            if (err) throw err;
+            res.send(result);
+            db.close();
+          });
+        }); 
+      },
+};
 
-router.get('/newturn', (req, res) => {
-  Restaurants.redirect('l_url_de_vincent').then((games) => res.json(games)).catch((err) => {
-    return res.status(404).send(err)
-  })
-})
-router.post('/newturn', (req, res) => {
-  Restaurants.url.then((games) => res.json(games)).catch((err) => {
-    return res.status(404).send(err)
-  })
-})
-
-router.get('/play', (req, res) => {
-  Restaurants.redirect('l_url_de_vincent').then((games) => res.json(games)).catch((err) => {
-    return res.status(404).send(err)
-  })
-})
-router.post('/play', (req, res) => {
-  Restaurants.url.then((games) => res.json(games)).catch((err) => {
-    return res.status(404).send(err)
-  })
-}) */

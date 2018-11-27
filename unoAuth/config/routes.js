@@ -24,11 +24,6 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': 'DashboardController.renderIndex',
-  '/explore': {
-    view: 'pages/explore'
-  },
-
   //Auth
   'get /login': {
     view: 'pages/login'
@@ -36,8 +31,9 @@ module.exports.routes = {
   'get /register': {
     view: 'pages/register'
   },
-  
-
+  //Data java
+  '/user': { controller: 'GameController', action: 'findAll' },
+  '/user/:id': {controller:'GameController', action:'findById'},
   /***************************************************************************
   *                                                                          *
   * More custom routes here...                                               *

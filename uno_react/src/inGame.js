@@ -21,6 +21,7 @@ class Test extends Component {
        event.preventDefault();
        const id = event.dataTransfer.getData("text");
        event.target.appendChild(document.getElementById(id));
+       console.log(id)
      }
      
     handleDragOver(event) {
@@ -94,9 +95,9 @@ class Test extends Component {
                                     <img class="hiddenFaceImg" src={swaped} draggable="false"></img>
                                 </div>
                             </div>
-                            <div id="visibleDraggable3" class="animated flipInY draggable in-hand hidden" draggable="true" onDragStart={this.handleDragStart}>
+                            <div id="visibleDraggable3" class="animated flipInY draggable in-hand hidden" draggable="true"  onDragStart={this.handleDragStart}>
                                 <div class="visibleFace">
-                                    <img class="visibleImg" id="3" src={testcard} draggable="false"></img>
+                                  <img class="visibleImg" id="3" src={testcard} draggable="false"></img>
                                 </div>
                             </div>
                     </div>
