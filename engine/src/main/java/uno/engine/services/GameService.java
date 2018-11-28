@@ -82,7 +82,6 @@ public class GameService {
             if (!playerService.setAvailableCard(currentCard, myGame.players.get(playerIdx))) {
                 CardMore(playerIdx);
                 Result.CanPlay = false;
-
                 Result.nextPlayer = setNextPlayer(playerIdx);
             } else {
                 Result.CanPlay = true;
@@ -111,6 +110,7 @@ public class GameService {
         myGame.stack.add(Card);
         switch (Card.getValue()) {
             case FORBIDDEN:
+                Card.setColor(Color.BLACK);
                 forbiddenPlayer = true;
                 break;
             case TWOMORE:
@@ -122,9 +122,6 @@ public class GameService {
             case DIRCHANGE:
                 myGame.turnDir = !myGame.turnDir;
                 break;
-            case COLORCHANGE:
-                Card.setColor(Color.BLACK);
-                break;
         }
 
 
@@ -133,6 +130,7 @@ public class GameService {
                 .filter(card -> card.getId().equals(Card.getId()))
                 .findFirst()
                 .get();
+
         myGame.players.get(playerIdx).getHand().remove(c);
         Result.CanRePlay = playerService.setOtherAvailableCard(Card, myGame.players.get(playerIdx));
         Result.hand = myGame.players.get(playerIdx).getHand();
