@@ -5,12 +5,20 @@ import testcard from './ressources/b3.png';
 import swaped from './ressources/swaped.png';
 import './css/animation.css';
 import Header from './header.js';
+import { cpus } from 'os';
 
 
 class Test extends Component {
 
     state = {
-        socket : null
+        images: null,
+        turn: null
+    }
+
+    importAllImages(r) {
+        let images = {};
+        r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+        this.setState(() =>({  images }))
     }
 
     openChat = () => {
@@ -28,7 +36,7 @@ class Test extends Component {
         console.log("bonjour")
         console.log(message)
         const chat = document.getElementById('messageChat')
-       // const message = document.getElementById('message').value
+        //const message = document.getElementById('message').value
         const newMessage = document.createElement('div')
         newMessage.classList.add('chatContainer')
         chat.appendChild(newMessage)
@@ -59,45 +67,117 @@ class Test extends Component {
         draggable.classList.add("in-stack")
      }
      
-    handleDrop(event) {
-       event.preventDefault();
-       const id = event.dataTransfer.getData("text");
-       event.target.appendChild(document.getElementById(id));
-       console.log(id)
+    handleDrop = (event) => {
+        event.preventDefault();
+        const id = event.dataTransfer.getData("text");
+        event.target.appendChild(document.getElementById(id));
+        this.effect(id)
      }
      
     handleDragOver(event) {
        event.preventDefault();
      }
 
-    //const xhr = new XMLHttpRequest();
     sendPost = () => {
-        /* xhr.open("POST", "url", true);
-         xhr.setRequestHeader('Content-Type', 'application/json');
-         xhr.send(JSON.stringify({
-             value: 'value'
-         }));*/
-        const draggableHidden1 = document.getElementById('draggableHidden1')
-        const visibleDraggable1 = document.getElementById('visibleDraggable1')
-        const draggableHidden2 = document.getElementById('draggableHidden2')
-        const visibleDraggable2 = document.getElementById('visibleDraggable2')
-        const draggableHidden3 = document.getElementById('draggableHidden3')
-        const visibleDraggable3 = document.getElementById('visibleDraggable3')
-        visibleDraggable1.classList.toggle('hidden')
-        draggableHidden1.classList.toggle('hidden')
-        visibleDraggable2.classList.toggle('hidden')
-        draggableHidden2.classList.toggle('hidden')
-        visibleDraggable3.classList.toggle('hidden')
-        draggableHidden3.classList.toggle('hidden')
+        const hand = document.getElementById('draggableContent').children
+        for(let i = 1 ; i <= hand.length / 2 ; i ++){
+            document.getElementById('draggableHidden' + i).classList.toggle('hidden')
+            document.getElementById('visibleDraggable' + i).classList.toggle('hidden')
+        }          
     }
 
+    updateCard = (currentCard) => {
+        const stack = document.getElementById('box_left')
+        if(stack.firstChild)
+            stack.removeChild(stack.firstChild)
+        const img = document.createElement('img')
+        img.src = this.state.images[currentCard.color.toLowerCase() + "_" + currentCard.value.toLowerCase() + ".png"]
+        stack.appendChild(img)
+    }
+    
+    effect(id){
+        let cardInfo = document.getElementById(id).firstChild.firstChild.alt;
+        this.props.location.socket.socket.emit('effect', cardInfo, this.state.turn)
+        var myNode = document.getElementById("draggableContent");
+        while (myNode.firstChild) {
+            myNode.removeChild(myNode.firstChild);
+        }
+    }
 
-    render() {
+    createHand = (info) => {
+
+        const hand = document.getElementById('hand')
+        let draggableContent = document.getElementById("draggableContent")
+        if(!document.getElementById("draggableContent")){
+            draggableContent = document.createElement('div')
+            draggableContent.id = 'draggableContent'
+            hand.appendChild(draggableContent)
+        }
+
+        let i = 1
+        info.hand.forEach(element => {
+            const draggableHidden = document.createElement('div')
+            draggableHidden.id = 'draggableHidden' + i
+            draggableHidden.classList.add('animated', 'slideInUp', 'in-hand')
+            draggableHidden.draggable = false
+            draggableContent.appendChild(draggableHidden)
+    
+            const hiddenFace = document.createElement('div')
+            hiddenFace.classList.add('hiddenFace' + i)
+            draggableHidden.appendChild(hiddenFace)
+    
+            const hiddenFaceImg = document.createElement('img')
+            hiddenFaceImg.classList.add('hiddenFaceImg')
+            hiddenFaceImg.src = swaped 
+            hiddenFaceImg.draggable = false
+            hiddenFace.appendChild(hiddenFaceImg)
+    
+            const visibleDraggable = document.createElement('div')
+            visibleDraggable.id = 'visibleDraggable' + i
+            visibleDraggable.classList.add('animated', 'flipInY', 'draggable', 'in-hand', 'hidden')
+            visibleDraggable.setAttribute("draggable", true) 
+            visibleDraggable.addEventListener("dragstart", this.handleDragStart)
+            draggableContent.appendChild(visibleDraggable)
+    
+            const visibleFace = document.createElement('div')
+            visibleFace.classList.add('visibleFace')
+            visibleDraggable.appendChild(visibleFace)
+    
+            const visibleImg = document.createElement('img')
+            visibleImg.classList.add('visibleImg')
+            visibleImg.id = i 
+            i = i + 1
+            visibleImg.src = this.state.images[element.color.toLowerCase() + "_" + element.value.toLowerCase() + ".png"]
+            visibleImg.setAttribute('alt', element.id + " " + element.color + " " + element.value)
+            visibleImg.draggable = false
+            visibleFace.appendChild(visibleImg)
+            console.log("ok")
+        });
+            
+        
+
+        
+    }
+
+    async componentDidMount() {
+        await this.importAllImages(require.context('./ressources/cards', false, /\.(png|jpe?g|svg)$/))
 
         this.props.location.socket.socket.on('chat', (message,author) => {
             this.sendChat(message, author)
         })
+        this.props.location.socket.socket.on('newTurn', (info, turn) => {
+            this.setState(() =>({ turn }))
+            this.createHand(info)
+            
+        })
+        this.props.location.socket.socket.on('update', (info) => {
+            this.updateCard(info.currentCard)
+        })
+    }
 
+    render() {
+
+        
 
         return (
             <div id="body">
@@ -108,47 +188,14 @@ class Test extends Component {
                                             onDragOver={this.handleDragOver}>
                         </div>
                     </div>
-                    
                     <div class="col s6">
                         <div id="box_right">
                             <img class="imgPioche" src={pioche} draggable="false"></img>
                         </div>
                     </div>
-                    <div class="col s12">
-                        <div id="draggableContent">
-                            <div id="draggableHidden1" class="animated slideInUp in-hand " draggable="false">
-                                <div class="hiddenFace1">
-                                    <img class="hiddenFaceImg" src={swaped} draggable="false"></img>
-                                </div>
-                            </div>
-                            <div id="visibleDraggable1" class="animated flipInY draggable in-hand hidden"  draggable="true" onDragStart={this.handleDragStart}>
-                                <div class="visibleFace">
-                                    <img class="visibleImg" id="1" src={testcard} draggable="false"></img>
-                                </div>
-                            </div>
-
-                            <div id="draggableHidden2" class="animated slideInUp in-hand"  draggable="false">
-                                <div class="hiddenFace2">
-                                    <img class="hiddenFaceImg" src={swaped} draggable="false"></img>
-                                </div>
-                            </div>
-                            <div id="visibleDraggable2" class="animated flipInY draggable in-hand hidden"  draggable="true" onDragStart={this.handleDragStart}>
-                                <div class="visibleFace">
-                                    <img class="visibleImg" id="2" src={testcard} draggable="false"></img>
-                                </div>
-                            </div>
-
-                            <div id="draggableHidden3" class="animated slideInUp in-hand"  draggable="false">
-                                <div class="hiddenFace3">
-                                    <img class="hiddenFaceImg" src={swaped} draggable="false"></img>
-                                </div>
-                            </div>
-                            <div id="visibleDraggable3" class="animated flipInY draggable in-hand hidden" draggable="true"  onDragStart={this.handleDragStart}>
-                                <div class="visibleFace">
-                                  <img class="visibleImg" id="3" src={testcard} draggable="false"></img>
-                                </div>
-                            </div>
-                    </div>
+                    <div id="hand" class="col s12">
+                    
+                        
                     <div class="col s12">
                         <div id="montour">
                             <button className="waves-effect waves-light btn-small unoColor centerbtn" onClick={this.sendPost}> Mon tour </button>

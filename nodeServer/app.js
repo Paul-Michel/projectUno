@@ -60,7 +60,6 @@ function gameCreateListener(callback,server){
 
 function gameListener(server,sockets){
     var io = require('socket.io').listen(server);
-    let turn = 0
     let players = []
     sockets.forEach(s => {
         s.socket.on('chat',function(message,author){
@@ -69,18 +68,17 @@ function gameListener(server,sockets){
                 s2.socket.emit('chat', message, s.pseudo)
             })
         })
-        s.socket.on('effect', function(){
-            turn = effect(cardPlayed)
-            newTurn(turn)
+        s.socket.on('effect', function(cardPlayed, turn){
+            effect(cardPlayed, sockets, turn)
         })
         players.push(s.id)
     })
-    //createGame("players=" + players)
+    console.log(players)
+    createGame("players=" + players, sockets)
     console.log('game created')
 }
 
-async function createGame(postData){
-    console.log(postData)
+async function createGame(postData,socket){
     var clientServerOptions = {
         uri: 'http://localhost:7000/newgame'+ '?' + postData,
         method: 'POST',
@@ -90,47 +88,65 @@ async function createGame(postData){
     }
 
     await request(clientServerOptions, function (error, response) {
-        newTurn("playerIdx=0")
+        newTurn("0", sockets)
         return;
     });
     
 }
 
-function newTurn(postData){
+function newTurn(postData, sockets){
     console.log(postData)
     var clientServerOptions = {
-        uri: 'http://localhost:7000/newturn'+ '?' + postData,
+        uri: 'http://localhost:7000/newturn'+ '?playerIdx=' + postData,
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         }
     }
-
+    // ERROR FIX : LES CARTES SE RECHARGENT ON REPLAY ET PAS ON PLAY, IL FAUDRA AUSSI AFFICHER LA CARTE EN COURS ET RECACHER LES CARTES A LA FIN DU TOUR
     request(clientServerOptions, function (error, response) {
-        console.log(JSON.parse(response.body))
-        socket.emit('newTurn')
+        console.log('newTurn : ', JSON.parse(response.body))
+        sockets[postData].socket.emit('newTurn', JSON.parse(response.body), postData)
+        sockets.forEach(s => {
+            if(sockets.indexOf(s) == postData)
+                s.socket.emit('chat', 'your turn', 'server')
+            else
+                s.socket.emit('chat', s.pseudo + ' playing...', 'server')
         return;
+        })
+        
     });
 }
 
 
-function effect(postData, turn){
-    console.log(postData)
+function effect(postData, sockets, turn){
+    postData = postData.split(' ')
+    let cardPlayed = {playerIdx: turn,
+                    card: {
+                        id: postData[0],
+                        color: postData[1],
+                        value: postData[2]
+                    }}
     var clientServerOptions = {
         uri: 'http://localhost:7000/effect',
         method: 'POST',
-        json: postData,
+        json: cardPlayed,
         headers: {
             'Content-Type': 'application/json'
         }
     }
 
     request(clientServerOptions, function (error, response) {
-        console.log(response.body)
-        if(response.body.CanRePlay)
-            return turn
-        else 
-            return response.body.nextPlayer
+        console.log('effect : ', response.body)
+        sockets.forEach(s => {
+            s.socket.emit('update', response.body)
+            if(sockets.indexOf(s) == turn)
+                s.socket.emit('chat', 'you played ' + response.body.currentCard.color + ' ' + response.body.currentCard.value, 'server')
+            else
+                s.socket.emit('chat', sockets[turn].pseudo + ' played ' + response.body.currentCard.color + ' ' + response.body.currentCard.value, 'server')
+        })
+        turn = response.body.nextPlayer
+        newTurn(turn,sockets) 
     });
 }
 
