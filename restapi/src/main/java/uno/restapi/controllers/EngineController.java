@@ -33,6 +33,9 @@ public class EngineController {
 
     @RequestMapping(value = "/effect", method = RequestMethod.POST, consumes = {"application/json"})
     Result effect(@RequestBody CardPlayed cardplayed) {
+
+
+
         return engineService.newEffect(cardplayed);
     }
 }

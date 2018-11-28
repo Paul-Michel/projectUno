@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import uno.restapi.enums.Color;
+import uno.restapi.enums.Value;
 
 
 @Data
@@ -12,7 +13,7 @@ import uno.restapi.enums.Color;
 public class Card {
 
     private Long id;
-    private String value;
+    private Value value;
     private Color color;
     private Boolean playable;
 

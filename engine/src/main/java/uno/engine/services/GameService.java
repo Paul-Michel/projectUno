@@ -82,6 +82,7 @@ public class GameService {
             if (!playerService.setAvailableCard(currentCard, myGame.players.get(playerIdx))) {
                 CardMore(playerIdx);
                 Result.CanPlay = false;
+
                 Result.nextPlayer = setNextPlayer(playerIdx);
             } else {
                 Result.CanPlay = true;

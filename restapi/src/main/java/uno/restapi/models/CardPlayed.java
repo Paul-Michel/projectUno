@@ -1,5 +1,6 @@
 package uno.restapi.models;
 
+
 public class CardPlayed {
 
     Integer playerIdx;
