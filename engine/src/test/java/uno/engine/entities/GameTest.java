@@ -191,4 +191,33 @@ public class GameTest {
         assertThat(myGame.newTurn(0).CanPlay).isEqualTo(true);
         assertThat(myGame.effect(new CardPlayed(0, card)).gameEnd).isEqualTo(true);
     }
+
+    @Test
+    public void the_current_color_should_change() {
+        List<Integer> players = new ArrayList<>();
+        players.add(111);
+        players.add(222);
+
+        GameService myGame = new GameService();
+        myGame.newGame(players);
+
+        Color tempColor;
+        if (myGame.getMyGame().getStack().get(myGame.getMyGame().getStack().size() - 1).getColor() == Color.RED) {
+            tempColor = Color.BLUE;
+        } else {
+            tempColor = Color.RED;
+        }
+        myGame.getMyGame().getPlayers().get(0).getHand().add(new Card(Value.COLORCHANGE, tempColor, 1254));
+
+
+        myGame.newTurn(0);
+        assertThat(myGame.effect(new CardPlayed(0, new Card(Value.COLORCHANGE, tempColor, 1254)))
+                .currentCard.getColor()).isEqualTo(tempColor);
+
+        List<Card> hand = new ArrayList<>();
+        hand.add(new Card(Value.ONE, tempColor, 1255));
+        myGame.getMyGame().getPlayers().get(1).setHand(hand);
+
+        assertThat(myGame.newTurn(1).hand.get(0).getPlayable()).isEqualTo(true);
+    }
 }
