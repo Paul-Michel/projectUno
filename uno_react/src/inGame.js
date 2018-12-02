@@ -12,7 +12,8 @@ class Test extends Component {
 
     state = {
         images: null,
-        turn: null
+        turn: null,
+        skipTurn: { bool: false, turn: null }
     }
 
     importAllImages(r) {
@@ -36,7 +37,6 @@ class Test extends Component {
         console.log("bonjour")
         console.log(message)
         const chat = document.getElementById('messageChat')
-        //const message = document.getElementById('message').value
         const newMessage = document.createElement('div')
         newMessage.classList.add('chatContainer')
         chat.appendChild(newMessage)
@@ -84,6 +84,18 @@ class Test extends Component {
             document.getElementById('draggableHidden' + i).classList.toggle('hidden')
             document.getElementById('visibleDraggable' + i).classList.toggle('hidden')
         }          
+    }
+
+    skipTurn = () => {
+        console.log(this.state.skipTurn.turn, this.state.skipTurn.bool)
+        if(this.state.skipTurn.bool === true){
+            this.props.location.socket.socket.emit('newTurn', this.state.skipTurn.turn)
+            var myNode = document.getElementById("draggableContent");
+            while (myNode.firstChild) {
+                myNode.removeChild(myNode.firstChild);
+            }
+            this.setState(() => ({ skipTurn: {bool: false, turn: null}}))
+        }    
     }
 
     updateCard = (currentCard) => {
@@ -135,7 +147,8 @@ class Test extends Component {
             const visibleDraggable = document.createElement('div')
             visibleDraggable.id = 'visibleDraggable' + i
             visibleDraggable.classList.add('animated', 'flipInY', 'draggable', 'in-hand', 'hidden')
-            visibleDraggable.setAttribute("draggable", true) 
+            if(element.playable === true)
+                visibleDraggable.setAttribute("draggable", true) 
             visibleDraggable.addEventListener("dragstart", this.handleDragStart)
             draggableContent.appendChild(visibleDraggable)
     
@@ -148,6 +161,8 @@ class Test extends Component {
             visibleImg.id = i 
             i = i + 1
             visibleImg.src = this.state.images[element.color.toLowerCase() + "_" + element.value.toLowerCase() + ".png"]
+            if(element.playable === false)
+                visibleImg.classList.add('notPlayable')
             visibleImg.setAttribute('alt', element.id + " " + element.color + " " + element.value)
             visibleImg.draggable = false
             visibleFace.appendChild(visibleImg)
@@ -155,11 +170,39 @@ class Test extends Component {
         });
             
         
+    }
 
-        
+    blackCard(){
+        const table = document.createElement('table')
+        const tr = document.createElement('tr')
+        const tr2 = document.createElement('tr')
+        const tdRed = document.createElement('td')
+        const tdBlue = document.createElement('td')
+        const tdYellow = document.createElement('td')
+        const tdGreen = document.createElement('td')
+
+        tdRed.innerHTML = "RED"
+        tdBlue.innerHTML = "BLUE"
+        tdGreen.innerHTML = "GREEN"
+        tdYellow.innerHTML = "YELLOW"
+
+        table.classList.add('buttonColor')
+        tdRed.classList.add('waves-effect', 'waves-light', 'btn-small', 'redButton', 'colorBody')
+        tdBlue.classList.add('waves-effect', 'waves-light', 'btn-small', 'blue', 'colorBody')
+        tdYellow.classList.add('waves-effect', 'waves-light', 'btn-small', 'yellow', 'colorBody')
+        tdGreen.classList.add('waves-effect', 'waves-light', 'btn-small', 'green', 'colorBody')
+
+        tr.appendChild(tdRed)
+        tr.appendChild(tdYellow)
+        tr2.appendChild(tdBlue)
+        tr2.appendChild(tdGreen)
+        table.appendChild(tr)
+        table.appendChild(tr2)
+        document.body.appendChild(table)
     }
 
     async componentDidMount() {
+        this.blackCard()
         await this.importAllImages(require.context('./ressources/cards', false, /\.(png|jpe?g|svg)$/))
 
         this.props.location.socket.socket.on('chat', (message,author) => {
@@ -171,7 +214,12 @@ class Test extends Component {
             
         })
         this.props.location.socket.socket.on('update', (info) => {
+            console.log(info)
             this.updateCard(info.currentCard)
+        })
+        this.props.location.socket.socket.on('skipTurn', (turn) => {
+            console.log('ok')
+            this.setState(() => ({ skipTurn: {bool: true, turn: turn}}))
         })
     }
 
@@ -188,17 +236,20 @@ class Test extends Component {
                                             onDragOver={this.handleDragOver}>
                         </div>
                     </div>
+                    
                     <div class="col s6">
                         <div id="box_right">
                             <img class="imgPioche" src={pioche} draggable="false"></img>
                         </div>
                     </div>
                     <div id="hand" class="col s12">
-                    
                         
                     <div class="col s12">
                         <div id="montour">
-                            <button className="waves-effect waves-light btn-small unoColor centerbtn" onClick={this.sendPost}> Mon tour </button>
+                            <button className="waves-effect waves-light btn-small unoColor centerbtn tour" onClick={this.sendPost}> Mon tour </button>
+                        </div>
+                        <div id="montour">
+                            <button className="waves-effect waves-light btn-small unoColor centerbtn tour" onClick={this.skipTurn}> Passer tour </button>
                         </div>
                     </div>
                     <div id="chat">

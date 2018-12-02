@@ -1,8 +1,13 @@
 package uno.engine.entities;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import uno.engine.enums.Color;
 import uno.engine.enums.Value;
 
+@Data
+@NoArgsConstructor
 public class Card {
 
     private Integer id;
@@ -16,6 +21,18 @@ public class Card {
         this.value = value;
         this.color = color;
         this.playable = false;
+    }
+
+    public Card(){
+
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public void setValue(Value value) {
+        this.value = value;
     }
 
     public Integer getId() {

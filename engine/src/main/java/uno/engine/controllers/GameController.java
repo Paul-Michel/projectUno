@@ -27,10 +27,10 @@ public class GameController {
 
     @RequestMapping(value = "/newgame", method = RequestMethod.POST)
     void newGame(@RequestBody String players) {
-        List<Integer> playersList = new ArrayList<>();
+        List<String> playersList = new ArrayList<>();
         for (String i : players.split(",")) {
             System.out.println(i);
-            playersList.add(Integer.valueOf(i));
+            playersList.add(i);
         }
         gameService.newGame(playersList);
     }
@@ -42,7 +42,11 @@ public class GameController {
 
     @RequestMapping(value = "/effect", method = RequestMethod.POST, consumes = {"application/json"})
     Result effect(@RequestBody CardPlayed cardplayed) {
-
+        System.out.println(cardplayed.getPlayerIdx());
+        System.out.println(cardplayed.getCard().getId());
+        System.out.println(cardplayed.getCard().getValue());
+        System.out.println(cardplayed.getCard().getColor());
+        System.out.println(cardplayed.getCard().getPlayable());
         return gameService.effect(cardplayed);
     }
 }

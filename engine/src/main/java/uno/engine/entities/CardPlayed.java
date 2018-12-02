@@ -1,11 +1,8 @@
-package uno.restapi.models;
-
+package uno.engine.entities;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class CardPlayed {
@@ -13,28 +10,27 @@ public class CardPlayed {
     Integer playerIdx;
     Card card;
 
-    CardPlayed(Integer playerIdx, Card card){
+    public CardPlayed(Integer playerIdx, Card card){
         this.playerIdx = playerIdx;
         this.card = card;
     }
+    public CardPlayed(){
 
-    CardPlayed(){
-    }
-
-    public void setPlayerIdx(Integer playerIdx) {
-        this.playerIdx = playerIdx;
-    }
-
-    public void setCard(Card card) {
-        this.card = card;
     }
 
     public Integer getPlayerIdx() {
         return playerIdx;
     }
 
+    public void setPlayerIdx(Integer playerIdx) {
+        this.playerIdx = playerIdx;
+    }
+
     public Card getCard() {
         return card;
     }
 
+    public void setCard(Card card) {
+        this.card = card;
+    }
 }

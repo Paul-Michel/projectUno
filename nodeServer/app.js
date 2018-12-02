@@ -71,6 +71,9 @@ function gameListener(server,sockets){
         s.socket.on('effect', function(cardPlayed, turn){
             effect(cardPlayed, sockets, turn)
         })
+        s.socket.on('newTurn', function(turn){
+            newTurn(turn, sockets)
+        })
         players.push(s.id)
     })
     console.log(players)
@@ -80,14 +83,14 @@ function gameListener(server,sockets){
 
 async function createGame(postData,socket){
     var clientServerOptions = {
-        uri: 'http://localhost:7000/newgame'+ '?' + postData,
+        uri: 'http://localhost:7001/newgame'+ '?' + postData,
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         }
     }
 
-    await request(clientServerOptions, function (error, response) {
+    request(clientServerOptions, function (error, response) {
         newTurn("0", sockets)
         return;
     });
@@ -97,8 +100,8 @@ async function createGame(postData,socket){
 function newTurn(postData, sockets){
     console.log(postData)
     var clientServerOptions = {
-        uri: 'http://localhost:7000/newturn'+ '?playerIdx=' + postData,
-        method: 'POST',
+        uri: 'http://localhost:7001/newturn/' + postData,
+        method: 'GET',
         headers: {
             'Content-Type': 'application/json'
         }
@@ -106,21 +109,26 @@ function newTurn(postData, sockets){
     // ERROR FIX : LES CARTES SE RECHARGENT ON REPLAY ET PAS ON PLAY, IL FAUDRA AUSSI AFFICHER LA CARTE EN COURS ET RECACHER LES CARTES A LA FIN DU TOUR
     request(clientServerOptions, function (error, response) {
         console.log('newTurn : ', JSON.parse(response.body))
+        console.log(JSON.parse(response.body).CanPlay)
+        if(JSON.parse(response.body).CanPlay == false){
+            sockets[postData].socket.emit('skipTurn', JSON.parse(response.body).nextPlayer)
+        }
         sockets[postData].socket.emit('newTurn', JSON.parse(response.body), postData)
         sockets.forEach(s => {
+                s.socket.emit('update', JSON.parse(response.body))
             if(sockets.indexOf(s) == postData)
                 s.socket.emit('chat', 'your turn', 'server')
             else
                 s.socket.emit('chat', s.pseudo + ' playing...', 'server')
-        return;
         })
-        
+        return response.body;
     });
 }
 
 
 function effect(postData, sockets, turn){
     postData = postData.split(' ')
+    console.log(postData[0], postData[1], postData[2])
     let cardPlayed = {playerIdx: turn,
                     card: {
                         id: postData[0],
@@ -145,8 +153,13 @@ function effect(postData, sockets, turn){
             else
                 s.socket.emit('chat', sockets[turn].pseudo + ' played ' + response.body.currentCard.color + ' ' + response.body.currentCard.value, 'server')
         })
-        turn = response.body.nextPlayer
-        newTurn(turn,sockets) 
+        if(response.body.CanRePlay !== true){
+            turn = response.body.nextPlayer
+            newTurn(turn,sockets) 
+        }else{
+            sockets[turn].socket.emit('newTurn', response.body, turn)
+        }   
+             
     });
 }
 

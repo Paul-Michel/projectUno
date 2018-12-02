@@ -7,7 +7,8 @@ draggable {
     margin-left: 44%;
     margin-top: 5%;
 }
-#draggable1, #draggable2, #draggable3, #draggable4, #draggable5, #draggable6, #draggable7 {
+#draggable1, #draggable2, #draggable3, #draggable4, #draggable5, #draggable6, #draggable7,
+#draggable8, #draggable9, #draggable10, #draggable11, #draggable12, #draggable13, #draggable14 {
     margin: 0%;
 }
 #draggableHidden1, #visibleDraggable1{
@@ -29,6 +30,27 @@ draggable {
     position: absolute;
 }
 #draggableHidden7, #visibleDraggable7 {
+    position: absolute;
+}
+#draggableHidden8, #visibleDraggable8{
+    position: absolute;
+}
+#draggableHidden9, #visibleDraggable9 {
+    position: absolute;
+}
+#draggableHidden10, #visibleDraggable10 {
+    position: absolute;
+}
+#draggableHidden11, #visibleDraggable11 {
+    position: absolute;
+}
+#draggableHidden12, #visibleDraggable12 {
+    position: absolute;
+}
+#draggableHidden13, #visibleDraggable13 {
+    position: absolute;
+}
+#draggableHidden14, #visibleDraggable14 {
     margin:0px;
     position: relative;
 }
@@ -53,6 +75,34 @@ draggable {
 }
 #visibleDraggable7.in-hand, #draggableHidden7.in-hand{
     margin-left: 240px;
+    width: 153px;
+}
+#visibleDraggable8.in-hand, #draggableHidden8.in-hand{
+    margin-left: 280px;
+    width: 153px;
+}
+#visibleDraggable9.in-hand, #draggableHidden9.in-hand{
+    margin-left: 320px;
+    width: 153px;
+}
+#visibleDraggable10.in-hand, #draggableHidden10.in-hand{
+    margin-left: 360px;
+    width: 153px;
+}
+#visibleDraggable11.in-hand, #draggableHidden11.in-hand{
+    margin-left: 400px;
+    width: 153px;
+}
+#visibleDraggable12.in-hand, #draggableHidden12.in-hand{
+    margin-left: 440px;
+    width: 153px;
+}
+#visibleDraggable13.in-hand, #draggableHidden13.in-hand{
+    margin-left: 480px;
+    width: 153px;
+}
+#visibleDraggable14.in-hand, #draggableHidden14.in-hand{
+    margin-left: 520px;
     width: 153px;
 }
 .draggable.in-pioche{
@@ -99,10 +149,16 @@ col.s6.containLeftBox{
  background-color: #ED1C24;
  font-family: 'Righteous';
 }
+
+.tour{
+    width: 150px;
+    margin-top: 20px;
+}
 #chat {
+    bottom: 70%;
     width: 300px;
     float: right;
-  }
+}
   
   #openChat {
     display : none;
@@ -110,25 +166,63 @@ col.s6.containLeftBox{
   
   .openChatBtn {
     position: fixed;
-    bottom: 50px;
+    top: 80%;
     right : 28px;
   }
   .closeChatBtn {
     display: none;
     position: fixed;
-    bottom: 40px;
+    top: 80%;
     right : 28px;
   }
   .inputChat{
     position: fixed;
-    top : -650px;
+    top : -650%;
     right : 20px;
   }
   
-  .positionMessageChat {
+  .positionMessageChat{
     height : 440px;
     overflow: auto;
     position: fixed;
     width : 300px;
-    top : -500px;
+    bottom : 500%;
   }
+  .notPlayable{
+    filter: brightness(50%)
+  }
+
+  .buttonColor{
+    width: 40%;
+    position:absolute;
+    top:420px;
+    left:45%;
+    border: none;
+  }
+  td{
+      border: none;
+  }
+  tr{
+      border:none;
+  }
+
+  .redButton{
+    background-color:red;
+    width: 80px;
+  }
+
+  .blue{
+    background-color:blue;
+    width: 80px;
+  }
+
+  .green{
+    background-color: green;
+    width: 80px;
+  }
+
+  .yellow{
+    background-color:yellow;
+    width: 80px;
+  }
+  

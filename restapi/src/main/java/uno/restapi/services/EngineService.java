@@ -30,11 +30,11 @@ public class EngineService {
             .target(IEngineClient.class, "http://localhost:7000");
 
 
-    public void newGame(Integer[] players) {
+    public void newGame(String[] players) {
         System.out.println("Service: " + players.length);
         String playersS = "";
-        for (Integer i : players) {
-            playersS += i.toString() + ',';
+        for (String i : players) {
+            playersS += i + ',';
         }
         iEngineClient.setNewGame(playersS);
     }

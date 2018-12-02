@@ -21,7 +21,7 @@ public class EngineController {
 
 
     @RequestMapping(value = "/newgame", method = RequestMethod.POST)
-    void newGame(Integer[] players) {
+    void newGame(String[] players) {
         System.out.println("Controller: " + players.length);
         engineService.newGame(players);
     }

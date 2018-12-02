@@ -7,11 +7,10 @@ import java.util.concurrent.atomic.AtomicReference;
 
 public class Player {
 
-    private Integer id;
-
+    private String id;
     private List<Card> hand;
 
-    public Player(Integer id, List<Card> hand) {
+    public Player(String id, List<Card> hand) {
         this.id = id;
         this.hand = hand;
     }

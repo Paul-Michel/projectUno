@@ -31,12 +31,12 @@ public class GameService {
     private Game myGame;
 
 
-    public void newGame(List<Integer> idPlayers) {
+    public void newGame(List<String> idPlayers) {
         this.myGame = new Game();
 
-//        myGame.deck = cardService.getAllCards();
+        myGame.deck = cardService.getAllCards();
 
-        this.deckCreate(); //Future recuperation des Cards dans la bdd
+        //this.deckCreate(); //Future recuperation des Cards dans la bdd
         Collections.shuffle(myGame.deck);
 
         idPlayers.forEach(id -> {
@@ -89,7 +89,6 @@ public class GameService {
         } else {
             Result.CanPlay = true;
         }
-
 
         Result.hand = myGame.players.get(playerIdx).getHand();
         return Result;
