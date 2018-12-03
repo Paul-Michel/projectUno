@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="ef97dd1d-008c-469c-80cb-0cceea4c77e0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
@@ -107,6 +108,27 @@
       <change beforePath="$PROJECT_DIR$/../../unoAuth/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../unoAuth/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
+=======
+    <list default="true" id="a5a03915-affc-411d-a249-325277f040c1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cardCore/out/production/classes/com/example/cardCore/configurations/DBstarter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/out/production/classes/com/example/cardCore/configurations/DBstarter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cardCore/out/production/classes/com/example/cardCore/controllers/CardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/out/production/classes/com/example/cardCore/controllers/CardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cardCore/out/production/classes/com/example/cardCore/entities/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/out/production/classes/com/example/cardCore/entities/Card.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyCore/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/.gradle/4.8.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyCore/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/services/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/services/GameService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../uno_react/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../uno_react/src/Accueil.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/Accueil.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../uno_react/src/Accueil.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/Accueil.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../uno_react/src/Settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/Settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../uno_react/src/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/footer.css" afterDir="false" />
+    </list>
+>>>>>>> Stashed changes
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -151,14 +173,37 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1447093904">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/UnoApplication.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="136">
               <caret line="9" selection-start-line="9" selection-end-line="9" />
+=======
+            <state relative-caret-position="221">
+              <caret line="14" selection-start-line="14" selection-end-line="16" selection-end-column="31" />
+>>>>>>> Stashed changes
               <folding>
                 <element signature="e#297#298#0" expanded="true" />
               </folding>
@@ -187,8 +232,43 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/client/IPlayerClient.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="160">
               <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+=======
+            <state relative-caret-position="153">
+              <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/services/PlayerService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="23" column="72" selection-start-line="23" selection-start-column="72" selection-end-line="23" selection-end-column="72" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+>>>>>>> Stashed changes
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/controllers/PlayerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="20" column="56" lean-forward="true" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -196,8 +276,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/controllers/PlayerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="20" column="56" lean-forward="true" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+            <state relative-caret-position="188">
+              <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/Uno/UnoApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/repositories/PlayerRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+>>>>>>> Stashed changes
               <folding>
                 <element signature="e#1063#1064#0" expanded="true" />
                 <element signature="e#1110#1111#0" expanded="true" />
@@ -207,6 +309,9 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -441,6 +546,10 @@
     </option>
     <option name="modificationStamps">
       <map>
+<<<<<<< Updated upstream
+=======
+        <entry key="$PROJECT_DIR$" value="6175383618242" />
+>>>>>>> Stashed changes
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="1875077379" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="1512434194" />
@@ -682,10 +791,23 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+<<<<<<< Updated upstream
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
+=======
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="948" />
+    <option name="width" value="981" />
+    <option name="height" value="1032" />
+>>>>>>> Stashed changes
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -709,6 +831,7 @@
               <item name="joueurCore" type="b2602c69:ProjectViewProjectNode" />
               <item name="joueurCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+<<<<<<< Updated upstream
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -755,10 +878,17 @@
             </path>
             <path>
               <item name="joueurCore" type="b2602c69:ProjectViewProjectNode" />
+=======
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Uno" type="b2602c69:ProjectViewProjectNode" />
+>>>>>>> Stashed changes
               <item name="joueurCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+<<<<<<< Updated upstream
               <item name="Uno" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -769,10 +899,41 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+=======
+            </path>
+            <path>
+              <item name="Uno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="joueurCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Uno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="joueurCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Uno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="joueurCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="Uno" type="462c0819:PsiDirectoryNode" />
+            </path>
+>>>>>>> Stashed changes
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
@@ -784,7 +945,12 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< Updated upstream
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543850711211" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543848689204" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../historyPlayerComposite" />
+>>>>>>> Stashed changes
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -802,7 +968,54 @@
       </list>
     </option>
   </component>
+<<<<<<< Updated upstream
   <component name="RunManager">
+=======
+  <component name="RunManager" selected="Application.UnoApplication">
+    <configuration name="UnoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.Uno.UnoApplication" />
+      <module name="Uno_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.Uno.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnoApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.example-Uno_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.Uno.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.Uno" />
+      <option name="MAIN_CLASS_NAME" value="com.example.Uno.UnoApplicationTests" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnoApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Uno_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.Uno.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.Uno" />
+      <option name="MAIN_CLASS_NAME" value="com.example.Uno.UnoApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+>>>>>>> Stashed changes
     <configuration name="UnoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Uno_main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.Uno.UnoApplication" />
@@ -810,6 +1023,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< Updated upstream
+=======
+    <list>
+      <item itemvalue="JUnit.UnoApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.UnoApplicationTests" />
+      <item itemvalue="Application.UnoApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.UnoApplication" />
+        <item itemvalue="JUnit.UnoApplicationTests" />
+        <item itemvalue="JUnit.UnoApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+>>>>>>> Stashed changes
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -825,13 +1053,28 @@
     </task>
     <servers />
   </component>
+<<<<<<< Updated upstream
+=======
+  <component name="TestHistory">
+    <history-entry file="UnoApplicationTests_contextLoads - 2018.11.12 at 17h 30m 06s.xml">
+      <configuration name="UnoApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UnoApplicationTests_contextLoads - 2018.11.13 at 09h 15m 56s.xml">
+      <configuration name="UnoApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UnoApplicationTests - 2018.12.03 at 15h 43m 25s.xml">
+      <configuration name="UnoApplicationTests" configurationId="JUnit" />
+    </history-entry>
+  </component>
+>>>>>>> Stashed changes
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="9291000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< Updated upstream
       <window_info id="Image Layers" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -847,6 +1090,23 @@
       <window_info anchor="bottom" id="Java Enterprise" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24453442" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4163701" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+>>>>>>> Stashed changes
       <window_info anchor="bottom" id="Build" order="7" weight="0.3295082" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" />
@@ -875,6 +1135,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/configurations/startDB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -893,6 +1154,11 @@
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.1.2.RELEASE/2b7030ac124a46f162cd273a00dbbeff030de202/spring-data-commons-2.1.2.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
+=======
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/java/lang/Object.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/configurations/startDB.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/exceptions/PlayerNotFoundException.java">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
@@ -909,16 +1175,29 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/UnoApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#297#298#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/configurations/SpringMongoConfig.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/entities/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" selection-start-line="14" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#873#874#0" expanded="true" />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/repositories/PlayerRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -930,13 +1209,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/configurations/dbConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/controllers/PlayerController.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="143">
           <caret line="20" column="56" lean-forward="true" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+=======
+        <state relative-caret-position="153">
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+>>>>>>> Stashed changes
           <folding>
             <element signature="e#1063#1064#0" expanded="true" />
             <element signature="e#1110#1111#0" expanded="true" />
@@ -946,15 +1246,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/client/IPlayerClient.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="160">
           <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+=======
+        <state relative-caret-position="255">
+          <caret line="23" column="72" selection-start-line="23" selection-start-column="72" selection-end-line="23" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/entities/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="170">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+=======
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/repositories/PlayerRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/controllers/PlayerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> Stashed changes
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/Uno/UnoApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
         </state>
       </provider>
     </entry>

@@ -12,7 +12,7 @@ class Settings extends Component {
     }
  
     async componentDidMount() {
-        const response1 = await fetch('http://localhost:8002/playedgames')
+        const response1 = await fetch('http://localhost:5002/playedgames')
         const games = await response1.json();
         this.setState({ games })
         const response2 = await fetch('http://localhost:5001/players')
@@ -72,22 +72,26 @@ class Settings extends Component {
     }
  
     histoPseudo = () => {
-        const history = document.getElementById('history')
+        const listeGame = document.getElementById('listeGame')
+        while (listeGame.firstChild) {
+            console.log('ok')
+            listeGame.removeChild(listeGame.firstChild);
+        }
         const histoPseudo = document.getElementById('histoPseudo').value
         const h1 = document.createElement('h1')
-        history.appendChild(h1)
+        listeGame.appendChild(h1)
         h1.innerHTML = histoPseudo
         h1.style.textAlign = "center"
         const ulHisto = document.createElement('ul')
-        history.appendChild(ulHisto)
+        listeGame.appendChild(ulHisto)
        
         this.state.games.forEach(game => {
             const descGame = document.createElement('div')
-            history.appendChild(descGame)
+            listeGame.appendChild(descGame)
             const heurePlayed = game.datePlayed.slice(14, 19)
-            descGame.innerHTML = " Game du " + game.datePlayed.slice(0, 10) + " à " + heurePlayed
+            listeGame.innerHTML = " Game du " + game.datePlayed.slice(0, 10) + " à " + heurePlayed
             const seeDescGame = document.createElement('a')
-            history.appendChild(seeDescGame)
+            listeGame.appendChild(seeDescGame)
             seeDescGame.innerHTML = " See more .."
             seeDescGame.onclick = this.toggleHiddenOnGame
             if(histoPseudo === game.firstWinner || histoPseudo === game.secondWinner || histoPseudo === game.thirdWinner || histoPseudo === game.fourthWinner){

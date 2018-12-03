@@ -35,13 +35,13 @@ public class GameService {
     public void newGame(List<String> idPlayers) {
         this.myGame = new Game();
 
-        //myGame.deck = cardService.getAllCards();
+        myGame.deck = cardService.getAllCards();
 
-        this.deckCreate(); //Future recuperation des Cards dans la bdd
+        //this.deckCreate(); //Future recuperation des Cards dans la bdd
         Collections.shuffle(myGame.deck);
 
         idPlayers.forEach(id -> {
-            List<Card> hand = new ArrayList<>(pickCard(1));
+            List<Card> hand = new ArrayList<>(pickCard(7));
             myGame.players.add(new Player(id, hand));
         });
         int i = 1;

@@ -155,8 +155,10 @@ col.s6.containLeftBox{
     margin-top: 20px;
 }
 #chat {
-    bottom: 70%;
-    width: 300px;
+    position: fixed;
+    top : 82%;
+    right : 28px;
+    width: 200px;
     float: right;
 }
   
@@ -172,12 +174,12 @@ col.s6.containLeftBox{
   .closeChatBtn {
     display: none;
     position: fixed;
-    top: 80%;
+    top: 95%;
     right : 28px;
   }
   .inputChat{
     position: fixed;
-    top : -650%;
+    top : -600%;
     right : 20px;
   }
   

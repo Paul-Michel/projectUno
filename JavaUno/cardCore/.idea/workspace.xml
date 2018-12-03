@@ -2,92 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c4040eb-b159-4596-8f17-53540e68c150" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/entities/CardPlayed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/EngineApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/EngineApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/Entities/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/entities/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/Entities/CardPlayed.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/Entities/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/entities/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/controllers/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/entities/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/enums/Value.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/enums/Value.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/cardCore/configurations/DBstarter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/cardCore/configurations/DBstarter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/cardCore/controllers/CardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/cardCore/controllers/CardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/cardCore/entities/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/cardCore/entities/Card.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyCore/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/.gradle/4.8.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyCore/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../joueurCore/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../joueurCore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../joueurCore/out/production/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/services/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/services/GameService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../engine/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../engine/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../nodeServer/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../nodeServer/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../restapi/src/main/java/uno/restapi/controllers/EngineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../restapi/src/main/java/uno/restapi/controllers/EngineController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../restapi/src/main/java/uno/restapi/enums/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../restapi/src/main/java/uno/restapi/enums/Color.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../restapi/src/main/java/uno/restapi/enums/Value.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../restapi/src/main/java/uno/restapi/enums/Value.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../restapi/src/main/java/uno/restapi/models/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../restapi/src/main/java/uno/restapi/models/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../restapi/src/main/java/uno/restapi/models/CardPlayed.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../restapi/src/main/java/uno/restapi/models/CardPlayed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../restapi/src/main/java/uno/restapi/services/EngineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../restapi/src/main/java/uno/restapi/services/EngineService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../restapi/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../restapi/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/css/inGame.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/css/inGame.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/inGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/inGame.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/back.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/back.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/black_colorchange.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/black_colorchange.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/black_fourmore.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/black_fourmore.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_colorchange.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_dirchange.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_dirchange.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_eight.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_eight.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_five.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_five.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_forbidden.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_forbidden.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_four.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_four.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_fourmore.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_nine.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_nine.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_one.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_one.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_seven.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_seven.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_six.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_six.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_three.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_three.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_two.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_two.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_twomore.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_twomore.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_zero.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/blue_zero.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_colorchange.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_dirchange.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_dirchange.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_eight.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_eight.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_five.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_five.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_forbidden.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_forbidden.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_four.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_four.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_fourmore.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_nine.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_nine.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_one.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_one.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_seven.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_seven.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_six.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_six.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_three.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_three.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_two.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_two.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_twomore.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_twomore.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_zero.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/green_zero.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_colorchange.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_dirchange.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_dirchange.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_eight.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_eight.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_five.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_five.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_forbidden.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_forbidden.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_four.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_four.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_fourmore.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_nine.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_nine.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_one.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_one.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_seven.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_seven.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_six.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_six.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_three.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_three.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_two.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_two.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_twomore.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_twomore.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_zero.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/red_zero.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow__dirchange.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow__dirchange.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_colorchange.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_eight.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_eight.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_five.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_five.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_forbidden.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_forbidden.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_four.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_four.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_fourmore.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_nine.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_nine.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_one.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_one.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_seven.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_seven.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_six.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_six.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_three.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_three.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_two.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_two.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_twomore.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_twomore.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_zero.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/ressources/cards/yellow_zero.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../uno_react/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../uno_react/src/Accueil.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/Accueil.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../uno_react/src/Accueil.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/Accueil.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../uno_react/src/Settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/Settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../uno_react/src/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/footer.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -120,12 +51,22 @@
       </state>
     </system>
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="386020685">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cardCore/entities/Card.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="238">
               <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
               <folding>
                 <element signature="e#889#890#0" expanded="true" />
@@ -135,10 +76,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cardCore/CardCoreApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state relative-caret-position="85">
               <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
@@ -147,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+            <state relative-caret-position="34">
+              <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -156,16 +97,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cardCore/repositories/CardRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
+            <state relative-caret-position="51">
               <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/cardCore/CardCoreApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
+            <state relative-caret-position="102">
               <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
@@ -174,7 +115,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
+            <state relative-caret-position="493">
               <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
             </state>
           </provider>
@@ -183,7 +124,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cardCore/controllers/CardController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="289">
               <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -195,7 +136,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cardCore/configurations/DBstarter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
+            <state relative-caret-position="102">
               <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
@@ -205,6 +146,17 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="6175383615489" />
+        <entry key="$PROJECT_DIR$/.gradle" value="0" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="1124744512" />
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="1613248354" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="2252332597" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -217,11 +169,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="480" />
-    <option name="y" value="170" />
-    <option name="width" value="971" />
-    <option name="height" value="1039" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="948" />
+    <option name="width" value="981" />
+    <option name="height" value="1032" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -229,6 +180,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -252,6 +205,40 @@
               <item name="cardCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="cardCore" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -267,31 +254,21 @@
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="cardCore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cardCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cardCore" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543746992138" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543848674254" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -333,7 +310,6 @@
     </configuration>
     <list>
       <item itemvalue="Application.CardCoreApplication" />
-      <item itemvalue="Spring Boot.CardCoreApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -360,10 +336,10 @@
     <option name="totallyTimeSpent" value="1236000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="480" y="170" width="971" height="1039" extended-state="0" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4454054" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22024292" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -371,10 +347,9 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3337029" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33274022" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -387,27 +362,31 @@
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
-      <window_info anchor="right" id="Maven" />
+      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Gradle" order="5" visible="true" weight="0.5535135" />
+      <window_info anchor="right" id="Gradle" order="5" visible="true" weight="0.2631579" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info anchor="right" id="Database" order="9" />
       <window_info anchor="right" id="Bean Validation" order="10" />
+      <window_info anchor="right" id="Maven" order="11" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cardCore/entities/Card.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="238">
           <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
           <folding>
             <element signature="e#889#890#0" expanded="true" />
@@ -416,23 +395,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cardCore/CardCoreApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="34">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cardCore/repositories/CardRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
+        <state relative-caret-position="493">
           <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cardCore/controllers/CardController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="289">
           <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -442,29 +428,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cardCore/configurations/DBstarter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="102">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cardCore/repositories/CardRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/cardCore/CardCoreApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="102">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cardCore/CardCoreApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
