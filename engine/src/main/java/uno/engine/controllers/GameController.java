@@ -2,16 +2,13 @@ package uno.engine.controllers;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import uno.engine.entities.CardPlayed;
 import uno.engine.services.GameService;
 import uno.engine.structs.Result;
 
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 @RestController

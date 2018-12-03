@@ -123,7 +123,6 @@ public class GameService {
                 break;
         }
 
-
         Card c = myGame.players.get(playerIdx).getHand()
                 .stream()
                 .filter(card -> card.getId().equals(Card.getId()))

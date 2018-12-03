@@ -27,12 +27,12 @@ public class CardService {
             .logLevel(Logger.Level.FULL)
             .target(ICardClient.class, "http://localhost:5000/cards");
 
-    public ResponseEntity<Object> getOneCard(Long id){
+    public ResponseEntity<Object> getOneCard(Long id) {
         Object obj = iCardClient.getOne(id);
         return new ResponseEntity<Object>(obj, HttpStatus.OK);
     }
 
-    public List<Card> getAllCards(){
+    public List<Card> getAllCards() {
         List<Card> cards = iCardClient.getAll();
         return cards;
     }

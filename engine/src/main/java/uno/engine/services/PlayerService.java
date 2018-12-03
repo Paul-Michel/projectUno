@@ -14,7 +14,7 @@ class PlayerService {
     Boolean setAvailableCard(Card currentCard, Player player) {
         AtomicReference<Boolean> minOneAvailable = new AtomicReference<>(false);
         player.getHand().forEach(card -> {
-            if ((card.getValue() == Value.FOURMORE ||card.getValue() == Value.COLORCHANGE)
+            if ((card.getValue() == Value.FOURMORE || card.getValue() == Value.COLORCHANGE)
                     || card.getColor() == currentCard.getColor()
                     || card.getValue() == currentCard.getValue()) {
                 card.setPlayable(true);

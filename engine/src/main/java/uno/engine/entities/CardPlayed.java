@@ -10,7 +10,7 @@ public class CardPlayed {
     Integer playerIdx;
     Card card;
 
-    public CardPlayed(Integer playerIdx, Card card){
+    CardPlayed(Integer playerIdx, Card card) {
         this.playerIdx = playerIdx;
         this.card = card;
     }
