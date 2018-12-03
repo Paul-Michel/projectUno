@@ -20,10 +20,7 @@ public class PlayedGameController {
     List<PlayedGame> getAll(){return playedGameRepository.findAll();}
 
     @RequestMapping(value = "/playedgames", method = RequestMethod.POST, consumes = {"application/json"})
-    PlayedGame createPlayedGame (@RequestBody List<Long> winnersId){
-        for(Long winner : winnersId){
-            System.out.println(winner);
-        }
+    PlayedGame createPlayedGame (@RequestBody List<String> winnersId){
         PlayedGame newPlayedGame = new PlayedGame(winnersId.get(0), winnersId.get(1), winnersId.get(2), winnersId.get(3));
         return playedGameRepository.save(newPlayedGame);
     }

@@ -61,7 +61,7 @@ class Accueil extends Component {
 
 
     newGame(){
-        this.state.socket.emit('create', 2, this.props.match.params.id, this.props.match.params.pseudo)
+        this.state.socket.emit('create', 3, this.props.match.params.id, this.props.match.params.pseudo)
         this.state.socket.on('message', function(response){
             if(response.res === true){
                 console.log("ok")

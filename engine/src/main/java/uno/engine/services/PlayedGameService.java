@@ -25,18 +25,19 @@ public class PlayedGameService {
             .logger(new Slf4jLogger(String.class))
             .logLevel(Logger.Level.FULL)
             .target(IPlayedGame.class, "http://localhost:5002/playedgames");
-    private List<Long> playersIdList = new ArrayList<>();
+    private List<String> playersIdList = new ArrayList<>();
     private Integer i = 0;
 
     public PlayedGameService() {
         for (int i = 0; i < 4; i++) {
-            playersIdList.add(-1L);
+            playersIdList.add(" ");
         }
     }
 
 
     public void updateplayedGame(String playerId) {
-        playersIdList.set(this.i, Long.parseLong(playerId));
+        System.out.println(playerId);
+        playersIdList.set(this.i, playerId);
         i++;
     }
 

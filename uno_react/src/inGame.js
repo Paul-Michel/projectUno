@@ -13,7 +13,8 @@ class Test extends Component {
     state = {
         images: null,
         turn: null,
-        skipTurn: { bool: false, turn: null }
+        skipTurn: { bool: false, turn: null },
+        cardInfo: null
     }
 
     importAllImages(r) {
@@ -87,7 +88,6 @@ class Test extends Component {
     }
 
     skipTurn = () => {
-        console.log(this.state.skipTurn.turn, this.state.skipTurn.bool)
         if(this.state.skipTurn.bool === true){
             this.props.location.socket.socket.emit('newTurn', this.state.skipTurn.turn)
             var myNode = document.getElementById("draggableContent");
@@ -109,13 +109,36 @@ class Test extends Component {
     
     effect(id){
         let cardInfo = document.getElementById(id).firstChild.firstChild.alt;
+        let cardColor = cardInfo.split(' ')[1]
+        console.log(1)
+        if(cardColor == 'BLACK'){
+            console.log(2)
+            this.setState(() =>({ cardInfo }))
+            this.blackCard()
+        }else{
+            this.props.location.socket.socket.emit('effect', cardInfo, this.state.turn)
+            const myNode = document.getElementById("draggableContent");
+            while (myNode.firstChild) {
+                myNode.removeChild(myNode.firstChild);
+            }
+        } 
+    }
+
+    blackEffect(color){
+        let cardInfo = this.state.cardInfo.split(' ')
+        cardInfo[1] = color
+        cardInfo = cardInfo.join(' ')
         this.props.location.socket.socket.emit('effect', cardInfo, this.state.turn)
-        var myNode = document.getElementById("draggableContent");
+        const myNode = document.getElementById("draggableContent");
+        const table = document.getElementById('tableColor')
         while (myNode.firstChild) {
             myNode.removeChild(myNode.firstChild);
         }
+        while(table.firstChild){
+            table.removeChild(table.firstChild)
+        }
+        document.body.removeChild(table)
     }
-
     createHand = (info) => {
 
         const hand = document.getElementById('hand')
@@ -166,7 +189,6 @@ class Test extends Component {
             visibleImg.setAttribute('alt', element.id + " " + element.color + " " + element.value)
             visibleImg.draggable = false
             visibleFace.appendChild(visibleImg)
-            console.log("ok")
         });
             
         
@@ -176,15 +198,19 @@ class Test extends Component {
         const table = document.createElement('table')
         const tr = document.createElement('tr')
         const tr2 = document.createElement('tr')
+        const tr3 = document.createElement('tr')
         const tdRed = document.createElement('td')
         const tdBlue = document.createElement('td')
         const tdYellow = document.createElement('td')
         const tdGreen = document.createElement('td')
 
+        table.id = 'tableColor'
+
         tdRed.innerHTML = "RED"
         tdBlue.innerHTML = "BLUE"
         tdGreen.innerHTML = "GREEN"
         tdYellow.innerHTML = "YELLOW"
+        tr3.innerHTML = 'Pick a color !'
 
         table.classList.add('buttonColor')
         tdRed.classList.add('waves-effect', 'waves-light', 'btn-small', 'redButton', 'colorBody')
@@ -192,17 +218,23 @@ class Test extends Component {
         tdYellow.classList.add('waves-effect', 'waves-light', 'btn-small', 'yellow', 'colorBody')
         tdGreen.classList.add('waves-effect', 'waves-light', 'btn-small', 'green', 'colorBody')
 
+        tdRed.addEventListener('click', () => this.blackEffect('RED'))
+        tdBlue.addEventListener('click', () => this.blackEffect('BLUE'))
+        tdYellow.addEventListener('click', () => this.blackEffect('YELLOW'))
+        tdGreen.addEventListener('click', () => this.blackEffect('GREEN'))
+
+
         tr.appendChild(tdRed)
         tr.appendChild(tdYellow)
         tr2.appendChild(tdBlue)
         tr2.appendChild(tdGreen)
+        table.appendChild(tr3)
         table.appendChild(tr)
         table.appendChild(tr2)
         document.body.appendChild(table)
     }
 
     async componentDidMount() {
-        this.blackCard()
         await this.importAllImages(require.context('./ressources/cards', false, /\.(png|jpe?g|svg)$/))
 
         this.props.location.socket.socket.on('chat', (message,author) => {

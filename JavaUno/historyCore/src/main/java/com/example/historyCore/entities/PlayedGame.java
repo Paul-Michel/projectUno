@@ -14,12 +14,12 @@ public class PlayedGame {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "PRIVATE_SEQ_PLAYEDGAME")
     private Long id;
     private Date datePlayed;
-    private Long firstWinnerId;
-    private Long secondWinnerId;
-    private Long thirdWinnerId;
-    private Long fourthWinnerId;
+    private String firstWinnerId;
+    private String secondWinnerId;
+    private String thirdWinnerId;
+    private String fourthWinnerId;
 
-    public PlayedGame(Long firstWinnerId, Long secondWinnerId, Long thirdWinnerId, Long fourthWinnerId) {
+    public PlayedGame(String firstWinnerId, String secondWinnerId, String thirdWinnerId, String fourthWinnerId) {
         this.datePlayed = new Date();
         this.firstWinnerId = firstWinnerId;
         this.secondWinnerId = secondWinnerId;
@@ -45,35 +45,35 @@ public class PlayedGame {
         this.datePlayed = datePlayed;
     }
 
-    public Long getFirstWinnerId() {
+    public String getFirstWinnerId() {
         return firstWinnerId;
     }
 
-    public void setFirstWinnerId(Long firstWinnerId) {
+    public void setFirstWinnerId(String firstWinnerId) {
         this.firstWinnerId = firstWinnerId;
     }
 
-    public Long getSecondWinnerId() {
+    public String getSecondWinnerId() {
         return secondWinnerId;
     }
 
-    public void setSecondWinnerId(Long secondWinnerId) {
+    public void setSecondWinnerId(String secondWinnerId) {
         this.secondWinnerId = secondWinnerId;
     }
 
-    public Long getThirdWinnerId() {
+    public String getThirdWinnerId() {
         return thirdWinnerId;
     }
 
-    public void setThirdWinnerId(Long thirdWinnerId) {
+    public void setThirdWinnerId(String thirdWinnerId) {
         this.thirdWinnerId = thirdWinnerId;
     }
 
-    public Long getFourthWinnerId() {
+    public String getFourthWinnerId() {
         return fourthWinnerId;
     }
 
-    public void setFourthWinnerId(Long fourthWinnerId) {
+    public void setFourthWinnerId(String fourthWinnerId) {
         this.fourthWinnerId = fourthWinnerId;
     }
 }

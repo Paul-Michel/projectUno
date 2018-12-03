@@ -18,10 +18,6 @@ public class initDB {
     @Bean
     CommandLineRunner initialize(PlayedGameRepository playedGameRepository){
         return args -> {
-            playedGameRepository.save(new PlayedGame(1L, 4L, 3L, 2L));
-            playedGameRepository.save(new PlayedGame(3L, 4L, 1L, 2L));
-            playedGameRepository.save(new PlayedGame(4L, 1L, 3L, 2L));
-            playedGameRepository.save(new PlayedGame(1L, 4L, 3L, 2L));
 
         };
     }

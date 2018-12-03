@@ -121,7 +121,7 @@ function newTurn(postData, sockets){
             else
                 s.socket.emit('chat', s.pseudo + ' playing...', 'server')
         })
-        return response.body;
+        return response.body
     });
 }
 
@@ -146,6 +146,16 @@ function effect(postData, sockets, turn){
 
     request(clientServerOptions, function (error, response) {
         console.log('effect : ', response.body)
+        if(JSON.parse(response.body.playerEnd !== null)){
+            sockets.forEach(s => {
+                s.socket.emit('chat', sockets[response.body.playerEnd] + 'has finished')
+            })
+        }
+        if(JSON.parse(response.body.gameEnd === true)){
+            sockets.forEach(s => {
+                s.socket.emit('chat', 'The game is finished !')
+            })
+        }
         sockets.forEach(s => {
             s.socket.emit('update', response.body)
             if(sockets.indexOf(s) == turn)

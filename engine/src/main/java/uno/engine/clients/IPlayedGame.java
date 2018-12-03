@@ -15,5 +15,5 @@ public interface IPlayedGame {
 
     @RequestLine("POST /")
     @Headers("Content-Type: application/json")
-    void setPlayedGame(@RequestBody List<Long> WinnersId);
+    void setPlayedGame(@RequestBody List<String> WinnersId);
 }
