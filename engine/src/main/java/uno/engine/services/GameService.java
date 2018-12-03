@@ -28,6 +28,7 @@ public class GameService {
     @Autowired
     private CardService cardService;
     private PlayerService playerService = new PlayerService();
+    private PlayedGameService playedGameService = new PlayedGameService();
     private Game myGame;
 
 
@@ -40,7 +41,7 @@ public class GameService {
         Collections.shuffle(myGame.deck);
 
         idPlayers.forEach(id -> {
-            List<Card> hand = new ArrayList<>(pickCard(7));
+            List<Card> hand = new ArrayList<>(pickCard(1));
             myGame.players.add(new Player(id, hand));
         });
         int i = 1;
@@ -109,7 +110,6 @@ public class GameService {
         myGame.stack.add(Card);
         switch (Card.getValue()) {
             case FORBIDDEN:
-                Card.setColor(Color.BLACK);
                 forbiddenPlayer = true;
                 break;
             case TWOMORE:
@@ -135,12 +135,14 @@ public class GameService {
         Result.currentCard = Card;
 
         if (myGame.players.get(playerIdx).getHand().size() <= 0) {
+            Result.playerEnd = playerIdx;
+            playedGameService.updateplayedGame(myGame.players.get(playerIdx).getId());
             myGame.players.remove(myGame.players.get(playerIdx));
-            //System.out.println("remove playeur");
             Result.gameEnd = false;
             if (myGame.players.size() == 1) {
                 Result.gameEnd = true;
-                //System.out.println("Game end !!!");
+                playedGameService.updateplayedGame(myGame.players.get(0).getId());
+                playedGameService.sendPlayedGame();
             }
         } else {
             Result.gameEnd = false;
@@ -190,45 +192,5 @@ public class GameService {
             myGame.deck.remove(myGame.deck.size() - 1);
         }
         return cards;
-    }
-
-    private void deckCreate() {
-        myGame.deck.add(new Card(Value.ONE, Color.BLUE, 1));
-        myGame.deck.add(new Card(Value.TWO, Color.BLUE, 2));
-        myGame.deck.add(new Card(Value.THREE, Color.BLUE, 3));
-        myGame.deck.add(new Card(Value.FOUR, Color.BLUE, 4));
-        myGame.deck.add(new Card(Value.FIVE, Color.BLUE, 5));
-        myGame.deck.add(new Card(Value.SIX, Color.BLUE, 6));
-        myGame.deck.add(new Card(Value.SEVEN, Color.BLUE, 7));
-        myGame.deck.add(new Card(Value.EIGHT, Color.BLUE, 8));
-        myGame.deck.add(new Card(Value.NINE, Color.BLUE, 9));
-        myGame.deck.add(new Card(Value.ZERO, Color.BLUE, 10));
-
-        myGame.deck.add(new Card(Value.ONE, Color.RED, 11));
-        myGame.deck.add(new Card(Value.TWO, Color.RED, 12));
-        myGame.deck.add(new Card(Value.THREE, Color.RED, 13));
-        myGame.deck.add(new Card(Value.FOUR, Color.RED, 14));
-        myGame.deck.add(new Card(Value.FIVE, Color.RED, 15));
-        myGame.deck.add(new Card(Value.SIX, Color.RED, 16));
-        myGame.deck.add(new Card(Value.SEVEN, Color.RED, 17));
-        myGame.deck.add(new Card(Value.EIGHT, Color.RED, 18));
-        myGame.deck.add(new Card(Value.NINE, Color.RED, 19));
-        myGame.deck.add(new Card(Value.ZERO, Color.RED, 20));
-
-        myGame.deck.add(new Card(Value.DIRCHANGE, Color.BLUE, 21));
-        myGame.deck.add(new Card(Value.DIRCHANGE, Color.BLUE, 22));
-        myGame.deck.add(new Card(Value.DIRCHANGE, Color.RED, 23));
-        myGame.deck.add(new Card(Value.DIRCHANGE, Color.RED, 24));
-
-        myGame.deck.add(new Card(Value.FORBIDDEN, Color.BLUE, 25));
-        myGame.deck.add(new Card(Value.FORBIDDEN, Color.BLUE, 26));
-        myGame.deck.add(new Card(Value.FORBIDDEN, Color.RED, 27));
-        myGame.deck.add(new Card(Value.FORBIDDEN, Color.RED, 28));
-
-        myGame.deck.add(new Card(Value.TWOMORE, Color.BLUE, 29));
-        myGame.deck.add(new Card(Value.TWOMORE, Color.BLUE, 30));
-        myGame.deck.add(new Card(Value.TWOMORE, Color.RED, 31));
-        myGame.deck.add(new Card(Value.TWOMORE, Color.RED, 32));
-
     }
 }

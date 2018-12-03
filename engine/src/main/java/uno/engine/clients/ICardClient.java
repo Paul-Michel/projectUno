@@ -12,9 +12,6 @@ import java.util.List;
 @FeignClient("CardClient")
 public interface ICardClient {
 
-    @RequestLine("GET /{id}")
-    Object getOne(@Param("id") Long id);
-
     @RequestLine("GET /")
     List<Card> getAll();
 }

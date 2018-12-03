@@ -1,9 +1,7 @@
 package uno.engine.entities;
 
-import uno.engine.enums.Color;
-
 import java.util.List;
-import java.util.concurrent.atomic.AtomicReference;
+
 
 public class Player {
 
@@ -21,6 +19,10 @@ public class Player {
 
     public void setHand(List<Card> hand) {
         this.hand = hand;
+    }
+
+    public String getId() {
+        return id;
     }
 
 }

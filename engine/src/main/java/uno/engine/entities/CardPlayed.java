@@ -1,10 +1,6 @@
 package uno.engine.entities;
 
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
-@AllArgsConstructor
 public class CardPlayed {
 
     Integer playerIdx;
@@ -14,7 +10,8 @@ public class CardPlayed {
         this.playerIdx = playerIdx;
         this.card = card;
     }
-    public CardPlayed(){
+
+    public CardPlayed() {
 
     }
 

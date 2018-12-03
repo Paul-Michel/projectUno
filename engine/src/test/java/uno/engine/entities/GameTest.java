@@ -18,10 +18,10 @@ public class GameTest {
 
     @Test
     public void the_game_should_be_correctly_initialized() {
-        List<Integer> players = new ArrayList<>();
-        players.add(111);
-        players.add(222);
-        players.add(333);
+        List<String> players = new ArrayList<>();
+        players.add("111");
+        players.add("222");
+        players.add("333");
 
         GameService myGame = new GameService();
         myGame.newGame(players);
@@ -36,10 +36,10 @@ public class GameTest {
 
     @Test
     public void player_should_pick_a_card() {
-        List<Integer> players = new ArrayList<>();
-        players.add(111);
-        players.add(222);
-        players.add(333);
+        List<String> players = new ArrayList<>();
+        players.add("111");
+        players.add("222");
+        players.add("333");
 
         GameService myGame = new GameService();
         myGame.newGame(players);
@@ -72,10 +72,10 @@ public class GameTest {
 
     @Test
     public void the_current_card_Should_change() {
-        List<Integer> players = new ArrayList<>();
-        players.add(111);
-        players.add(222);
-        players.add(333);
+        List<String> players = new ArrayList<>();
+        players.add("111");
+        players.add("222");
+        players.add("333");
 
         GameService myGame = new GameService();
         myGame.newGame(players);
@@ -92,10 +92,10 @@ public class GameTest {
 
     @Test
     public void the_turn_direction_should_change() {
-        List<Integer> players = new ArrayList<>();
-        players.add(111);
-        players.add(222);
-        players.add(333);
+        List<String> players = new ArrayList<>();
+        players.add("111");
+        players.add("222");
+        players.add("333");
 
         GameService myGame = new GameService();
         myGame.newGame(players);
@@ -111,10 +111,10 @@ public class GameTest {
 
     @Test
     public void the_next_player_should_pass_turn() {
-        List<Integer> players = new ArrayList<>();
-        players.add(111);
-        players.add(222);
-        players.add(333);
+        List<String> players = new ArrayList<>();
+        players.add("111");
+        players.add("222");
+        players.add("333");
 
         GameService myGame = new GameService();
         myGame.newGame(players);
@@ -130,10 +130,10 @@ public class GameTest {
 
     @Test
     public void the_third_player_should_pick_six_card() {
-        List<Integer> players = new ArrayList<>();
-        players.add(111);
-        players.add(222);
-        players.add(333);
+        List<String> players = new ArrayList<>();
+        players.add("111");
+        players.add("222");
+        players.add("333");
 
         GameService myGame = new GameService();
         myGame.newGame(players);
@@ -169,9 +169,10 @@ public class GameTest {
 
     @Test
     public void the_end_game_should_be_detected() {
-        List<Integer> players = new ArrayList<>();
-        players.add(111);
-        players.add(222);
+        List<String> players = new ArrayList<>();
+        players.add("111");
+        players.add("222");
+
 
         GameService myGame = new GameService();
         myGame.newGame(players);
@@ -194,9 +195,10 @@ public class GameTest {
 
     @Test
     public void the_current_color_should_change() {
-        List<Integer> players = new ArrayList<>();
-        players.add(111);
-        players.add(222);
+        List<String> players = new ArrayList<>();
+        players.add("111");
+        players.add("222");
+
 
         GameService myGame = new GameService();
         myGame.newGame(players);

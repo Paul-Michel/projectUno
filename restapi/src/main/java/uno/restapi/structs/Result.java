@@ -11,6 +11,7 @@ public class Result {
     public Boolean CanPlay;
     public Boolean CanRePlay;
     public Integer nextPlayer;
+    public Integer playerEnd;
     public Card currentCard;
     public List<Card> hand;
 }

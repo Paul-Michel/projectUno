@@ -8,8 +8,6 @@ import uno.restapi.enums.Value;
 
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class Card {
 
     private Long id;

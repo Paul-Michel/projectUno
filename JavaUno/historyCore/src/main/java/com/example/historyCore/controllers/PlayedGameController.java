@@ -19,8 +19,14 @@ public class PlayedGameController {
     @RequestMapping(value = "/playedgames", method = RequestMethod.GET)
     List<PlayedGame> getAll(){return playedGameRepository.findAll();}
 
-    @RequestMapping(value = "/playedgames", method = RequestMethod.POST)
-    PlayedGame newPlayedGame (@RequestBody PlayedGame newPlayedGame){return playedGameRepository.save(newPlayedGame);}
+    @RequestMapping(value = "/playedgames", method = RequestMethod.POST, consumes = {"application/json"})
+    PlayedGame createPlayedGame (@RequestBody List<Long> winnersId){
+        for(Long winner : winnersId){
+            System.out.println(winner);
+        }
+        PlayedGame newPlayedGame = new PlayedGame(winnersId.get(0), winnersId.get(1), winnersId.get(2), winnersId.get(3));
+        return playedGameRepository.save(newPlayedGame);
+    }
 
     @RequestMapping(value = "/playedgames/{id}", method = RequestMethod.GET)
     PlayedGame getOne(@PathVariable Long id){

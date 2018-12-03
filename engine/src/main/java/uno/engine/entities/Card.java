@@ -1,13 +1,11 @@
 package uno.engine.entities;
 
-import lombok.AllArgsConstructor;
+
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import uno.engine.enums.Color;
 import uno.engine.enums.Value;
 
 @Data
-@NoArgsConstructor
 public class Card {
 
     private Integer id;
@@ -23,7 +21,7 @@ public class Card {
         this.playable = false;
     }
 
-    public Card(){
+    public Card() {
 
     }
 
