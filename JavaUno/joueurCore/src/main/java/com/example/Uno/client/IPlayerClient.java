@@ -6,11 +6,16 @@ import feign.RequestLine;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 @FeignClient("PlayerClient")
 public interface IPlayerClient {
 
+    @RequestLine("GET /")
+    List<Player> getAll();
+
     @RequestLine("GET /{id}")
-    Player getOneById(@Param("id") Long id);
+    List<Player> getOneById(@Param("id") String id);
 
 }
