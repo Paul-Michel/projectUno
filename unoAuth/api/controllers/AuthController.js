@@ -17,7 +17,7 @@ module.exports = {
   },
   logout: function(req, res) {
       req.logout();
-      res.redirect('/');
+      res.redirect('http://localhost:3000/accueil/' + user.id + '/' + user.username);
   },
   register: function(req, res){
     data = {
@@ -34,7 +34,7 @@ module.exports = {
         req.login(user, function(err){
             if (err) return res.negotiate(err);
             sails.log('User '+ user.id +' has logged in.');
-            return res.redirect('/');
+            return res.redirect('http://localhost:3000/accueil/' + user.id + '/' + user.username);
         })
     })
 
