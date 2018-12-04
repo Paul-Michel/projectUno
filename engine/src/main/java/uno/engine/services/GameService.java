@@ -28,16 +28,16 @@ public class GameService {
     @Autowired
     private CardService cardService;
     private PlayerService playerService = new PlayerService();
-    private PlayedGameService playedGameService = new PlayedGameService();
+    private PlayedGameService playedGameService;
     private Game myGame;
 
 
     public void newGame(List<String> idPlayers) {
         this.myGame = new Game();
+        playedGameService = new PlayedGameService();
+//        myGame.deck = cardService.getAllCards();
 
-        myGame.deck = cardService.getAllCards();
-
-        //this.deckCreate(); //Future recuperation des Cards dans la bdd
+        this.deckCreate(); //Future recuperation des Cards dans la bdd
         Collections.shuffle(myGame.deck);
 
         idPlayers.forEach(id -> {
@@ -138,7 +138,6 @@ public class GameService {
             Result.playerEnd = playerIdx;
             playedGameService.updateplayedGame(myGame.players.get(playerIdx).getId());
             myGame.players.remove(myGame.players.get(playerIdx));
-            Result.gameEnd = false;
             if (myGame.players.size() == 1) {
                 Result.gameEnd = true;
                 playedGameService.updateplayedGame(myGame.players.get(0).getId());
