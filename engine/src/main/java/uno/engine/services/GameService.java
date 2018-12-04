@@ -41,7 +41,7 @@ public class GameService {
         Collections.shuffle(myGame.deck);
 
         idPlayers.forEach(id -> {
-            List<Card> hand = new ArrayList<>(pickCard(7));
+        List<Card> hand = new ArrayList<>(pickCard(7));
             myGame.players.add(new Player(id, hand));
         });
         int i = 1;

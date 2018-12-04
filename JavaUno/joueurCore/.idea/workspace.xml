@@ -2,53 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5a03915-affc-411d-a249-325277f040c1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../historyCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../historyCore/out/production/classes/com/example/historyCore/controllers/PlayedGameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/out/production/classes/com/example/historyCore/controllers/PlayedGameController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../historyCore/out/production/classes/com/example/historyCore/repositories/PlayedGameRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/out/production/classes/com/example/historyCore/repositories/PlayedGameRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../historyCore/src/main/java/com/example/historyCore/controllers/PlayedGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/src/main/java/com/example/historyCore/controllers/PlayedGameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../historyCore/src/main/java/com/example/historyCore/repositories/PlayedGameRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/src/main/java/com/example/historyCore/repositories/PlayedGameRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/clients/IHistoryClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/clients/IHistoryClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/clients/IPlayerClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/clients/IPlayerClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/controllers/PlayerHistoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/controllers/PlayerHistoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/entities/History.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/entities/History.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/entities/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/entities/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/entities/PlayerHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/entities/PlayerHistory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/services/PlayerHistoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/services/PlayerHistoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/clients/IHistoryClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/clients/IHistoryClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/clients/IPlayerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/clients/IPlayerClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/controllers/PlayerHistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/controllers/PlayerHistoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/entities/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/entities/History.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/entities/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/entities/PlayerHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/entities/PlayerHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/services/PlayerHistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/services/PlayerHistoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_tx_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_web_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webmvc_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_xmlunit_xmlunit_core_2_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_yaml_snakeyaml_1_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Uno_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Uno_main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/Uno/configurations/startDB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/Uno/controllers/PlayerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/Uno/controllers/PlayerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/Uno/repositories/PlayerRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Uno/client/IPlayerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Uno/client/IPlayerClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Uno/configurations/dbConnector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Uno/configurations/startDB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Uno/controllers/PlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Uno/controllers/PlayerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Uno/repositories/PlayerRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Uno/services/PlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Uno/services/PlayerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/services/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/services/GameService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/services/PlayedGameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/services/PlayedGameService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../nodeServer/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../nodeServer/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../unoAuth/api/controllers/GameController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../unoAuth/api/controllers/GameController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../unoAuth/config/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../unoAuth/config/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/Settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/Settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../engine/src/test/java/uno/engine/entities/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../engine/src/test/java/uno/engine/entities/GameTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -137,9 +95,9 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="6" />
-          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.2" value="2" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -734,7 +692,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="421" />
+    <option name="x" value="420" />
     <option name="width" value="981" />
     <option name="height" value="1032" />
   </component>
@@ -746,6 +704,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -854,7 +813,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -999,7 +957,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12955466" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13117409" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1009,7 +967,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.4163701" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49959514" visible="true" weight="0.4163701" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
