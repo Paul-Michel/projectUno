@@ -1,7 +1,11 @@
 package uno.engine.entities;
 
 
+import jdk.internal.jline.internal.TestAccessible;
 import org.junit.Test;
+import org.springframework.boot.test.autoconfigure.web.client.RestClientTest;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.TestComponent;
 import uno.engine.enums.Color;
 import uno.engine.enums.Value;
 import uno.engine.services.GameService;

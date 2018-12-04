@@ -11,7 +11,10 @@ import org.springframework.stereotype.Component;
 @FeignClient("PlayerClient")
 public interface IPlayerClient {
 
-    @RequestLine("GET /{id}")
-    Player getOneById(@Param("id") Long id);
+    @RequestLine("GET /{username}")
+    Player getOneByUsername(@Param("username") String username);
+
+    @RequestLine("GET /id/{id}")
+    Player getOneById(@Param("id") String id);
 
 }

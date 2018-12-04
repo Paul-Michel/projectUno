@@ -15,7 +15,10 @@ public interface IPlayerClient {
     @RequestLine("GET /")
     List<Player> getAll();
 
-    @RequestLine("GET /{id}")
+    @RequestLine("GET /{username}")
+    List<Player> getOneByUsername(@Param("username") String username);
+
+    @RequestLine("GET /id/{id}")
     List<Player> getOneById(@Param("id") String id);
 
 }

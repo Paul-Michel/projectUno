@@ -81,7 +81,7 @@ function gameListener(server,sockets){
     console.log('game created')
 }
 
-async function createGame(postData,socket){
+async function createGame(postData, socket){
     var clientServerOptions = {
         uri: 'http://localhost:7001/newgame'+ '?' + postData,
         method: 'POST',

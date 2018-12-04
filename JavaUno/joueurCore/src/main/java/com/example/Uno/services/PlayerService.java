@@ -28,7 +28,13 @@ public class PlayerService {
                 .logLevel(Logger.Level.FULL)
                 .target(IPlayerClient.class, "http://localhost:1337/user");
 
-    public ResponseEntity<Object> getOne(String id){
+    public ResponseEntity<Object> getOneByUsername(String username){
+        List<Player> players = iPlayerClient.getOneByUsername(username);
+        return players.size() == 0 ? new ResponseEntity<>(HttpStatus.NOT_FOUND) :
+                new ResponseEntity<>(players.get(0), HttpStatus.OK);
+    }
+
+    public ResponseEntity<Object> getOneById(String id){
         List<Player> players = iPlayerClient.getOneById(id);
         return players.size() == 0 ? new ResponseEntity<>(HttpStatus.NOT_FOUND) :
                 new ResponseEntity<>(players.get(0), HttpStatus.OK);
@@ -38,4 +44,5 @@ public class PlayerService {
         Object object = iPlayerClient.getAll();
         return new ResponseEntity<Object>(object, HttpStatus.OK);
     }
+
 }

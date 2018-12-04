@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
@@ -31,9 +32,19 @@ public class PlayedGameController {
     }
 
     @RequestMapping(value = "/playedgames/winner/{id}", method = RequestMethod.GET)
-    List<PlayedGame> getAllWonGames(@PathVariable Long id){
+    List<PlayedGame> getAllWonGames(@PathVariable String id){
         return playedGameRepository.findAllByFirstWinnerId(id);
     }
+
+    @RequestMapping(value = "/playedgames/looser/{id}", method = RequestMethod.GET)
+    List<PlayedGame> getAllSecondGames(@PathVariable String id){
+        List<PlayedGame> playedGames = new ArrayList<>();
+        playedGames.addAll(playedGameRepository.findAllBySecondWinnerId(id));
+        playedGames.addAll(playedGameRepository.findAllByThirdWinnerId(id));
+        playedGames.addAll(playedGameRepository.findAllByFourthWinnerId(id));
+        return playedGames;
+    }
+
 
 
     @PutMapping(value = "/playedgames/{id}")

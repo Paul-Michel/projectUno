@@ -8,14 +8,18 @@ import java.util.Date;
 @Data
 public class History {
 
-    private Long id;
+    private String id;
     private Date datePlayed;
-    private Long firstWinnerId;
-    private Long secondWinnerId;
-    private Long thirdWinnerId;
-    private Long fourthWinnerId;
+    private String firstWinnerId;
+    private String secondWinnerId;
+    private String thirdWinnerId;
+    private String fourthWinnerId;
 
-    public History(Long firstWinnerId, Long secondWinnerId, Long thirdWinnerId, Long fourthWinnerId) {
+    public History(){
+
+    }
+
+    public History(String firstWinnerId, String secondWinnerId, String thirdWinnerId, String fourthWinnerId) {
         this.datePlayed = new Date();
         this.firstWinnerId = firstWinnerId;
         this.secondWinnerId = secondWinnerId;
@@ -23,11 +27,11 @@ public class History {
         this.fourthWinnerId = fourthWinnerId;
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -39,35 +43,35 @@ public class History {
         this.datePlayed = datePlayed;
     }
 
-    public Long getFirstWinnerId() {
+    public String getFirstWinnerId() {
         return firstWinnerId;
     }
 
-    public void setFirstWinnerId(Long firstWinnerId) {
+    public void setFirstWinnerId(String firstWinnerId) {
         this.firstWinnerId = firstWinnerId;
     }
 
-    public Long getSecondWinnerId() {
+    public String getSecondWinnerId() {
         return secondWinnerId;
     }
 
-    public void setSecondWinnerId(Long secondWinnerId) {
+    public void setSecondWinnerId(String secondWinnerId) {
         this.secondWinnerId = secondWinnerId;
     }
 
-    public Long getThirdWinnerId() {
+    public String getThirdWinnerId() {
         return thirdWinnerId;
     }
 
-    public void setThirdWinnerId(Long thirdWinnerId) {
+    public void setThirdWinnerId(String thirdWinnerId) {
         this.thirdWinnerId = thirdWinnerId;
     }
 
-    public Long getFourthWinnerId() {
+    public String getFourthWinnerId() {
         return fourthWinnerId;
     }
 
-    public void setFourthWinnerId(Long fourthWinnerId) {
+    public void setFourthWinnerId(String fourthWinnerId) {
         this.fourthWinnerId = fourthWinnerId;
     }
 }

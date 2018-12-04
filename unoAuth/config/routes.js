@@ -33,7 +33,8 @@ module.exports.routes = {
   },
   //Data java
   '/user': { controller: 'GameController', action: 'findAll' },
-  '/user/:id': {controller:'GameController', action:'findById'},
+  '/user/:username': {controller:'GameController', action:'findByUsername'},
+  '/user/id/:id': {controller:'GameController', action:'findById'},
   /***************************************************************************
   *                                                                          *
   * More custom routes here...                                               *

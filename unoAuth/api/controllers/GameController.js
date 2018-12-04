@@ -22,17 +22,30 @@ module.exports = {
       }); 
     },
 
-    findById: function(req,res){
+    findByUsername: function(req,res){
         console.log('test1')
         MongoClient.connect(url, function(err, db) {
           if (err) throw err;
           var dbo = db.db("unoUsers")
-          dbo.collection("user").find({"_id": ObjectId(req.params.id)}).toArray(function(err, result) {
+          dbo.collection("user").find({"username": req.params.username}).toArray(function(err, result) {
             if (err) throw err;
             res.send(result);
             db.close();
           });
         }); 
       },
+
+  findById: function(req,res){
+    console.log('test1')
+    MongoClient.connect(url, function(err, db) {
+      if (err) throw err;
+      var dbo = db.db("unoUsers")
+      dbo.collection("user").find({"_id": ObjectId(req.params.id)}).toArray(function(err, result) {
+        if (err) throw err;
+        res.send(result);
+        db.close();
+      });
+    }); 
+  },
 };
 

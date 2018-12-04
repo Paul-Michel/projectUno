@@ -1,136 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< Updated upstream
-    <list default="true" id="ef97dd1d-008c-469c-80cb-0cceea4c77e0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+    <list default="true" id="a5a03915-affc-411d-a249-325277f040c1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyCore/out/production/classes/com/example/historyCore/controllers/PlayedGameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/out/production/classes/com/example/historyCore/controllers/PlayedGameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyCore/out/production/classes/com/example/historyCore/repositories/PlayedGameRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/out/production/classes/com/example/historyCore/repositories/PlayedGameRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyCore/src/main/java/com/example/historyCore/controllers/PlayedGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/src/main/java/com/example/historyCore/controllers/PlayedGameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyCore/src/main/java/com/example/historyCore/repositories/PlayedGameRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/src/main/java/com/example/historyCore/repositories/PlayedGameRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/clients/IHistoryClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/clients/IHistoryClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/clients/IPlayerClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/clients/IPlayerClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/controllers/PlayerHistoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/controllers/PlayerHistoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/entities/History.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/entities/History.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/entities/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/entities/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/entities/PlayerHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/entities/PlayerHistory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/services/PlayerHistoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/services/PlayerHistoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/clients/IHistoryClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/clients/IHistoryClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/clients/IPlayerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/clients/IPlayerClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/controllers/PlayerHistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/controllers/PlayerHistoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/entities/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/entities/History.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/entities/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/entities/PlayerHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/entities/PlayerHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/services/PlayerHistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/services/PlayerHistoryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__antlr_antlr_2_7_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_classmate_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_h2database_h2_1_4_197.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_zaxxer_HikariCP_3_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_persistence_javax_persistence_api_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_transaction_javax_transaction_api_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_9_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_agent_1_9_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minidev_json_smart_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_api_2_11_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_to_slf4j_2_11_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_core_9_0_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_el_9_0_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_aspectj_aspectjweaver_1_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_assertj_assertj_core_3_11_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_dom4j_dom4j_2_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_common_hibernate_commons_annotations_5_0_4_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_hibernate_core_5_3_7_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_validator_hibernate_validator_6_0_13_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_javassist_javassist_3_23_1_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_jandex_2_0_5_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_core_2_23_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_projectlombok_lombok_1_18_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_aop_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_data_jpa_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_jdbc_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_json_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_test_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_autoconfigure_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_data_spring_data_commons_2_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_data_spring_data_jpa_2_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aop_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aspects_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_beans_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_core_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jcl_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jdbc_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_orm_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_test_5_1_2_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_tx_5_1_2_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_web_5_1_2_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webmvc_5_1_2_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_xmlunit_xmlunit_core_2_6_2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_yaml_snakeyaml_1_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Uno.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Uno_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Uno_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Uno_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Uno_main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/Uno/configurations/startDB.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/Uno/controllers/PlayerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/Uno/controllers/PlayerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/Uno/entities/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/Uno/entities/Player.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/Uno/repositories/PlayerRepository.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/Uno/UnoApplicationTests.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Uno/client/IPlayerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Uno/client/IPlayerClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Uno/configurations/dbConnector.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Uno/configurations/startDB.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Uno/controllers/PlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Uno/controllers/PlayerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Uno/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Uno/entities/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Uno/repositories/PlayerRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Uno/services/PlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Uno/services/PlayerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../unoAuth/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../unoAuth/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../unoAuth/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../unoAuth/package.json" afterDir="false" />
-    </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-=======
-    <list default="true" id="a5a03915-affc-411d-a249-325277f040c1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/out/production/classes/com/example/cardCore/configurations/DBstarter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/out/production/classes/com/example/cardCore/configurations/DBstarter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/out/production/classes/com/example/cardCore/controllers/CardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/out/production/classes/com/example/cardCore/controllers/CardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/out/production/classes/com/example/cardCore/entities/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/out/production/classes/com/example/cardCore/entities/Card.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../historyCore/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/.gradle/4.8.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../historyCore/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../historyCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/services/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/services/GameService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/Accueil.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/Accueil.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/Accueil.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/Accueil.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/services/PlayedGameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/services/PlayedGameService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../nodeServer/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../nodeServer/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unoAuth/api/controllers/GameController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../unoAuth/api/controllers/GameController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unoAuth/config/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../unoAuth/config/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../uno_react/src/Settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/Settings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uno_react/src/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/footer.css" afterDir="false" />
     </list>
->>>>>>> Stashed changes
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,89 +64,118 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Uno" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="141410476">
+    <session id="2065322971">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="17" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.2" value="4" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.47" value="1" />
+          <entry key="project.open.time.5" value="5" />
+          <entry key="project.open.time.55" value="1" />
+          <entry key="project.open.time.64" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.83" value="1" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="11" />
-          <entry key="properties" value="1" />
+          <entry key="class" value="2" />
+          <entry key="gradle" value="4" />
+          <entry key="java" value="38" />
+          <entry key="properties" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="11" />
-          <entry key="Properties" value="1" />
+          <entry key="CLASS" value="2" />
+          <entry key="Groovy" value="4" />
+          <entry key="JAVA" value="38" />
+          <entry key="Properties" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="757" />
+          <entry key="dummy" value="8" />
+          <entry key="gradle" value="55" />
+          <entry key="java" value="3093" />
+          <entry key="properties" value="382" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="757" />
+          <entry key="Groovy" value="55" />
+          <entry key="JAVA" value="3093" />
+          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="Properties" value="382" />
         </counts>
       </usages-collector>
     </session>
     <session id="-1447093904">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="1" />
+          <entry key="java" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="1" />
+          <entry key="JAVA" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="771" />
+          <entry key="properties" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="771" />
+          <entry key="Properties" value="4" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/UnoApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-            <state relative-caret-position="136">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-=======
-            <state relative-caret-position="221">
-              <caret line="14" selection-start-line="14" selection-end-line="16" selection-end-column="31" />
->>>>>>> Stashed changes
-              <folding>
-                <element signature="e#297#298#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/services/PlayerService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/entities/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="238">
+              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -232,52 +183,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/client/IPlayerClient.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-            <state relative-caret-position="160">
-              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-=======
-            <state relative-caret-position="153">
-              <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/services/PlayerService.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="23" column="72" selection-start-line="23" selection-start-column="72" selection-end-line="23" selection-end-column="72" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
->>>>>>> Stashed changes
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-<<<<<<< Updated upstream
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/controllers/PlayerController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="20" column="56" lean-forward="true" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
-=======
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/controllers/PlayerController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
+              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -286,32 +193,65 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/Uno/UnoApplicationTests.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/services/PlayerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="195">
+              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/repositories/PlayerRepository.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
->>>>>>> Stashed changes
+            <state>
+              <caret column="16" selection-start-column="16" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/controllers/PlayerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
               <folding>
-                <element signature="e#1063#1064#0" expanded="true" />
-                <element signature="e#1110#1111#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/Uno/UnoApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/UnoApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -319,12 +259,12 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="C:\Gradle\gradle-4.10.2" />
+        <entry key="$PROJECT_DIR$" value="C:\Users\Hoyet\.gradle\wrapper\dists\gradle-4.8.1-bin\e8p42vx1m7a3mz9ydmjagn6wn\gradle-4.8.1" />
       </map>
     </option>
     <option name="myGradleVersions">
       <map>
-        <entry key="$PROJECT_DIR$" value="4.10.2" />
+        <entry key="$PROJECT_DIR$" value="4.8.1" />
       </map>
     </option>
     <option name="availableProjects">
@@ -546,12 +486,10 @@
     </option>
     <option name="modificationStamps">
       <map>
-<<<<<<< Updated upstream
-=======
-        <entry key="$PROJECT_DIR$" value="6175383618242" />
->>>>>>> Stashed changes
+        <entry key="$PROJECT_DIR$" value="6175389117126" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="1875077379" />
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2077093676" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="1512434194" />
       </map>
     </option>
@@ -590,156 +528,153 @@
               <option name="name" value="Uno" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="C:/Gradle/gradle-4.10.2/src/announce" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/antlr" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/base-services" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/base-services-groovy" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/build-cache" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/build-cache-http" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/build-comparison" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/build-init" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/build-option" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/cli" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/code-quality" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/composite-builds" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/core" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/core-api" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/dependency-management" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/diagnostics" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/docs" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/ear" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/ide" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/ide-native" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/ide-play" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/installation-beacon" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/internal-android-performance-testing" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/internal-integ-testing" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/internal-performance-testing" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/internal-testing" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/ivy" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/jacoco" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/javascript" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/jvm-services" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/language-groovy" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/language-java" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/language-jvm" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/language-native" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/language-scala" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/launcher" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/logging" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/maven" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/messaging" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/model-core" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/model-groovy" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/native" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/osgi" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/persistent-cache" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/platform-base" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/platform-jvm" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/platform-native" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/platform-play" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/plugin-development" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/plugin-use" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/plugins" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/process-services" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/publish" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/reporting" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/resources" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/resources-gcs" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/resources-http" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/resources-s3" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/resources-sftp" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/scala" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/signing" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/test-kit" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/testing-base" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/testing-junit-platform" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/testing-jvm" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/testing-native" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/tooling-api" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/tooling-api-builders" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/tooling-native" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/version-control" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/workers" />
-                  <option value="C:/Gradle/gradle-4.10.2/src/wrapper" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/ant-1.9.11.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/ant-launcher-1.9.11.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-api-metadata-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-base-services-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-base-services-groovy-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-build-cache-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-build-option-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-cli-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-core-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-core-api-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-docs-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-installation-beacon-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-jvm-services-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-kotlin-dsl-1.0-rc-6.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-kotlin-dsl-provider-plugins-1.0-rc-6.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-kotlin-dsl-tooling-builders-1.0-rc-6.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-kotlin-dsl-tooling-models-1.0-rc-6.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-launcher-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-logging-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-messaging-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-model-core-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-model-groovy-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-native-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-persistent-cache-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-process-services-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-resources-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-runtime-api-info-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-tooling-api-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/gradle-wrapper-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/groovy-all-2.4.15.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-announce-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-antlr-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-build-cache-http-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-build-comparison-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-build-init-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-code-quality-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-composite-builds-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-dependency-management-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-diagnostics-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-ear-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-ide-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-ide-native-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-ide-play-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-ivy-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-jacoco-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-javascript-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-language-groovy-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-language-java-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-language-jvm-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-language-native-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-language-scala-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-maven-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-osgi-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-platform-base-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-platform-jvm-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-platform-native-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-platform-play-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-plugin-development-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-plugin-use-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-plugins-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-publish-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-reporting-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-resources-gcs-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-resources-http-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-resources-s3-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-resources-sftp-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-scala-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-signing-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-test-kit-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-testing-base-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-testing-junit-platform-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-testing-jvm-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-testing-native-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-tooling-api-builders-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-tooling-native-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-version-control-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/gradle-workers-4.10.2.jar" />
-                  <option value="C:/Gradle/gradle-4.10.2/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/announce" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/antlr" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/base-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/base-services-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/build-cache" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/build-cache-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/build-comparison" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/build-init" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/build-option" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/cli" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/code-quality" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/composite-builds" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/core-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/dependency-management" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/diagnostics" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/ear" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/ide" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/ide-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/ide-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/installation-beacon" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/internal-android-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/internal-integ-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/internal-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/internal-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/ivy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/jacoco" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/javascript" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/jvm-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/language-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/language-java" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/language-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/language-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/language-scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/launcher" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/logging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/maven" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/messaging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/model-core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/model-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/osgi" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/persistent-cache" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/platform-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/platform-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/platform-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/platform-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/plugin-development" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/plugin-use" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/plugins" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/process-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/publish" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/reporting" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/resources" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/resources-gcs" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/resources-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/resources-s3" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/resources-sftp" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/signing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/test-kit" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/testing-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/testing-junit-platform" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/testing-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/testing-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/tooling-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/tooling-api-builders" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/version-control" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/workers" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/src/wrapper" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/ant-1.9.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/ant-launcher-1.9.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-base-services-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-base-services-groovy-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-build-cache-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-build-option-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-cli-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-core-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-core-api-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-docs-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-installation-beacon-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-jvm-services-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-kotlin-dsl-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-kotlin-dsl-provider-plugins-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-kotlin-dsl-provider-spi-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-kotlin-dsl-tooling-builders-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-kotlin-dsl-tooling-models-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-launcher-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-logging-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-messaging-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-model-core-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-model-groovy-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-native-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-persistent-cache-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-process-services-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-resources-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-runtime-api-info-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-tooling-api-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/gradle-wrapper-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/groovy-all-2.4.12.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-announce-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-antlr-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-build-cache-http-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-build-comparison-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-build-init-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-code-quality-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-composite-builds-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-dependency-management-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-diagnostics-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-ear-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-ide-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-ide-native-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-ide-play-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-ivy-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-jacoco-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-javascript-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-language-groovy-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-language-java-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-language-jvm-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-language-native-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-language-scala-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-maven-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-osgi-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-platform-base-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-platform-jvm-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-platform-native-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-platform-play-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-plugin-development-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-plugin-use-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-plugins-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-publish-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-reporting-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-resources-gcs-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-resources-http-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-resources-s3-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-resources-sftp-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-scala-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-signing-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-test-kit-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-testing-base-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-testing-junit-platform-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-testing-jvm-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-testing-native-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-tooling-api-builders-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-version-control-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/gradle-workers-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-all/6fmj4nezasjg1b7kkmy10xgo2/gradle-4.8.1/lib/plugins/ivy-2.2.0.jar" />
                 </list>
               </option>
             </ExternalProjectBuildClasspathPojo>
@@ -749,39 +684,40 @@
     </option>
     <option name="projectSyncType">
       <map>
-        <entry key="$PROJECT_DIR$/../../../../Java/B3Examples-master/Microservice" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../Java/B3Examples-master/Microservice/.gradle" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../Java/B3Examples-master/Microservice/coursestudentscomposite" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../Java/B3Examples-master/Microservice/coursestudentscomposite/coursestudentscomposite" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../Java/BoubouProject" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../Java/CorrectionDemo" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../Java/MScores" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../Java/MScores/core" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../Java/MScores/coursestudentscomposite" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../Java/core" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../Java/demo" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../Java/micro_service/core1" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../Uno/cardCore" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../Uno/carteCore" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../Uno/historyCore" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../Uno/historyPlayerComposite" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../Uno/historyPlayerCore" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../Uno/joueurCore" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../restapi" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../spring-vue-sample-master/src/main/java" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../../gs-accessing-data-mongodb-master/complete" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../../gs-accessing-data-mongodb-master/initial" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Java/B3Examples-master/Microservice" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Java/B3Examples-master/Microservice/.gradle" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Java/B3Examples-master/Microservice/coursestudentscomposite" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Java/B3Examples-master/Microservice/coursestudentscomposite/coursestudentscomposite" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Java/BoubouProject" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Java/CorrectionDemo" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Java/MScores" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Java/MScores/core" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Java/MScores/coursestudentscomposite" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Java/core" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Java/demo" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Java/micro_service/core1" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+        <entry key="$PROJECT_DIR$/../../spring-vue-sample-master/src/main/java" value="PREVIEW" />
       </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/example/Uno/client/IPlayerClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/Uno/entity/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/Uno/controllers/StudentController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/Uno/UnoApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/Uno/exceptions/PlayerNotFoundException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/Uno/entities/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/Uno/configurations/SpringMongoConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/Uno/configurations/dbConnector.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/Uno/repositories/PlayerRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/Uno/configurations/startDB.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/Uno/client/IPlayerClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/Uno/services/PlayerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/Uno/controllers/PlayerController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/Uno/entities/Player.java" />
       </list>
     </option>
   </component>
@@ -791,12 +727,6 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-<<<<<<< Updated upstream
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-7" />
-    <option name="width" value="697" />
-    <option name="height" value="735" />
-=======
   <component name="MavenProjectNavigator">
     <treeState>
       <expand />
@@ -804,14 +734,15 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="948" />
+    <option name="x" value="421" />
     <option name="width" value="981" />
     <option name="height" value="1032" />
->>>>>>> Stashed changes
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <hideEmptyPackages ProjectPane="true" />
+      <abbreviatePackageNames ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -819,121 +750,109 @@
         <subPane>
           <expand>
             <path>
-              <item name="joueurCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Uno" type="b2602c69:ProjectViewProjectNode" />
               <item name="joueurCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="joueurCore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="joueurCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="joueurCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Uno" type="b2602c69:ProjectViewProjectNode" />
               <item name="joueurCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-<<<<<<< Updated upstream
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="joueurCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Uno" type="b2602c69:ProjectViewProjectNode" />
               <item name="joueurCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="joueurCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Uno" type="b2602c69:ProjectViewProjectNode" />
               <item name="joueurCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Uno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="joueurCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Uno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="joueurCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Uno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="joueurCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
               <item name="Uno" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="joueurCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Uno" type="b2602c69:ProjectViewProjectNode" />
               <item name="joueurCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
               <item name="Uno" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="joueurCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Uno" type="b2602c69:ProjectViewProjectNode" />
               <item name="joueurCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
               <item name="Uno" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="joueurCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Uno" type="b2602c69:ProjectViewProjectNode" />
               <item name="joueurCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
               <item name="Uno" type="462c0819:PsiDirectoryNode" />
               <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="joueurCore" type="b2602c69:ProjectViewProjectNode" />
-=======
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
               <item name="Uno" type="b2602c69:ProjectViewProjectNode" />
->>>>>>> Stashed changes
               <item name="joueurCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-<<<<<<< Updated upstream
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
               <item name="Uno" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="joueurCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Uno" type="b2602c69:ProjectViewProjectNode" />
               <item name="joueurCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-=======
-            </path>
-            <path>
-              <item name="Uno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="joueurCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Uno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="joueurCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Uno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="joueurCore" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="Uno" type="462c0819:PsiDirectoryNode" />
-            </path>
->>>>>>> Stashed changes
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
@@ -945,14 +864,13 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-<<<<<<< Updated upstream
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543850711211" />
-=======
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543848689204" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../historyPlayerComposite" />
->>>>>>> Stashed changes
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543876878743" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
@@ -968,9 +886,6 @@
       </list>
     </option>
   </component>
-<<<<<<< Updated upstream
-  <component name="RunManager">
-=======
   <component name="RunManager" selected="Application.UnoApplication">
     <configuration name="UnoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.Uno.UnoApplication" />
@@ -1015,7 +930,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
->>>>>>> Stashed changes
     <configuration name="UnoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Uno_main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.Uno.UnoApplication" />
@@ -1023,8 +937,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-<<<<<<< Updated upstream
-=======
     <list>
       <item itemvalue="JUnit.UnoApplicationTests.contextLoads" />
       <item itemvalue="JUnit.UnoApplicationTests" />
@@ -1037,24 +949,38 @@
         <item itemvalue="JUnit.UnoApplicationTests.contextLoads" />
       </list>
     </recent_temporary>
->>>>>>> Stashed changes
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ef97dd1d-008c-469c-80cb-0cceea4c77e0" name="Default Changelist" comment="" />
-      <created>1543835820108</created>
+      <changelist id="a5a03915-affc-411d-a249-325277f040c1" name="Default Changelist" comment="" />
+      <created>1541424939380</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1543835820108</updated>
-      <workItem from="1543835821927" duration="9291000" />
+      <updated>1541424939380</updated>
+      <workItem from="1541424941116" duration="6746000" />
+      <workItem from="1541497202972" duration="106000" />
+      <workItem from="1541497348433" duration="87000" />
+      <workItem from="1541498148683" duration="334000" />
+      <workItem from="1541499268946" duration="3961000" />
+      <workItem from="1541512713458" duration="1214000" />
+      <workItem from="1541518391134" duration="243000" />
+      <workItem from="1541751375317" duration="2833000" />
+      <workItem from="1542016811731" duration="13000" />
+      <workItem from="1542031084717" duration="5520000" />
+      <workItem from="1542096823744" duration="3168000" />
+      <workItem from="1542114820747" duration="1436000" />
+      <workItem from="1542275808013" duration="934000" />
+      <workItem from="1542401072366" duration="386000" />
+      <workItem from="1542619855816" duration="5088000" />
+      <workItem from="1542703104811" duration="10528000" />
+      <workItem from="1543220044201" duration="13993000" />
+      <workItem from="1543332053716" duration="185000" />
     </task>
     <servers />
   </component>
-<<<<<<< Updated upstream
-=======
   <component name="TestHistory">
     <history-entry file="UnoApplicationTests_contextLoads - 2018.11.12 at 17h 30m 06s.xml">
       <configuration name="UnoApplicationTests.contextLoads" configurationId="JUnit" />
@@ -1066,32 +992,14 @@
       <configuration name="UnoApplicationTests" configurationId="JUnit" />
     </history-entry>
   </component>
->>>>>>> Stashed changes
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9291000" />
+    <option name="totallyTimeSpent" value="57008000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-<<<<<<< Updated upstream
-      <window_info id="Image Layers" order="0" />
-      <window_info id="UI Designer" order="1" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Web" order="4" side_tool="true" />
-      <window_info id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.24962178" />
-      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Spring" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.3295082" />
-      <window_info anchor="bottom" id="Java Enterprise" order="4" />
-      <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
-=======
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24453442" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12955466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1101,31 +1009,30 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4163701" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.4163701" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
->>>>>>> Stashed changes
-      <window_info anchor="bottom" id="Build" order="7" weight="0.3295082" />
-      <window_info anchor="bottom" id="Message" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.40819672" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="14" />
-      <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="right" id="Maven Projects" order="1" />
-      <window_info anchor="right" id="Gradle" order="2" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Bean Validation" order="6" />
-      <window_info anchor="right" id="Palette" order="7" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="8" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49959514" weight="0.3291815" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50040483" side_tool="true" weight="0.4163701" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3291815" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32980332" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.32955465" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32980332" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1135,175 +1042,163 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< Updated upstream
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/configurations/startDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/configurations/dbConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.1.2.RELEASE/2b7030ac124a46f162cd273a00dbbeff030de202/spring-data-commons-2.1.2.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
-=======
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/java/lang/Object.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/configurations/startDB.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/exceptions/PlayerNotFoundException.java">
->>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.1.0.RELEASE/fe4390ff7a5b04cae4eabadca60b6026ade138a1/spring-boot-autoconfigure-2.1.0.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="477" column="44" selection-start-line="477" selection-start-column="44" selection-end-line="477" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< Updated upstream
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/UnoApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#297#298#0" expanded="true" />
-=======
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/configurations/SpringMongoConfig.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/entities/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" selection-start-line="14" selection-end-line="16" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#796#797#0" expanded="true" />
-            <element signature="e#873#874#0" expanded="true" />
->>>>>>> Stashed changes
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< Updated upstream
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/repositories/PlayerRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/services/PlayerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/configurations/dbConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
->>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/controllers/PlayerController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/repositories/PlayerRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/configurations/dbConnector.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/configurations/startDB.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/entities/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state relative-caret-position="143">
-          <caret line="20" column="56" lean-forward="true" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
-=======
-        <state relative-caret-position="153">
-          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
->>>>>>> Stashed changes
+        <state relative-caret-position="238">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
           <folding>
-            <element signature="e#1063#1064#0" expanded="true" />
-            <element signature="e#1110#1111#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/client/IPlayerClient.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state relative-caret-position="160">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-=======
         <state relative-caret-position="255">
-          <caret line="23" column="72" selection-start-line="23" selection-start-column="72" selection-end-line="23" selection-end-column="72" />
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
->>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state relative-caret-position="170">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-=======
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/repositories/PlayerRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/controllers/PlayerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
+        <state relative-caret-position="357">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
->>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/Uno/UnoApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/UnoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Uno/services/PlayerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Uno</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

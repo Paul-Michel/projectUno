@@ -1,6 +1,7 @@
 package com.example.historyPlayerComposite.controllers;
 
 import com.example.historyPlayerComposite.entities.PlayerHistory;
+import com.example.historyPlayerComposite.entities.PlayerStat;
 import com.example.historyPlayerComposite.services.PlayerHistoryService;
 import lombok.Data;
 import lombok.Setter;
@@ -18,8 +19,13 @@ public class PlayerHistoryController {
     @Setter
     PlayerHistoryService playerHistoryService;
 
-    @RequestMapping("/wonbyplayer/{id}")
-    ResponseEntity<PlayerHistory> getOne (@PathVariable Long id){
-        return new ResponseEntity<>(playerHistoryService.getOneById(id), HttpStatus.OK);
+    @RequestMapping("/wonbyplayer/{username}")
+    ResponseEntity<PlayerHistory> getOne (@PathVariable String username){
+        return new ResponseEntity<>(playerHistoryService.getOneById(username), HttpStatus.OK);
+    }
+
+    @RequestMapping("/stats/{username}")
+    ResponseEntity<PlayerStat> getStats (@PathVariable String username){
+        return new ResponseEntity<>(playerHistoryService.getStatsByUsername(username), HttpStatus.OK);
     }
 }

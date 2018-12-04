@@ -8,5 +8,8 @@ import java.util.List;
 
 @Repository
 public interface PlayedGameRepository extends JpaRepository<PlayedGame, Long> {
-    List<PlayedGame> findAllByFirstWinnerId(Long FirstWinnerId);
+    List<PlayedGame> findAllByFirstWinnerId(String FirstWinnerId);
+    List<PlayedGame> findAllBySecondWinnerId(String FirstWinnerId);
+    List<PlayedGame> findAllByThirdWinnerId(String FirstWinnerId);
+    List<PlayedGame> findAllByFourthWinnerId(String FirstWinnerId);
 }

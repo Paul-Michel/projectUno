@@ -2,37 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8915a335-6a31-4c0d-a215-b875009b4f57" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__antlr_antlr_2_7_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_9_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_9_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_9_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_9_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__com_h2database_h2_1_4_197.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__com_h2database_h2_1_4_197.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__net_minidev_accessors_smart_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__net_minidev_json_smart_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__net_minidev_json_smart_2_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__org_hibernate_validator_hibernate_validator_6_0_13_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__org_hibernate_validator_hibernate_validator_6_0_13_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__org_objenesis_objenesis_2_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__org_objenesis_objenesis_2_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_1_7_25.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cardCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cardCore/out/production/classes/com/example/cardCore/controllers/CardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../cardCore/out/production/classes/com/example/cardCore/controllers/CardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../restAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/controllers/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyCore/out/production/classes/com/example/historyCore/controllers/PlayedGameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/out/production/classes/com/example/historyCore/controllers/PlayedGameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyCore/out/production/classes/com/example/historyCore/repositories/PlayedGameRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/out/production/classes/com/example/historyCore/repositories/PlayedGameRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyCore/src/main/java/com/example/historyCore/controllers/PlayedGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/src/main/java/com/example/historyCore/controllers/PlayedGameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyCore/src/main/java/com/example/historyCore/repositories/PlayedGameRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/src/main/java/com/example/historyCore/repositories/PlayedGameRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/historyPlayerComposite/clients/IHistoryClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/historyPlayerComposite/clients/IHistoryClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/historyPlayerComposite/clients/IPlayerClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/historyPlayerComposite/clients/IPlayerClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/historyPlayerComposite/controllers/PlayerHistoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/historyPlayerComposite/controllers/PlayerHistoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/historyPlayerComposite/entities/History.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/historyPlayerComposite/entities/History.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/historyPlayerComposite/entities/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/historyPlayerComposite/entities/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/historyPlayerComposite/entities/PlayerHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/historyPlayerComposite/entities/PlayerHistory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/historyPlayerComposite/services/PlayerHistoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/historyPlayerComposite/services/PlayerHistoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/clients/IHistoryClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/clients/IHistoryClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/clients/IPlayerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/clients/IPlayerClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/controllers/PlayerHistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/controllers/PlayerHistoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/entities/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/entities/History.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/entities/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/entities/PlayerHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/entities/PlayerHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/services/PlayerHistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/services/PlayerHistoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../joueurCore/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/.idea/libraries/Gradle__org_springframework_spring_tx_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/.idea/libraries/Gradle__org_springframework_spring_web_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/.idea/libraries/Gradle__org_springframework_spring_webmvc_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/.idea/libraries/Gradle__org_xmlunit_xmlunit_core_2_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/.idea/libraries/Gradle__org_yaml_snakeyaml_1_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../joueurCore/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/.idea/modules/Uno_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../joueurCore/.idea/modules/Uno_main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../joueurCore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/out/production/classes/com/example/Uno/configurations/startDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/out/production/classes/com/example/Uno/controllers/PlayerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../joueurCore/out/production/classes/com/example/Uno/controllers/PlayerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/out/production/classes/com/example/Uno/repositories/PlayerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../joueurCore/out/production/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/src/main/java/com/example/Uno/client/IPlayerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../joueurCore/src/main/java/com/example/Uno/client/IPlayerClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/src/main/java/com/example/Uno/configurations/dbConnector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/src/main/java/com/example/Uno/configurations/startDB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/src/main/java/com/example/Uno/controllers/PlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../joueurCore/src/main/java/com/example/Uno/controllers/PlayerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/src/main/java/com/example/Uno/repositories/PlayerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/src/main/java/com/example/Uno/services/PlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../joueurCore/src/main/java/com/example/Uno/services/PlayerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../joueurCore/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/services/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/services/GameService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/services/PlayedGameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/services/PlayedGameService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../nodeServer/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../nodeServer/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unoAuth/api/controllers/GameController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../unoAuth/api/controllers/GameController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unoAuth/config/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../unoAuth/config/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../uno_react/src/Settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/Settings.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -81,18 +97,43 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="502970322">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1294" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1294" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/entities/PlayerHistory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-              <folding>
-                <element signature="e#554#555#0" expanded="true" />
-                <element signature="e#581#582#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="187">
+              <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -100,8 +141,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/controllers/PlayerHistoryController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+            <state relative-caret-position="272">
+              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -109,8 +150,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/clients/IHistoryClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+            <state relative-caret-position="221">
+              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -132,8 +173,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/services/PlayerHistoryService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+            <state relative-caret-position="312">
+              <caret line="48" column="23" lean-forward="true" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/entities/PlayerStat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -141,8 +194,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/clients/IPlayerClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            <state relative-caret-position="153">
+              <caret line="13" column="32" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -150,33 +203,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/entities/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-              <folding>
-                <element signature="e#579#580#0" expanded="true" />
-                <element signature="e#613#614#0" expanded="true" />
-                <element signature="e#641#642#0" expanded="true" />
-                <element signature="e#674#675#0" expanded="true" />
-                <element signature="e#703#704#0" expanded="true" />
-                <element signature="e#747#748#0" expanded="true" />
-                <element signature="e#783#784#0" expanded="true" />
-                <element signature="e#815#816#0" expanded="true" />
-                <element signature="e#843#844#0" expanded="true" />
-                <element signature="e#885#886#0" expanded="true" />
-                <element signature="e#919#920#0" expanded="true" />
-                <element signature="e#954#955#0" expanded="true" />
-                <element signature="e#985#986#0" expanded="true" />
-                <element signature="e#1033#1034#0" expanded="true" />
-                <element signature="e#1073#1074#0" expanded="true" />
-                <element signature="e#1107#1108#0" expanded="true" />
-                <element signature="e#1137#1138#0" expanded="true" />
-                <element signature="e#1183#1184#0" expanded="true" />
-                <element signature="e#1221#1222#0" expanded="true" />
-                <element signature="e#1253#1254#0" expanded="true" />
-                <element signature="e#1281#1282#0" expanded="true" />
-                <element signature="e#1323#1324#0" expanded="true" />
-                <element signature="e#1357#1358#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -184,38 +212,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/entities/History.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+            <state relative-caret-position="153">
+              <caret line="11" column="9" selection-end-line="77" />
               <folding>
-                <element signature="e#688#689#0" expanded="true" />
-                <element signature="e#722#723#0" expanded="true" />
-                <element signature="e#750#751#0" expanded="true" />
-                <element signature="e#785#786#0" expanded="true" />
-                <element signature="e#818#819#0" expanded="true" />
-                <element signature="e#868#869#0" expanded="true" />
-                <element signature="e#912#913#0" expanded="true" />
-                <element signature="e#950#951#0" expanded="true" />
-                <element signature="e#986#987#0" expanded="true" />
-                <element signature="e#1042#1043#0" expanded="true" />
-                <element signature="e#1092#1093#0" expanded="true" />
-                <element signature="e#1131#1132#0" expanded="true" />
-                <element signature="e#1168#1169#0" expanded="true" />
+                <element signature="e#1189#1190#0" expanded="true" />
                 <element signature="e#1226#1227#0" expanded="true" />
-                <element signature="e#1278#1279#0" expanded="true" />
-                <element signature="e#1316#1317#0" expanded="true" />
-                <element signature="e#1352#1353#0" expanded="true" />
-                <element signature="e#1408#1409#0" expanded="true" />
-                <element signature="e#1458#1459#0" expanded="true" />
-                <element signature="e#1497#1498#0" expanded="true" />
-                <element signature="e#1534#1535#0" expanded="true" />
-                <element signature="e#1592#1593#0" expanded="true" />
-                <element signature="e#1644#1645#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Long</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -450,7 +469,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6168661687408" />
+        <entry key="$PROJECT_DIR$" value="6175383617051" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="1060998899" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="1613248354" />
@@ -595,15 +614,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/entities/PlayerHistory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/entities/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/entities/History.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/entities/PlayerHistory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/clients/IPlayerClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/clients/IHistoryClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/entities/PlayerStat.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/controllers/PlayerHistoryController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/services/PlayerHistoryService.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="948" />
+    <option name="x" value="421" />
     <option name="width" value="981" />
     <option name="height" value="1032" />
   </component>
@@ -613,6 +636,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -720,12 +745,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542459542888" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543876878712" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -781,7 +804,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2534413" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12793522" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -790,7 +813,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3291815" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.1797153" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -815,6 +838,27 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/entities/PlayerHistory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/controllers/PlayerHistoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/clients/IHistoryClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -825,106 +869,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/entities/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/entities/PlayerStat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        <state relative-caret-position="357">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
           <folding>
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#674#675#0" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#919#920#0" expanded="true" />
-            <element signature="e#954#955#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1033#1034#0" expanded="true" />
-            <element signature="e#1073#1074#0" expanded="true" />
-            <element signature="e#1107#1108#0" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
-            <element signature="e#1183#1184#0" expanded="true" />
-            <element signature="e#1221#1222#0" expanded="true" />
-            <element signature="e#1253#1254#0" expanded="true" />
-            <element signature="e#1281#1282#0" expanded="true" />
-            <element signature="e#1323#1324#0" expanded="true" />
-            <element signature="e#1357#1358#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/entities/History.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-          <folding>
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#722#723#0" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#950#951#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-            <element signature="e#1092#1093#0" expanded="true" />
-            <element signature="e#1131#1132#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
-            <element signature="e#1226#1227#0" expanded="true" />
-            <element signature="e#1278#1279#0" expanded="true" />
-            <element signature="e#1316#1317#0" expanded="true" />
-            <element signature="e#1352#1353#0" expanded="true" />
-            <element signature="e#1408#1409#0" expanded="true" />
-            <element signature="e#1458#1459#0" expanded="true" />
-            <element signature="e#1497#1498#0" expanded="true" />
-            <element signature="e#1534#1535#0" expanded="true" />
-            <element signature="e#1592#1593#0" expanded="true" />
-            <element signature="e#1644#1645#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/clients/IHistoryClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/entities/PlayerHistory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding>
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/controllers/PlayerHistoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/clients/IPlayerClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="153">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/entities/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/entities/History.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="9" selection-end-line="77" />
+          <folding>
+            <element signature="e#1189#1190#0" expanded="true" />
+            <element signature="e#1226#1227#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/historyPlayerComposite/services/PlayerHistoryService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+        <state relative-caret-position="312">
+          <caret line="48" column="23" lean-forward="true" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
         </state>
       </provider>
     </entry>

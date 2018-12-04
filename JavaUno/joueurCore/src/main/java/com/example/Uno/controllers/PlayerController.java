@@ -17,8 +17,15 @@ public class PlayerController {
     @RequestMapping(value = "/players", method = RequestMethod.GET)
     ResponseEntity<Object> getAll(){return playerService.getAll();}
 
-    @RequestMapping(value = "/players/{id}", method = RequestMethod.GET)
-    ResponseEntity<Object> getOne (@PathVariable String id){
-        return playerService.getOne(id);
+    @RequestMapping(value = "/players/{username}", method = RequestMethod.GET)
+    ResponseEntity<Object> getOneByUsername (@PathVariable String username){
+        return playerService.getOneByUsername(username);
     }
+
+    @RequestMapping(value = "/players/id/{id}", method = RequestMethod.GET)
+    ResponseEntity<Object> getOneById (@PathVariable String id){
+        return playerService.getOneById(id);
+    }
+
+
 }

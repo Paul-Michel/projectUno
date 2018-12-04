@@ -26,19 +26,20 @@ public class PlayedGameService {
             .logLevel(Logger.Level.FULL)
             .target(IPlayedGame.class, "http://localhost:5002/playedgames");
     private List<String> playersIdList = new ArrayList<>();
-    private Integer i = 0;
+    private Integer j;
 
     public PlayedGameService() {
+        j = 0;
+        playersIdList = new ArrayList<>();
         for (int i = 0; i < 4; i++) {
             playersIdList.add(" ");
         }
     }
 
-
     public void updateplayedGame(String playerId) {
         System.out.println(playerId);
-        playersIdList.set(this.i, playerId);
-        i++;
+        playersIdList.set(this.j, playerId);
+        this.j++;
     }
 
     public void sendPlayedGame() {

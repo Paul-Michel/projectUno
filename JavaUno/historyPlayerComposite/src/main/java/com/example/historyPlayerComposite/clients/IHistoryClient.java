@@ -14,5 +14,8 @@ import java.util.List;
 public interface IHistoryClient {
 
     @RequestLine("GET /winner/{id}")
-    Object getAllByfirstWinnerId(@Param("id") Long id);
+    List<History> getAllByfirstWinnerId(@Param("id") String id);
+
+    @RequestLine("GET /looser/{id}")
+    List<History> getAllLooserId(@Param("id") String id);
 }

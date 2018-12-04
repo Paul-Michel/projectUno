@@ -8,21 +8,21 @@ import java.util.List;
 @Data
 public class PlayerHistory {
 
-    private Long id;
+    private String id;
     private String name;
     private Object playedGames;
 
-    public PlayerHistory(Long id, String name, Object playedGames) {
+    public PlayerHistory(String id, String name, Object playedGames) {
         this.id = id;
         this.name = name;
         this.playedGames = playedGames;
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

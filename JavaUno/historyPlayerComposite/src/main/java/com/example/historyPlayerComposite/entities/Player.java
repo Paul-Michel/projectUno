@@ -5,8 +5,8 @@ import lombok.Data;
 @Data
 public class Player {
 
-    private Long id;
-    private String pseudo;
+    private String _id;
+    private String username;
     private Double winNb;
     private Double playedNb;
     private Double winrate;
@@ -14,28 +14,28 @@ public class Player {
 
     public Player(){}
 
-    public Player(String pseudo, Double winNb, Double playedNb, String email) {
-        this.pseudo = pseudo;
+    public Player(String username, Double winNb, Double playedNb, String email) {
+        this.username = username;
         this.winNb = winNb;
         this.playedNb = playedNb;
         winrate = winNb/playedNb*100;
         this.email = email;
     }
 
-    public Long getId() {
-        return id;
+    public String get_id() {
+        return _id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void set_id(String _id) {
+        this._id = _id;
     }
 
-    public String getPseudo() {
-        return pseudo;
+    public String getUsername() {
+        return username;
     }
 
-    public void setPseudo(String pseudo) {
-        this.pseudo = pseudo;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public Double getWinNb() {

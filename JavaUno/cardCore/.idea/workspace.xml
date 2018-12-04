@@ -3,12 +3,60 @@
   <component name="ChangeListManager">
     <list default="true" id="1c4040eb-b159-4596-8f17-53540e68c150" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
+=======
+      <change beforePath="$PROJECT_DIR$/../historyCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyCore/out/production/classes/com/example/historyCore/controllers/PlayedGameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/out/production/classes/com/example/historyCore/controllers/PlayedGameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyCore/out/production/classes/com/example/historyCore/repositories/PlayedGameRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/out/production/classes/com/example/historyCore/repositories/PlayedGameRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyCore/src/main/java/com/example/historyCore/controllers/PlayedGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/src/main/java/com/example/historyCore/controllers/PlayedGameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyCore/src/main/java/com/example/historyCore/repositories/PlayedGameRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyCore/src/main/java/com/example/historyCore/repositories/PlayedGameRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/clients/IHistoryClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/clients/IHistoryClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/clients/IPlayerClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/clients/IPlayerClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/controllers/PlayerHistoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/controllers/PlayerHistoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/entities/History.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/entities/History.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/entities/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/entities/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/entities/PlayerHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/entities/PlayerHistory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/services/PlayerHistoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/out/production/classes/com/example/historyPlayerComposite/services/PlayerHistoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/clients/IHistoryClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/clients/IHistoryClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/clients/IPlayerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/clients/IPlayerClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/controllers/PlayerHistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/controllers/PlayerHistoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/entities/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/entities/History.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/entities/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/entities/PlayerHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/entities/PlayerHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/services/PlayerHistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../historyPlayerComposite/src/main/java/com/example/historyPlayerComposite/services/PlayerHistoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../joueurCore/.idea/compiler.xml" afterDir="false" />
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/../joueurCore/.idea/libraries/Gradle__org_springframework_spring_tx_5_1_2_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../joueurCore/.idea/libraries/Gradle__org_springframework_spring_web_5_1_2_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../joueurCore/.idea/libraries/Gradle__org_springframework_spring_webmvc_5_1_2_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../joueurCore/.idea/libraries/Gradle__org_xmlunit_xmlunit_core_2_6_2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../joueurCore/.idea/libraries/Gradle__org_yaml_snakeyaml_1_23.xml" beforeDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/services/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/services/GameService.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/../joueurCore/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../joueurCore/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/.idea/modules/Uno_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../joueurCore/.idea/modules/Uno_main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../joueurCore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/out/production/classes/com/example/Uno/configurations/startDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/out/production/classes/com/example/Uno/controllers/PlayerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../joueurCore/out/production/classes/com/example/Uno/controllers/PlayerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/out/production/classes/com/example/Uno/repositories/PlayerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../joueurCore/out/production/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/src/main/java/com/example/Uno/client/IPlayerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../joueurCore/src/main/java/com/example/Uno/client/IPlayerClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/src/main/java/com/example/Uno/configurations/dbConnector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/src/main/java/com/example/Uno/configurations/startDB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/src/main/java/com/example/Uno/controllers/PlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../joueurCore/src/main/java/com/example/Uno/controllers/PlayerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/src/main/java/com/example/Uno/repositories/PlayerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/src/main/java/com/example/Uno/services/PlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../joueurCore/src/main/java/com/example/Uno/services/PlayerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joueurCore/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../joueurCore/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/services/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/services/GameService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/services/PlayedGameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../engine/src/main/java/uno/engine/services/PlayedGameService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../engine/src/test/java/uno/engine/entities/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../engine/src/test/java/uno/engine/entities/GameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../nodeServer/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../nodeServer/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unoAuth/api/controllers/GameController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../unoAuth/api/controllers/GameController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unoAuth/config/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../unoAuth/config/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../uno_react/src/Settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../uno_react/src/Settings.js" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -45,8 +93,10 @@
     <session id="386020685">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
     </session>
@@ -160,9 +210,15 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< Updated upstream
     <option name="x" value="949" />
     <option name="width" value="980" />
     <option name="height" value="1031" />
+=======
+    <option name="x" value="420" />
+    <option name="width" value="981" />
+    <option name="height" value="1032" />
+>>>>>>> Stashed changes
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -253,8 +309,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543848674254" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543876878684" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../engine" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -385,10 +441,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cardCore/CardCoreApplication.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="68">
           <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+=======
+        <state relative-caret-position="85">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
@@ -396,6 +457,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/cardCore/CardCoreApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -423,17 +491,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/cardCore/CardCoreApplicationTests.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/cardCore/CardCoreApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="34">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
         </state>
       </provider>
     </entry>
